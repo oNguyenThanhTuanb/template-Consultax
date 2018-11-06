@@ -1,0 +1,17 @@
+//
+// Base :: Global
+// --------------------------------------------------
+// Global default style
+body {
+  font-family: $bfont;
+  font-size: 14px;
+}
+
+.d-flex {
+  display: flex;
+  width: 100%;
+}
+
+.justify-content-between {
+  justify-content: space-between;
+}

@@ -1,0 +1,37 @@
+//
+// Components :: Blog
+// --------------------------------------------------
+.post {
+
+}
+
+.post-thumb {
+}
+
+.post-content {
+  border: 1px solid $grey-lighten-2;
+  border-top: 0;
+  padding: 15px 20px;
+
+  .post__title {
+    a {
+      color: $mcolor;
+    }
+  }
+
+  .post__meta {
+    color: $grey-darken-1;
+
+    span {
+      margin-right: 5px;
+    }
+  }
+
+  .post__desc {
+
+  }
+
+  .post__meta-info {
+
+  }
+}
