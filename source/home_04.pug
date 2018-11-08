@@ -1,0 +1,45 @@
+extends modules/layout/layout.pug
+append head
+  title="Index - HomePage 04"
+append header
+append content
+  //- blog
+  .container
+    .row
+      .col-md-6
+        .post-type-02
+          .post-thumb
+            a(href='#')
+              img(src='images/home03-blog-01.jpg')
+          .post-content
+            p.post__meta
+              span August 27, 2018
+              span.divider | 
+              a(href='#') Finance
+            h3.post__title
+              a(href='#') Porttitor auctor platea tristique neque, pellentesque suscipit.
+            .post__meta-info
+              a.read-more(href='#') Read More
+      .col-md-6
+        .post-type-01
+          .post-content
+            p.post__meta
+              span August 27, 2018
+              span.divider | 
+              a(href='#') Business
+            h3.post__title
+              a(href='#') Curabitur suspendisse ullamcorper volutpat tempor
+            .post__meta-info
+              a.read-more(href='#') Read More
+        .post-type-01
+          .post-content
+            p.post__meta
+              span August 27, 2018
+              span.divider | 
+              a(href='#') Business
+            h3.post__title
+              a(href='#') Ligula magnis et duis litora fusce potenti, leo dis fermentum auctor.
+            .post__meta-info
+              a.read-more(href='#') Read More
+append footer
+append script
