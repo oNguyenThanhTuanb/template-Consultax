@@ -25,8 +25,11 @@ $dark-light-1: #363636;
 $dark-light-2: #252525;
 $dark-base   : #1c1c1c;
 
-
+// blue
+$blue-base     :#e5eef5;
 /// grey
+
+$grey-lighten-6: #787878;
 $grey-lighten-5: #fafafa !default;
 $grey-lighten-4: #f5f5f5 !default;
 $grey-lighten-3: #eeeeee !default;
@@ -37,6 +40,12 @@ $grey-darken-1 : #757575 !default;
 $grey-darken-2 : #616161 !default;
 $grey-darken-3 : #424242 !default;
 $grey-darken-4 : #212121 !default;
+////gray
+$gray-base     : #4d4d4d !default;
+$gray-green    : #1b293a !default;
+
+/// orange
+$orange-base: #fbaf5d;
 
 /// Typography
 /// -------------------------------------------------
@@ -121,3 +130,10 @@ $listlyblue      : #52b1b3;
 $vine            : #00b489;
 $steam           : #171a21;
 $discord         : #7289da;
+
+/// boder radius
+/// -------------------------------------------------
+
+$border_radius_base : 4px !default;
+$border_radius_medium : 8px !default;
+$border_radius_large : 12px !default;

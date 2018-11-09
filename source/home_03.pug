@@ -69,7 +69,25 @@ append content
               input.ct-input(type="email", placeholder="Email address")
               button.btn-orange(type="submit")
                 i.fa.fa-paper-plane
+  //- Testimonial Home Page 3
+  .container
+    .testimonial.testimonial3
+      ul.testimonial4__content
+        li.list-item.active
+          .row
+            .col-sm-5
+              .thumb-img
+                img(src="images/h3_avatar1.png" alt="")
+            .col-sm-7
+              .testimonial__desc.testimonial3__desc
+                | “A wonderful serenity has taken possession of my entire soul, like these sweet mornings of spring which I enjoy with my whole heart.”
+              .testimonial3__bottom
+                .testimonial3__info
+                  h3.testimonial-title.pull-left Caroline Cummings
+                  p.testimonial-from.pull-left - from Berlin
+                span.testimonial__star
+                  img(src="images/star.png" alt="")
+  .h-40
   //- footer
   include modules/footer/footer02.pug
-append footer
-append script
+  append script
