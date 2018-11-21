@@ -1,3 +1,50 @@
 //
 // Components :: Form Elements
 // --------------------------------------------------
+// input
+.ct-input {
+  border-radius: 2px;
+  height: 43px;
+  border: 1px solid white;
+  background-color: white;
+  color: black;
+  font-size: 14px;
+  width: 100%;
+  padding: 8px 15px;
+  -webkit-appearance: none;
+  transition: $transition-base;
+
+  @include placeholder {
+    color: rgba(0,0,0,.5);
+  }
+
+  &:hover,
+  &:focus {
+    border-color: $scolor;
+    outline: 0;
+  }
+}
+
+// textarea
+.ct-textarea {
+  border-radius: 2px;
+  height: 90px;
+  border: 1px solid white;
+  background-color: white;
+  color: black;
+  font-size: 14px;
+  width: 100%;
+  padding: 8px 15px;
+  -webkit-appearance: none;
+  transition: $transition-base;
+
+  @include placeholder {
+    color: rgba(0,0,0,.5);
+  }
+
+  &:hover,
+  &:focus {
+    border-color: $scolor;
+    outline: 0;
+  }
+}

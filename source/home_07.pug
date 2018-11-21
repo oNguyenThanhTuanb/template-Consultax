@@ -3,7 +3,7 @@ append head
   title="Index - HomePage 07"
 append header
 append content
-  //- blog
+  //- blog & cta
   .container
     .row
       .col-md-8
@@ -22,5 +22,250 @@ append content
               | When, while the lovely valley teems with vapour around me, and the meridian sun strikes the upper surface of the impenetrable foliage of my trees, and but a few stray gleams.
             .post__meta-info
               a.read-more(href='#') Read More
-append footer
+      .col-md-4
+        .home07-cta-01
+          .main-title
+            p SUBSCRIBE
+            h3  subscribe for the newsletter
+            span Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem.
+          .cta-form
+            form
+              .form-row
+                .form-field
+                  input.ct-input(type="text", placeholder="Name")
+              .form-row
+                .form-field
+                  input.ct-input(type="email", placeholder="Email address")
+              .form-row.last
+                .form-field
+                  button.btn-orange SUBSCRIBE
+  .footer07
+    .footer07__inner
+      .container
+        .row
+          .col-md-4
+            .footer07__block01
+              a(href="index.html")
+                img(src="images/logo-color.png")
+              p Lorem ipsum dolor sit amet consectetur adipiscing elit praesent, laoreet vitae luctus...
+                a.read-more(href="#") Read more
+          .col-md-8
+            .footer07__block02
+              ul.list__link03--dark
+                li
+                  a(href="#") Services
+                li
+                  a(href="#") FAQ
+                li
+                  a(href="#") About us
+                li
+                  a(href="#") Featured
+                li
+                  a(href="#") Coctact
+                li
+                  a(href="#") Cases
+              ul.list-social02--dark
+                  li
+                    a(href="#").facebook
+                      i.fa.fa-facebook
+                  li
+                    a(href="#").twitter
+                      i.fa.fa-twitter
+                  li
+                    a(href="#").pinterest
+                      i.fa.fa-pinterest
+                  li
+                    a(href="#").linkedin
+                      i.fa.fa-linkedin
+              span.text-copyright © 2018 Finacial Consulting Theme by Ocean Themes
+  #js-footer07__map.js-footer07__map
 append script
+  script(src="js/extention/maplace.min.js")  
+  script(src='https://maps.googleapis.com/maps/api/js?key=AIzaSyBS5224HISbnpAiKW7mx6eyTrHxfGeCftk')
+  script(type='text/javascript').
+    var LocsA = [
+    {
+    lat: 37.774509,
+    lon: -122.411727,
+    title: 'San Francisco',
+    html: [
+    '<div class="map__info-window"><h3><i class="fa fa-location-arrow"></i>AREA ONE</h3>',
+    '<p>307 Jesse Centers London City, England 12568 </p>',
+    '<div class="control"><a href="#">Contact Us</a><a href="#">Get directions</a></div></div>'
+    ].join(''),
+    icon: 'images/map-icon01.png',
+    animation: google.maps.Animation.DROP,
+    zoom:4
+    },
+    {
+    lat: 34.298450,
+    lon: -111.714435,
+    title: 'Arizona',
+    html: [
+    '<div class="map__info-window"><h3><i class="fa fa-location-arrow"></i>AREA TWO</h3>',
+    '<p>307 Jesse Centers London City, England 12568 </p>',
+    '<div class="control"><a href="#">Contact Us</a><a href="#">Get directions</a></div></div>'
+    ].join(''),
+    icon: 'images/map-icon01.png',
+    show_infowindow: true,
+    animation: google.maps.Animation.DROP,
+    zoom:4
+    },
+    {
+    lat: 35.775319,
+    lon: -79.708533,
+    title: 'North Carolina',
+    html: [
+    '<div class="map__info-window"><h3><i class="fa fa-location-arrow"></i>AREA THREE</h3>',
+    '<p>307 Jesse Centers London City, England 12568 </p>',
+    '<div class="control"><a href="#">Contact Us</a><a href="#">Get directions</a></div></div>'
+    ].join(''),
+    icon: 'images/map-icon01.png',
+    animation: google.maps.Animation.DROP,
+    zoom:4
+    },
+    {
+    lat: 39.952644,
+    lon: -75.165247,
+    title: 'Philadelphia',
+    html: [
+    '<div class="map__info-window"><h3><i class="fa fa-location-arrow"></i>AREA FOUR</h3>',
+    '<p>307 Jesse Centers London City, England 12568 </p>',
+    '<div class="control"><a href="#">Contact Us</a><a href="#">Get directions</a></div></div>'
+    ].join(''),
+    icon: 'images/map-icon01.png',
+    animation: google.maps.Animation.DROP,
+    zoom:4
+    }
+    ];
+    new Maplace({
+    locations: LocsA,
+    map_div: '#js-footer07__map',
+    controls_type: 'list',
+    controls_on_map: false,
+    map_options: {
+    scrollwheel: false
+    },
+    start:1,
+    styles: {
+    "Ultra Light": [
+    {
+    "featureType": "landscape",
+    "stylers": [
+    {
+    "saturation": -100
+    },
+    {
+    "lightness": 65
+    },
+    {
+    "visibility": "on"
+    }
+    ]
+    },
+    {
+    "featureType": "poi",
+    "stylers": [
+    {
+    "saturation": -100
+    },
+    {
+    "lightness": 51
+    },
+    {
+    "visibility": "simplified"
+    }
+    ]
+    },
+    {
+    "featureType": "road.highway",
+    "stylers": [
+    {
+    "saturation": -100
+    },
+    {
+    "visibility": "simplified"
+    }
+    ]
+    },
+    {
+    "featureType": "road.arterial",
+    "stylers": [
+    {
+    "saturation": -100
+    },
+    {
+    "lightness": 30
+    },
+    {
+    "visibility": "on"
+    }
+    ]
+    },
+    {
+    "featureType": "road.local",
+    "stylers": [
+    {
+    "saturation": -100
+    },
+    {
+    "lightness": 40
+    },
+    {
+    "visibility": "on"
+    }
+    ]
+    },
+    {
+    "featureType": "transit",
+    "stylers": [
+    {
+    "saturation": -100
+    },
+    {
+    "visibility": "simplified"
+    }
+    ]
+    },
+    {
+    "featureType": "administrative.province",
+    "stylers": [
+    {
+    "visibility": "off"
+    }
+    ]
+    },
+    {
+    "featureType": "water",
+    "elementType": "labels",
+    "stylers": [
+    {
+    "visibility": "on"
+    },
+    {
+    "lightness": -25
+    },
+    {
+    "saturation": -100
+    }
+    ]
+    },
+    {
+    "featureType": "water",
+    "elementType": "geometry",
+    "stylers": [
+    {
+    "hue": "#ffff00"
+    },
+    {
+    "lightness": -25
+    },
+    {
+    "saturation": -97
+    }
+    ]
+    }
+    ],
+    }
+    }).Load();
+

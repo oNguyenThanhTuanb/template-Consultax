@@ -2,3 +2,197 @@
 // Components :: List Link
 // --------------------------------------------------
 // List text links & icon links
+.list__links01--white {
+  padding: 0;
+  margin: 0;
+  color: white;
+  font-size: 12px;
+  font-family: $hfont;
+
+  li {
+    display: block;
+    position: relative;
+    margin-bottom: 8px;
+
+    &:before {
+      content: "\f101";
+      font-family: $fontawesome;
+      padding-right: 10px;
+    }
+
+    a {
+      color: white;
+    }
+  }
+}
+
+.list__link02--white {
+  margin: 0;
+  padding: 0;
+
+  li {
+    display: inline-block;
+    margin-right: 36px;
+
+    &:last-child {
+      margin-right: 0;
+    }
+
+    a {
+      color: rgba($white, .6);
+      transition: $transition-base;
+      font-size: 14px;
+      font-weight: 300;
+
+      &:hover {
+        color: $white;
+        text-decoration: none;
+      }
+    }
+  }
+}
+
+.list__link03--white {
+  @extend .list__link02--white;
+  
+  li {
+    a {
+      font-weight: 900;
+      font-family: $hfont;
+      font-size: 12px;
+      color: $white;
+
+      &:hover {
+        color: $scolor;
+      }
+    }
+  }
+}
+
+.list__link03--dark {
+  @extend .list__link02--white;
+  
+  li {
+    a {
+      font-weight: 900;
+      font-family: $hfont;
+      font-size: 12px;
+      color: $black;
+
+      &:hover {
+        color: $scolor;
+      }
+    }
+  }
+}
+
+.list-social01 {
+  margin: 0;
+  padding: 0;
+  display: block;
+
+  li {
+    display: inline-block;
+    margin-right: 10px;
+
+    &:last-child {
+      margin-right: 0;
+    }
+
+    a {
+      display: block;
+      width: 35px;
+      height: 35px;
+      border-radius: 50%;
+      color: #363636;
+      background-color: $white;
+      font-size: 18px;
+      line-height: 35px;
+      text-align: center;
+      transition: $transition-base;
+
+      i {
+        line-height: inherit;
+      }
+
+      &:hover {
+        color: $white;
+      }
+
+      &.facebook:hover {
+        background-color: $facebook;
+      }
+
+      &.twitter:hover {
+        background-color: $twitter;
+      }
+
+      &.pinterest:hover {
+        background-color: $pinterest;
+      }
+
+      &.linkedin:hover {
+        background-color: $linkedin;
+      }
+    }
+  }
+}
+
+
+.list-social02 {
+  margin: 0;
+  padding: 0;
+  display: block;
+
+  li {
+    display: inline-block;
+    margin-right: 8px;
+    width: 30px;
+    height: 30px;
+
+    &:last-child {
+      margin-right: 0;
+    }
+
+    a {
+      display: block;
+      border-radius: 50%;
+      color: $white;
+      opacity: .5;
+      font-size: 14px;
+      transition: $transition-base;
+
+      i {
+        line-height: inherit;
+      }
+
+      &:hover {
+        opacity: 1;
+      }
+
+      &.facebook:hover {
+        color: $facebook;
+      }
+
+      &.twitter:hover {
+        color: $twitter;
+      }
+
+      &.pinterest:hover {
+        color: $pinterest;
+      }
+
+      &.linkedin:hover {
+        color: $linkedin;
+      }
+    }
+  }
+}
+
+.list-social02--dark {
+  @extend .list-social02;
+
+  li a {
+    color: $black;
+  }
+}

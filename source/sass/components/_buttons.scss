@@ -1,3 +1,47 @@
 //
 // Components :: Buttons
 // --------------------------------------------------
+.btn-blue {
+  border-radius: 2px;
+  background-color: $mcolor;
+  color: white;
+  border: 1px solid $mcolor;
+  text-align: center;
+  font-weight: bold;
+  font-family: $hfont;
+  padding: 12px 38px;
+  font-size: 12px;
+  transition: $transition-base;
+
+  &:hover,
+  &:focus {
+    border-color: darken($mcolor, 5%);
+    background-color: darken($mcolor, 5%);
+  }
+}
+
+.btn-orange {
+  @extend .btn-blue;
+  background-color: $scolor;
+  border-color: $scolor;
+
+  &:hover,
+  &:focus {
+    border-color: darken($scolor, 5%);
+    background-color: darken($scolor, 5%);
+  }
+}
+
+.btn-white {
+  @extend .btn-blue;
+  border-color: #a1a1a1;
+  color: #555555;
+  background-color: white;
+
+  &:hover,
+  &:focus {
+    border-color: black;
+    background-color: white;
+    color: black;
+  }
+}

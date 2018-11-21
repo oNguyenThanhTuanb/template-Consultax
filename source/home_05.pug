@@ -38,5 +38,28 @@ append content
               | Posuere vestibulum arcu nostra nascetur vel nisi laoreet fusce, torquent...
             .post__meta-info
               a.read-more(href='#') Read More
-append footer
+  //- cta
+  .home05-cta-01
+    .container
+      .row
+        .inner
+          .main-title
+            p SUPPORT ONLINE
+            h3 Get a Consultation
+          .row
+            .cta-form
+              .col-md-3
+                .form-field
+                  input.ct-input(type="text", placeholder="Name")
+              .col-md-3
+                .form-field
+                  input.ct-input(type="text", placeholder="Phone number")
+              .col-md-3
+                .form-field
+                  input.ct-input(type="email", placeholder="Email address")
+              .col-md-3
+                .form-field
+                  button.btn-orange SUBMIT
+  //- footer
+  include modules/footer/footer01.pug
 append script

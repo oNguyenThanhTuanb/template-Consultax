@@ -16,4 +16,28 @@ a {
   color: $mcolor;
 }
 
+// title sm white
+.title__sm--white {
+  font-size: 18px;
+  color: white;
+  font-weight: 900;
+  font-family: $bfont;
+  position: relative;
+  padding-bottom: 10px;
+  margin-bottom: 30px;
 
+  &:after {
+    content: '';
+    width: 45px;
+    background-color: $white;
+    height: 1px;
+    opacity: .2;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+  }
+}
+
+.text-orange {
+  color: $scolor;
+}
