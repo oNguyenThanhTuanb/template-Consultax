@@ -39,6 +39,43 @@ append content
               .form-row.last
                 .form-field
                   button.btn-orange SUBSCRIBE
+  .h-40
+  .container
+    .testimonial.testimonial7
+      .row
+        .col-sm-6
+          .testimonial7__content
+            .testimonial7__top
+              .testimonial7__avatar
+                img(src="images/h2_avatar1.jpg" alt="")
+                .testimonial7__star
+                  span 4.5
+            .testimonial7__bottom
+              p.testimonial__desc.testimonial__desc7
+                | I should be incapable of drawing a single stroke at the present moment; and yet I feel that I never was a greater artist than now.
+              .testimonial7__bottom2.d-flex
+                .testimonial7__info
+                  h3.testimonial-title Bang Bay Buom
+                  p.testimonial-from from Hanoi
+                .testimonial7__time
+                  | - on August 27, 2018
+        .col-sm-6
+          .testimonial7__content
+            .testimonial7__top
+              .testimonial7__avatar
+                img(src="images/h2_avatar1.jpg" alt="")
+                .testimonial7__star
+                  span 4.5
+            .testimonial7__bottom
+              p.testimonial__desc.testimonial__desc7
+                | O my friend -- but it is too much for my strength -- I sink under the weight of the splendour of these visions! A wonderful serenity has taken possession of my entire soul.
+              .testimonial7__bottom2.d-flex
+                .testimonial7__info
+                  h3.testimonial-title Occhos deokinh
+                  p.testimonial-from from Beijing
+                .testimonial7__time
+                  | - on August 27, 2018
+  .h-40
   .footer07
     .footer07__inner
       .container
@@ -79,193 +116,193 @@ append content
                       i.fa.fa-linkedin
               span.text-copyright © 2018 Finacial Consulting Theme by Ocean Themes
   #js-footer07__map.js-footer07__map
-append script
-  script(src="js/extention/maplace.min.js")  
-  script(src='https://maps.googleapis.com/maps/api/js?key=AIzaSyBS5224HISbnpAiKW7mx6eyTrHxfGeCftk')
-  script(type='text/javascript').
-    var LocsA = [
-    {
-    lat: 37.774509,
-    lon: -122.411727,
-    title: 'San Francisco',
-    html: [
-    '<div class="map__info-window"><h3><i class="fa fa-location-arrow"></i>AREA ONE</h3>',
-    '<p>307 Jesse Centers London City, England 12568 </p>',
-    '<div class="control"><a href="#">Contact Us</a><a href="#">Get directions</a></div></div>'
-    ].join(''),
-    icon: 'images/map-icon01.png',
-    animation: google.maps.Animation.DROP,
-    zoom:4
-    },
-    {
-    lat: 34.298450,
-    lon: -111.714435,
-    title: 'Arizona',
-    html: [
-    '<div class="map__info-window"><h3><i class="fa fa-location-arrow"></i>AREA TWO</h3>',
-    '<p>307 Jesse Centers London City, England 12568 </p>',
-    '<div class="control"><a href="#">Contact Us</a><a href="#">Get directions</a></div></div>'
-    ].join(''),
-    icon: 'images/map-icon01.png',
-    show_infowindow: true,
-    animation: google.maps.Animation.DROP,
-    zoom:4
-    },
-    {
-    lat: 35.775319,
-    lon: -79.708533,
-    title: 'North Carolina',
-    html: [
-    '<div class="map__info-window"><h3><i class="fa fa-location-arrow"></i>AREA THREE</h3>',
-    '<p>307 Jesse Centers London City, England 12568 </p>',
-    '<div class="control"><a href="#">Contact Us</a><a href="#">Get directions</a></div></div>'
-    ].join(''),
-    icon: 'images/map-icon01.png',
-    animation: google.maps.Animation.DROP,
-    zoom:4
-    },
-    {
-    lat: 39.952644,
-    lon: -75.165247,
-    title: 'Philadelphia',
-    html: [
-    '<div class="map__info-window"><h3><i class="fa fa-location-arrow"></i>AREA FOUR</h3>',
-    '<p>307 Jesse Centers London City, England 12568 </p>',
-    '<div class="control"><a href="#">Contact Us</a><a href="#">Get directions</a></div></div>'
-    ].join(''),
-    icon: 'images/map-icon01.png',
-    animation: google.maps.Animation.DROP,
-    zoom:4
-    }
-    ];
-    new Maplace({
-    locations: LocsA,
-    map_div: '#js-footer07__map',
-    controls_type: 'list',
-    controls_on_map: false,
-    map_options: {
-    scrollwheel: false
-    },
-    start:1,
-    styles: {
-    "Ultra Light": [
-    {
-    "featureType": "landscape",
-    "stylers": [
-    {
-    "saturation": -100
-    },
-    {
-    "lightness": 65
-    },
-    {
-    "visibility": "on"
-    }
-    ]
-    },
-    {
-    "featureType": "poi",
-    "stylers": [
-    {
-    "saturation": -100
-    },
-    {
-    "lightness": 51
-    },
-    {
-    "visibility": "simplified"
-    }
-    ]
-    },
-    {
-    "featureType": "road.highway",
-    "stylers": [
-    {
-    "saturation": -100
-    },
-    {
-    "visibility": "simplified"
-    }
-    ]
-    },
-    {
-    "featureType": "road.arterial",
-    "stylers": [
-    {
-    "saturation": -100
-    },
-    {
-    "lightness": 30
-    },
-    {
-    "visibility": "on"
-    }
-    ]
-    },
-    {
-    "featureType": "road.local",
-    "stylers": [
-    {
-    "saturation": -100
-    },
-    {
-    "lightness": 40
-    },
-    {
-    "visibility": "on"
-    }
-    ]
-    },
-    {
-    "featureType": "transit",
-    "stylers": [
-    {
-    "saturation": -100
-    },
-    {
-    "visibility": "simplified"
-    }
-    ]
-    },
-    {
-    "featureType": "administrative.province",
-    "stylers": [
-    {
-    "visibility": "off"
-    }
-    ]
-    },
-    {
-    "featureType": "water",
-    "elementType": "labels",
-    "stylers": [
-    {
-    "visibility": "on"
-    },
-    {
-    "lightness": -25
-    },
-    {
-    "saturation": -100
-    }
-    ]
-    },
-    {
-    "featureType": "water",
-    "elementType": "geometry",
-    "stylers": [
-    {
-    "hue": "#ffff00"
-    },
-    {
-    "lightness": -25
-    },
-    {
-    "saturation": -97
-    }
-    ]
-    }
-    ],
-    }
-    }).Load();
+  append script
+    script(src="js/extention/maplace.min.js")  
+    script(src='https://maps.googleapis.com/maps/api/js?key=AIzaSyBS5224HISbnpAiKW7mx6eyTrHxfGeCftk')
+    script(type='text/javascript').
+      var LocsA = [
+      {
+      lat: 37.774509,
+      lon: -122.411727,
+      title: 'San Francisco',
+      html: [
+      '<div class="map__info-window"><h3><i class="fa fa-location-arrow"></i>AREA ONE</h3>',
+      '<p>307 Jesse Centers London City, England 12568 </p>',
+      '<div class="control"><a href="#">Contact Us</a><a href="#">Get directions</a></div></div>'
+      ].join(''),
+      icon: 'images/map-icon01.png',
+      animation: google.maps.Animation.DROP,
+      zoom:4
+      },
+      {
+      lat: 34.298450,
+      lon: -111.714435,
+      title: 'Arizona',
+      html: [
+      '<div class="map__info-window"><h3><i class="fa fa-location-arrow"></i>AREA TWO</h3>',
+      '<p>307 Jesse Centers London City, England 12568 </p>',
+      '<div class="control"><a href="#">Contact Us</a><a href="#">Get directions</a></div></div>'
+      ].join(''),
+      icon: 'images/map-icon01.png',
+      show_infowindow: true,
+      animation: google.maps.Animation.DROP,
+      zoom:4
+      },
+      {
+      lat: 35.775319,
+      lon: -79.708533,
+      title: 'North Carolina',
+      html: [
+      '<div class="map__info-window"><h3><i class="fa fa-location-arrow"></i>AREA THREE</h3>',
+      '<p>307 Jesse Centers London City, England 12568 </p>',
+      '<div class="control"><a href="#">Contact Us</a><a href="#">Get directions</a></div></div>'
+      ].join(''),
+      icon: 'images/map-icon01.png',
+      animation: google.maps.Animation.DROP,
+      zoom:4
+      },
+      {
+      lat: 39.952644,
+      lon: -75.165247,
+      title: 'Philadelphia',
+      html: [
+      '<div class="map__info-window"><h3><i class="fa fa-location-arrow"></i>AREA FOUR</h3>',
+      '<p>307 Jesse Centers London City, England 12568 </p>',
+      '<div class="control"><a href="#">Contact Us</a><a href="#">Get directions</a></div></div>'
+      ].join(''),
+      icon: 'images/map-icon01.png',
+      animation: google.maps.Animation.DROP,
+      zoom:4
+      }
+      ];
+      new Maplace({
+      locations: LocsA,
+      map_div: '#js-footer07__map',
+      controls_type: 'list',
+      controls_on_map: false,
+      map_options: {
+      scrollwheel: false
+      },
+      start:1,
+      styles: {
+      "Ultra Light": [
+      {
+      "featureType": "landscape",
+      "stylers": [
+      {
+      "saturation": -100
+      },
+      {
+      "lightness": 65
+      },
+      {
+      "visibility": "on"
+      }
+      ]
+      },
+      {
+      "featureType": "poi",
+      "stylers": [
+      {
+      "saturation": -100
+      },
+      {
+      "lightness": 51
+      },
+      {
+      "visibility": "simplified"
+      }
+      ]
+      },
+      {
+      "featureType": "road.highway",
+      "stylers": [
+      {
+      "saturation": -100
+      },
+      {
+      "visibility": "simplified"
+      }
+      ]
+      },
+      {
+      "featureType": "road.arterial",
+      "stylers": [
+      {
+      "saturation": -100
+      },
+      {
+      "lightness": 30
+      },
+      {
+      "visibility": "on"
+      }
+      ]
+      },
+      {
+      "featureType": "road.local",
+      "stylers": [
+      {
+      "saturation": -100
+      },
+      {
+      "lightness": 40
+      },
+      {
+      "visibility": "on"
+      }
+      ]
+      },
+      {
+      "featureType": "transit",
+      "stylers": [
+      {
+      "saturation": -100
+      },
+      {
+      "visibility": "simplified"
+      }
+      ]
+      },
+      {
+      "featureType": "administrative.province",
+      "stylers": [
+      {
+      "visibility": "off"
+      }
+      ]
+      },
+      {
+      "featureType": "water",
+      "elementType": "labels",
+      "stylers": [
+      {
+      "visibility": "on"
+      },
+      {
+      "lightness": -25
+      },
+      {
+      "saturation": -100
+      }
+      ]
+      },
+      {
+      "featureType": "water",
+      "elementType": "geometry",
+      "stylers": [
+      {
+      "hue": "#ffff00"
+      },
+      {
+      "lightness": -25
+      },
+      {
+      "saturation": -97
+      }
+      ]
+      }
+      ],
+      }
+      }).Load();
 
