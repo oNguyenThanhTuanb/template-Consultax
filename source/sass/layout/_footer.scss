@@ -169,6 +169,7 @@
 }
 
 .footer08__block01 {
+  color: $white;
   img {
     margin-bottom: 25px;
   }
@@ -192,6 +193,7 @@
 }
 
 .footer08__block02 {
+  color: $white;
   text-align: right;
 
   .list__link03--white {
@@ -297,5 +299,29 @@
         color: $scolor;
       }
     }
+  }
+}
+
+.footer04 {
+  background: url('../images/home01-cta-01.jpg');
+  background-size: cover;
+  background-position: center center;
+  position: relative;
+
+  &__first-row {
+    .main-title--white {
+      margin-top: -10px;
+    }
+  }
+
+  &__divider {
+    width: 100%;
+    height: 2px;
+    background-color: rgba($white, .2);
+    margin: 56px 0;
+  }
+
+  &__second-row {
+
   }
 }

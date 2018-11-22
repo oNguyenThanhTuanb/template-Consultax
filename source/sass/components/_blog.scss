@@ -318,3 +318,22 @@
     }
   }
 }
+
+.post-type-05 {
+  @extend .post-type-01;
+  background-color: $white;
+
+  .post-content {
+    .post__meta {
+      a {
+        color: $scolor;
+        font-weight: bold;
+
+        &:hover {
+          color: $scolor;
+          text-decoration: underline;
+        }
+      }
+    }
+  }
+}

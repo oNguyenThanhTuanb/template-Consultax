@@ -34,3 +34,30 @@ body {
 .text-italic {
   font-style: italic;
 }
+
+.overlay02 {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba($mcolor, .9);
+}
+
+.overlay03 {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(#1b293a, .9);
+}
+
+.overlay04 {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba($mcolor, .7);
+}

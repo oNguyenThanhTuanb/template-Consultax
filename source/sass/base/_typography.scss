@@ -41,3 +41,38 @@ a {
 .text-orange {
   color: $scolor;
 }
+
+.main-title {
+  position: relative;
+  color: $black;
+
+  p {
+    color: rgba($black, .7);
+    font-family: $hfont;
+    font-size: 12px;
+    font-weight: 900;
+    margin-bottom: 8px;
+  }
+
+  span {
+    line-height: 22px;
+  }
+
+  h3 {
+    font-size: 40px;
+    font-weight: 900;
+    font-family: $hfont;
+    margin-bottom: 18px;
+    margin-top: 0;
+    line-height: 1.3;
+  }
+}
+
+.main-title--white {
+  @extend .main-title;
+  color: $white;
+
+  p {
+    color: rgba($white, .7);
+  }
+}
