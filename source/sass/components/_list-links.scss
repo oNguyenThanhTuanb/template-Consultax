@@ -196,3 +196,14 @@
     color: $black;
   }
 }
+
+.list-social03 {
+  @extend .list-social02;
+
+  li {
+    a {
+      opacity: 1;
+      font-size: 18px;
+    }
+  }  
+}

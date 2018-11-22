@@ -1,3 +1,95 @@
 //
 // Components :: Team
 // --------------------------------------------------
+.team02__item {
+  position: relative;
+  color: $white;
+  cursor: pointer;
+
+  .overlay02 {
+    opacity: 0;
+    transition: $transition-base;
+    padding: 40px 25px;
+  }
+
+  .team02 {
+    &__name {
+      font-size: 20px;
+      font-weight: 900;
+      font-family: $hfont;
+      margin-bottom: 0;
+    }
+
+    &__job {
+      font-size: 12px;
+      font-weight: 300;
+      font-family: $hfont;
+    }
+
+    &__divider {
+      height: 1px;
+      width: 100%;
+      background-color: rgba($white, .2);
+      margin: 27px 0;
+    }
+
+    &__desc {
+      line-height: 22px;
+      margin-bottom: 52px;
+    }
+  }
+
+  &:hover {
+    .overlay02 {
+      opacity: 1;
+    }
+  }
+}
+
+.team04__item {
+  cursor: pointer;
+
+  .overlay03 {
+    opacity: 0;
+    transition: $transition-base;
+    padding: 25px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .team04 {
+    &__item--info {
+      padding-top: 27px;
+      padding-bottom: 10px;
+    }
+
+    &__name {
+      font-size: 20px;
+      font-weight: 900;
+      font-family: $hfont;
+      margin-bottom: 0;
+    }
+
+    &__job {
+      font-size: 12px;
+      font-weight: 300;
+      font-family: $hfont;
+      margin-bottom: 0;
+    }
+
+    &__item-img {
+      position: relative;
+
+      img {
+        width: 100%;
+      }
+    }
+  }
+
+  &:hover {
+    .overlay03 {
+      opacity: 1;
+    }
+  }
+}
