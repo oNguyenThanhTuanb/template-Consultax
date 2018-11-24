@@ -3,8 +3,15 @@ append head
   title="Index - HomePage 05"
 append header
 append content
+  //- feature
+  .home05-feature.mgt
+    .container
+      .row
+        .main-title
+          p FEATURE
+          h3 Why choose us ?
   //- who we are
-  .home05-wwa
+  .home05-wwa.mgt
     .container
       .home05-wwa__inner
         .home05-wwa__content
@@ -33,47 +40,76 @@ append content
             p.job-title Founder & CEO
         .hom05-wwa__cover
           img(src="images/home05-wwa-01.jpg" alt="demo")
-  //- blog
-  .container
-    .row
-      .col-md-6
-        .post-type-03
-          .post-thumb
-            a(href='#')
-              img(src='images/home05-blog-01.jpg')
-          .post-content
-            p.post__meta
-              span August 27, 2018
-              span.divider | 
-              a(href='#') Finance
-            h3.post__title
-              a(href='#') Investment Update, Fourth Quarter 2018
-            p.post__desc
-              | Posuere vestibulum arcu nostra nascetur vel nisi laoreet fusce, torquent...
-            .post__meta-info
-              a.read-more(href='#') Read More
-      .col-md-6
-        .post-type-03
-          .post-thumb
-            a(href='#')
-              img(src='images/home05-blog-02.jpg')
-          .post-content
-            p.post__meta
-              span August 27, 2018
-              span.divider | 
-              a(href='#') Finance
-            h3.post__title
-              a(href='#') Investment Update, Fourth Quarter 2018
-            p.post__desc
-              | Posuere vestibulum arcu nostra nascetur vel nisi laoreet fusce, torquent...
-            .post__meta-info
-              a.read-more(href='#') Read More
-  //- cta
+  //- services
+  .home05-services.ssp
+    .container
+      .row
+        .main-title--white
+          p OUR SERVICES
+          h3 what we bring to you
+          a(href="#") All services
+  //- product
+  .home05-product.ssp
+    .container
+      .row
+        .main-title
+          p OUR PROJECT
+          h3 We are the leaders
+          a(href="#") All projects
+  //- testimonial
+  .home05-testimonial.ssp.bg-blue-light
+    .container
+      .main-title
+        p TESTIMONIAL & PARTNER
+        h3 What our clients say
+        a(href="#") <>
+      .testimonial.testimonial1
+        .row
+          .col-sm-4
+            .testimonial1-content
+              .testimonial1__top.d-flex
+                .testimonial__avatar
+                  img(src="images/avatar1.png" alt="")
+                .testimonial1__info
+                  h3.testimonial-title Maria Occhos
+                  p.testimonial-from from Berlin
+              .testimonial1__bottom
+                span.testimonial1__star
+                  img(src="images/star.png" alt="")
+                p.testimonial__desc
+                  | I am alone, and feel the charm of existence in this spot, which was created for the bliss of souls like mine.
+          .col-sm-4
+            .testimonial1-content
+              .testimonial1__top.d-flex
+                .testimonial1__avatar
+                  img(src="images/avatar2.png" alt="")
+                .testimonial1__info
+                  h3.testimonial-title Mr. Bang
+                  p.testimonial-from from Berlin
+              .testimonial1__bottom
+                span.testimonial1__star
+                  img(src="images/star.png" alt="")
+                p.testimonial__desc
+                  | I should be incapable of drawing a single stroke at the present moment; and yet I feel that I never was a greater artist than now. 
+          .col-sm-4
+            .testimonial1-content
+              .testimonial1__top.d-flex
+                .testimonial1__avatar
+                  img(src="images/avatar3.png" alt="")
+                .testimonial1__info
+                  h3.testimonial-title Bang baby
+                  p.testimonial-from from Berlin
+              .testimonial1__bottom
+                span.testimonial1__star
+                  img(src="images/star.png" alt="")
+                p.testimonial__desc
+                  | I am so happy, my dear friend, so absorbed in the exquisite sense of mere tranquil existence, that I neglect my talents.
+    //- cta
   .home05-cta-01
     .container
       .row
         .inner
-          .main-title
+          .main-title--white
             p SUPPORT ONLINE
             h3 Get a Consultation
           .row
@@ -90,58 +126,53 @@ append content
               .col-md-3
                 .form-field
                   button.btn-orange SUBMIT
-  //- testimonial
-  .h-40
-  .container
-    .testimonial.testimonial1
+  //- blog
+  .home05-blog.ssp
+    .container
+      .main-title
+        p OUR BLOG
+        h3 Our latest news
       .row
-        .col-sm-4
-          .testimonial1-content
-            .testimonial1__top.d-flex
-              .testimonial__avatar
-                img(src="images/avatar1.png" alt="")
-              .testimonial1__info
-                h3.testimonial-title Maria Occhos
-                p.testimonial-from from Berlin
-            .testimonial1__bottom
-              span.testimonial1__star
-                img(src="images/star.png" alt="")
-              p.testimonial__desc
-                | I am alone, and feel the charm of existence in this spot, which was created for the bliss of souls like mine.
-        .col-sm-4
-          .testimonial1-content
-            .testimonial1__top.d-flex
-              .testimonial1__avatar
-                img(src="images/avatar2.png" alt="")
-              .testimonial1__info
-                h3.testimonial-title Mr. Bang
-                p.testimonial-from from Berlin
-            .testimonial1__bottom
-              span.testimonial1__star
-                img(src="images/star.png" alt="")
-              p.testimonial__desc
-                | I should be incapable of drawing a single stroke at the present moment; and yet I feel that I never was a greater artist than now. 
-        .col-sm-4
-          .testimonial1-content
-            .testimonial1__top.d-flex
-              .testimonial1__avatar
-                img(src="images/avatar3.png" alt="")
-              .testimonial1__info
-                h3.testimonial-title Bang baby
-                p.testimonial-from from Berlin
-            .testimonial1__bottom
-              span.testimonial1__star
-                img(src="images/star.png" alt="")
-              p.testimonial__desc
-                | I am so happy, my dear friend, so absorbed in the exquisite sense of mere tranquil existence, that I neglect my talents.
-  .h-40
+        .col-md-6
+          .post-type-03
+            .post-thumb
+              a(href='#')
+                img(src='images/home05-blog-01.jpg')
+            .post-content
+              p.post__meta
+                span August 27, 2018
+                span.divider | 
+                a(href='#') Finance
+              h3.post__title
+                a(href='#') Investment Update, Fourth Quarter 2018
+              p.post__desc
+                | Posuere vestibulum arcu nostra nascetur vel nisi laoreet fusce, torquent...
+              .post__meta-info
+                a.read-more(href='#') Read More
+        .col-md-6
+          .post-type-03
+            .post-thumb
+              a(href='#')
+                img(src='images/home05-blog-02.jpg')
+            .post-content
+              p.post__meta
+                span August 27, 2018
+                span.divider | 
+                a(href='#') Finance
+              h3.post__title
+                a(href='#') Investment Update, Fourth Quarter 2018
+              p.post__desc
+                | Posuere vestibulum arcu nostra nascetur vel nisi laoreet fusce, torquent...
+              .post__meta-info
+                a.read-more(href='#') Read More
   //- team
-  .home05-team
+  .home05-team.mgb
     .container
       .row
         .main-title
           p OUR TEAM
           h3 Meet our team
+          a(href="#") <>
         .home05-team__inner
           .col-md-4
             .team02__item

@@ -71,6 +71,10 @@ body {
   background-color: $blue-light;
 }
 
+.bg-white {
+  background-color: $white;
+}
+
 .ssp {
   padding: 120px 0;
 }
@@ -85,4 +89,12 @@ body {
 
 .sst60 {
   padding-top: 60px;
+}
+
+.mgt {
+  margin-top: 120px;
+}
+
+.mgb {
+  margin-bottom: 120px;
 }

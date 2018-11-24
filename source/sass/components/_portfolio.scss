@@ -5,13 +5,28 @@
   
 }
 
+.home05-services {
+  background: url('../images/home05-services01.jpg');
+  background-size: cover;
+  background-position: center center;
+  position: relative;
+  color: white;
+}
+
 .home07-project {
-  background-color: $mcolor;
+  background: url('../images/home07-bg-project01.jpg');
+  background-size: cover;
+  background-position: center center;
+  position: relative;
+  color: white;
+
   &__cover {
 
   }
 
   &__thumb {
+    display: flex;
+    
     &-item {
       border-radius: 5px;
       border: 1px solid rgba($white, .2);
@@ -54,5 +69,9 @@
         opacity: 1;
       }
     }
+  }
+
+  &__inner {
+    position: relative;
   }
 }

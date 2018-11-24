@@ -96,6 +96,10 @@ a {
   p {
     color: rgba($white, 0.7);
   }
+
+  a {
+    color: rgba($white, 0.7);
+  }
 }
 
 .main-title--white-sm {
@@ -115,6 +119,20 @@ a {
 
   span {
     color: rgba($white, 0.9);
+  }
+}
+
+.main-title--vertical {
+  @extend .main-title;
+
+  span {
+    margin-bottom: 35px;
+    display: block;
+  }
+
+  a {
+    position: static;
+    display: block;
   }
 }
 
