@@ -3,45 +3,41 @@ append head
   title="Index - HomePage 04"
 append header
 append content
-  //- blog
-  .container
-    .row
-      .col-md-6
-        .post-type-02
-          .post-thumb
-            a(href='#')
-              img(src='images/home03-blog-01.jpg')
-          .post-content
-            p.post__meta
-              span August 27, 2018
-              span.divider | 
-              a(href='#') Finance
-            h3.post__title
-              a(href='#') Porttitor auctor platea tristique neque, pellentesque suscipit.
-            .post__meta-info
-              a.read-more(href='#') Read More
-      .col-md-6
-        .post-type-01
-          .post-content
-            p.post__meta
-              span August 27, 2018
-              span.divider | 
-              a(href='#') Business
-            h3.post__title
-              a(href='#') Curabitur suspendisse ullamcorper volutpat tempor
-            .post__meta-info
-              a.read-more(href='#') Read More
-        .post-type-01
-          .post-content
-            p.post__meta
-              span August 27, 2018
-              span.divider | 
-              a(href='#') Business
-            h3.post__title
-              a(href='#') Ligula magnis et duis litora fusce potenti, leo dis fermentum auctor.
-            .post__meta-info
-              a.read-more(href='#') Read More
-  //- team
+  //- who we are
+  .home04-wwa
+    .container
+      .row
+        .home04-wwa__inner
+          .home04-wwa__slider
+            .home04-wwa-item
+              img(src="images/home04-wwa-01.jpg", alt="demo")
+          .row
+            .home04-wwa__description
+              .col-md-7
+                .home04-wwa__description-inner
+                  p.rotate-title WHO WE ARE
+                  .main-title
+                    h3 Our Mission 
+                      br
+                      | Values and Motto
+                    span Porta dictum imperdiet inceptos sodales quam felis luctus ac molestie magna semper, tristique congue sociis libero nibh pretium per gravida varius praesent montes, tincidunt facilisis donec curabitur dapibus id hac mattis.
+                  .home02-wwa__signature
+                    p.text-signature Patterson 
+                    p.name James Patterson
+                    p.job-title Founder & CEO
+              .col-md-5
+                .home04-wwa__description-inner--right
+                  p.rotate-title OUR FEATURED
+                  .home04-wwa__sm-block
+                    h3.text-orange We Innovate
+                    p Bibendum at gravida ridiculus convallis donec quisque eros ad vivamus nunc.
+                  .home04-wwa__sm-block
+                    h3.text-orange Performance
+                    p Fames quam sed enim nibh sagittis convallis urna magna, fusce penatibus augue aliquam dignissim commodon
+                  .home04-wwa__sm-block
+                    h3.text-orange Reponsive
+                    p Ornare porta vel mollis dignissi tempus phasellus tincidunt, augue nec.
+  //- testimonial
   .h-40  
   .container
     .row
@@ -70,8 +66,8 @@ append content
                 span.testimonial__star
                   img(src="images/star.png" alt="")
   .h-40
+  //- blog
   .home04-blog
-    .overlay03
     .home04-blog__inner
       .container
         .row

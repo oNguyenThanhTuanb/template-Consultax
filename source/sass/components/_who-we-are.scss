@@ -1,0 +1,253 @@
+//
+// Components :: Who We Are
+// --------------------------------------------------
+.home01-wwa {
+  
+}
+
+.home01-wwa {
+  &__inner {
+    display: flex;
+    color: $white;
+  }
+
+  &__cover {
+    flex: 0 0 50%;
+    background-size: cover;
+    background-position: center center;
+  }
+
+  &__content {
+    flex: 0 0 50%;
+    background-color: $mcolor;
+    padding: 100px 55px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  &__signature {
+    position: relative;
+    padding-top: 120px;
+    padding-left: 60px;
+
+    .text-signature {
+      transform: rotate(-12deg);
+      position: absolute;
+      top: 60px;
+      left: 0;
+    }
+
+    .name {
+      font-size: 16px;
+      font-weight: 900;
+      font-family: $hfont;
+      margin: 0;
+    }
+
+    .job-title {
+      font-family: $hfont;
+      font-weight: 300;
+      font-size: 12px;
+      margin: 0;
+    }
+  }
+}
+
+.home02-wwa {
+  &__inner {
+    display: flex;
+  }
+
+  &__cover {
+    flex: 0 0 50%;
+    background-size: cover;
+    background-position: center center;
+    position: relative;
+    color: $white;
+
+    &-inner {
+      background-color: rgba($mcolor, .9);
+      position: absolute;
+      top: 32px;
+      left: 32px;
+      bottom: 32px;
+      right: 32px;
+      padding: 72px;
+
+      h3 {
+        font-size: 30px;
+        font-weight: 900;
+        font-family: $hfont;
+        margin-bottom: 18px;
+      }
+    }
+  }
+
+  &__divider {
+    height: 1px;
+    width: 80px;
+    background-color: rgba($white, .5);
+    margin-bottom: 50px;
+  }
+
+  &__sm-title {
+    font-size: 12px;
+    color: #acacac;
+    font-family: $hfont;
+    margin-bottom: 18px;
+
+    i {
+      padding-right: 4px;
+    }
+  }
+
+  &__text {
+    font-size: 18px;
+    font-weight: bold;
+    font-family: $hfont;
+    margin-bottom: 40px;
+
+    &:last-of-type {
+      margin-bottom: 60px;
+    }
+  }
+
+  .btn-organge {
+    display: block;
+  }
+
+  &__content {
+    flex: 0 0 50%;
+    background-color: $white;
+    padding: 100px 55px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  &__signature {
+    position: relative;
+    padding-top: 120px;
+    padding-left: 60px;
+
+    .text-signature {
+      transform: rotate(-12deg);
+      position: absolute;
+      top: 60px;
+      left: 0;
+    }
+
+    .name {
+      font-size: 16px;
+      font-weight: 900;
+      font-family: $hfont;
+      margin: 0;
+    }
+
+    .job-title {
+      font-family: $hfont;
+      font-weight: 300;
+      font-size: 12px;
+      margin: 0;
+    }
+  }
+}
+
+.home04-wwa {
+
+}
+
+.home04-wwa__inner {
+
+}
+
+.home04-wwa__description {
+  padding-top: 60px;
+}
+
+.home04-wwa__description-inner {
+  padding-left: 45px;
+  position: relative;
+  
+  .rotate-title {
+    top: 10px;
+  }
+}
+
+.home04-wwa__description-inner--right {
+  padding-left: 48px;
+  position: relative;
+}
+
+.home04-wwa__sm-block {
+  margin-bottom: 17px;
+
+  h3 {
+    font-weight: 900;
+    font-family: $hfont;
+    font-size: 21px;
+    margin-bottom: 8px;
+  }
+}
+
+.home05-wwa {
+  &__inner {
+    display: flex;
+  }
+
+  &__cover {
+    flex: 0 0 50%;
+  }
+
+  &__content {
+    flex: 0 0 50%;
+    padding-right: 140px;
+    padding-top: 40px;
+    position: relative;
+
+    .list-social02--dark {
+      position: absolute;
+      bottom: 0;
+      right: 10px;
+      width: 35px;
+    }
+  }
+}
+
+.home06__about-inner__right {
+  p {
+    margin-bottom: 40px;
+  }
+}
+
+.home07-services {
+  padding-top: 175px;
+  margin-bottom: 300px;
+
+  &__inner {
+    position: relative;
+    padding-right: 370px;
+  }
+
+  &__content {
+    position: relative;
+    padding-left: 40px;
+
+    .rotate-title {
+      top: 15px;
+    }
+
+    .main-title {
+      margin-bottom: 60px;
+      max-width: 520px;
+    }
+  }
+
+  .services__menu {
+    position: absolute;
+    right: 0;
+    top: 0;
+    width: 370px;
+  }
+}
