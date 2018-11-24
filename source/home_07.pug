@@ -3,8 +3,15 @@ append head
   title="Index - HomePage 07"
 append header
 append content
+  //- feature
+  .home07-feature.bg-blue-light.ssp
+    .container
+      .row
+        .main-title
+          p FEATURE
+          h3 Why choose us ?
   //- main services
-  .home07-services
+  .home07-services.ssp
     .container
       .row
         .home07-services__inner
@@ -35,92 +42,178 @@ append content
             .services__menu--footer
               a(href="#").services__menu--btn VIEW ALL SERVICES
   //- our services
-  .home07-project
+  .home07-project.ssp
+    .overlay
     .container
       .row
-        .main-title--white
-          p OUR PROJECT
-          h3 We are the leaders
-        .home07-project__cover
-          img(src="images/home07-project01.jpg" alt="demo")
-        .home07-project__thumb
-          .home07-project__thumb-item
-            p Contract project: August 27, 2018
-            h3 Planning the development for the viral world
-            a.read-more(href="#") View Detail
-  //- blog & cta
-  .container
-    .row
-      .col-md-8
-        .post-type-01
-          .post-thumb
-            a(href='#')
-              img(src='images/home07-blog-01.jpg')
-          .post-content
-            p.post__meta
-              span August 27, 2018
-              span.divider | 
-              a(href='#') Finance
-            h3.post__title
-              a(href='#') Investment Update, Fourth Quarter 2018
-            p.post__desc
-              | When, while the lovely valley teems with vapour around me, and the meridian sun strikes the upper surface of the impenetrable foliage of my trees, and but a few stray gleams.
-            .post__meta-info
-              a.read-more(href='#') Read More
-      .col-md-4
-        .home07-cta-01
+        .home07-project__inner
           .main-title--white
-            p SUBSCRIBE
-            h3  subscribe for the newsletter
-            span Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem.
-          .cta-form
-            form
-              .form-row
-                .form-field
-                  input.ct-input(type="text", placeholder="Name")
-              .form-row
-                .form-field
-                  input.ct-input(type="email", placeholder="Email address")
-              .form-row.last
-                .form-field
-                  button.btn-orange SUBSCRIBE
-  .h-40
-  .container
-    .testimonial.testimonial7
+            p OUR PROJECT
+            h3 We are the leaders
+            a(href="#") All projects
+          .home07-project__cover
+            img(src="images/home07-project01.jpg" alt="demo")
+          .home07-project__thumb
+            .home07-project__thumb-item
+              p Contract project: August 27, 2018
+              h3 Planning the development for the viral world
+              a.read-more(href="#") View Detail
+            .home07-project__thumb-item
+              p Contract project: August 22, 2018
+              h3 Planning the development for the viral world
+              a.read-more(href="#") View Detail
+            .home07-project__thumb-item
+              p Contract project: August 21, 2018
+              h3 Planning the development for the viral world
+              a.read-more(href="#") View Detail
+    //- team
+  .home02-team.ssp
+    .container
       .row
-        .col-sm-6
-          .testimonial7__content
-            .testimonial7__top
-              .testimonial7__avatar
-                img(src="images/h2_avatar1.jpg" alt="")
-                .testimonial7__star
-                  span 4.5
-            .testimonial7__bottom
-              p.testimonial__desc.testimonial__desc7
-                | I should be incapable of drawing a single stroke at the present moment; and yet I feel that I never was a greater artist than now.
-              .testimonial7__bottom2.d-flex
-                .testimonial7__info
-                  h3.testimonial-title Bang Bay Buom
-                  p.testimonial-from from Hanoi
-                .testimonial7__time
-                  | - on August 27, 2018
-        .col-sm-6
-          .testimonial7__content
-            .testimonial7__top
-              .testimonial7__avatar
-                img(src="images/h2_avatar1.jpg" alt="")
-                .testimonial7__star
-                  span 4.5
-            .testimonial7__bottom
-              p.testimonial__desc.testimonial__desc7
-                | O my friend -- but it is too much for my strength -- I sink under the weight of the splendour of these visions! A wonderful serenity has taken possession of my entire soul.
-              .testimonial7__bottom2.d-flex
-                .testimonial7__info
-                  h3.testimonial-title Occhos deokinh
-                  p.testimonial-from from Beijing
-                .testimonial7__time
-                  | - on August 27, 2018
-  .h-40
+        .main-title
+          p OUR TEAM
+          h3 Meet our team
+        .home02-team__inner
+          .col-md-4
+            .team02__item
+              .overlay02
+                p.team02__name James Patterson
+                p.team02__job Founder & CEO
+                .team02__divider
+                p.team02__desc Enim nisi dui potenti tempor lacinia elementum massa nascetur, curabitur augue netus imperdiet nam.
+                ul.list-social01
+                  li
+                    a(href="#").facebook
+                      i.fa.fa-facebook
+                  li
+                    a(href="#").twitter
+                      i.fa.fa-twitter
+                  li
+                    a(href="#").pinterest
+                      i.fa.fa-pinterest
+              img(src="images/team01.png" alt="demo")
+          .col-md-4
+            .team02__item
+              .overlay02
+                p.team02__name James Patterson
+                p.team02__job Founder & CEO
+                .team02__divider
+                p.team02__desc Enim nisi dui potenti tempor lacinia elementum massa nascetur, curabitur augue netus imperdiet nam.
+                ul.list-social01
+                  li
+                    a(href="#").facebook
+                      i.fa.fa-facebook
+                  li
+                    a(href="#").twitter
+                      i.fa.fa-twitter
+                  li
+                    a(href="#").pinterest
+                      i.fa.fa-pinterest
+              img(src="images/team02.png" alt="demo")
+          .col-md-4
+            .team02__item
+              .overlay02
+                p.team02__name James Patterson
+                p.team02__job Founder & CEO
+                .team02__divider
+                p.team02__desc Enim nisi dui potenti tempor lacinia elementum massa nascetur, curabitur augue netus imperdiet nam.
+                ul.list-social01
+                  li
+                    a(href="#").facebook
+                      i.fa.fa-facebook
+                  li
+                    a(href="#").twitter
+                      i.fa.fa-twitter
+                  li
+                    a(href="#").pinterest
+                      i.fa.fa-pinterest
+              img(src="images/team03.png" alt="demo")
+  //- testimonial
+  .home07-testimonial.ssp.bg-blue-light
+    .container
+      .testimonial.testimonial7
+        .row
+          .main-title
+            p TESTIMONIAL & PARTNER
+            h3 What our clients say
+            a(href="#") <>
+        .row
+          .col-sm-6
+            .testimonial7__content
+              .testimonial7__top
+                .testimonial7__avatar
+                  img(src="images/h2_avatar1.jpg" alt="")
+                  .testimonial7__star
+                    span 4.5
+              .testimonial7__bottom
+                p.testimonial__desc.testimonial__desc7
+                  | I should be incapable of drawing a single stroke at the present moment; and yet I feel that I never was a greater artist than now.
+                .testimonial7__bottom2.d-flex
+                  .testimonial7__info
+                    h3.testimonial-title Bang Bay Buom
+                    p.testimonial-from from Hanoi
+                  .testimonial7__time
+                    | - on August 27, 2018
+          .col-sm-6
+            .testimonial7__content
+              .testimonial7__top
+                .testimonial7__avatar
+                  img(src="images/h2_avatar1.jpg" alt="")
+                  .testimonial7__star
+                    span 4.5
+              .testimonial7__bottom
+                p.testimonial__desc.testimonial__desc7
+                  | O my friend -- but it is too much for my strength -- I sink under the weight of the splendour of these visions! A wonderful serenity has taken possession of my entire soul.
+                .testimonial7__bottom2.d-flex
+                  .testimonial7__info
+                    h3.testimonial-title Occhos deokinh
+                    p.testimonial-from from Beijing
+                  .testimonial7__time
+                    | - on August 27, 2018
+  //- blog & cta
+  .home07-blog.ssp
+    .container
+      .row
+        .col-md-8
+          .main-title
+            p OUR BLOG
+            h3 Our latest news
+            a(href="#") <>
+      .row
+        .col-md-8
+          .post-type-01
+            .post-thumb
+              a(href='#')
+                img(src='images/home07-blog-01.jpg')
+            .post-content
+              p.post__meta
+                span August 27, 2018
+                span.divider | 
+                a(href='#') Finance
+              h3.post__title
+                a(href='#') Investment Update, Fourth Quarter 2018
+              p.post__desc
+                | When, while the lovely valley teems with vapour around me, and the meridian sun strikes the upper surface of the impenetrable foliage of my trees, and but a few stray gleams.
+              .post__meta-info
+                a.read-more(href='#') Read More
+        .col-md-4
+          .home07-cta-01
+            .main-title--white
+              p SUBSCRIBE
+              h3  subscribe for the newsletter
+              span Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem.
+            .cta-form
+              form
+                .form-row
+                  .form-field
+                    input.ct-input(type="text", placeholder="Name")
+                .form-row
+                  .form-field
+                    input.ct-input(type="email", placeholder="Email address")
+                .form-row.last
+                  .form-field
+                    button.btn-orange SUBSCRIBE
+  //- footer
   .footer07
     .footer07__inner
       .container

@@ -338,8 +338,42 @@
   }
 }
 
+.post-type-01__content {
+  @extend .post-type-01;
+
+  .post-content {
+    padding: 40px 32px;
+  }
+}
+
 .home02-blog__inner {
   margin-left: -15px;
   margin-right: -15px;
   display: flex;
+}
+
+.home03-blog__inner {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 58px;
+
+  .home03-blog {
+    &__left {
+      flex: 0 0 calc(50% - 15px);
+    }
+
+    &__right {
+      flex: 0 0 calc(50% - 15px);
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+    }
+  }
+}
+
+.home04-blog {
+  background: url('../images/home04-bg-blog01.jpg');
+  background-size: cover;
+  background-position: center center;
+  position: relative;
 }

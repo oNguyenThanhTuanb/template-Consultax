@@ -70,7 +70,6 @@
   color: white;
   padding-top: 130px;
   padding-bottom: 110px;
-  // height: 250px; wait until title done
 
   .inner {
     display: flex;
@@ -78,6 +77,14 @@
     justify-content: space-between;
     align-items: flex-end;
     position: relative;
+
+    .main-title {
+      margin-bottom: 0;
+
+      h3 {
+        margin: 0;
+      }
+    }
   }
 }
 
@@ -99,6 +106,8 @@
     position: relative;
 
     .subcribe-form {
+      width: 370px;
+      
       .form-group {
         position: relative;
         margin: 0;
@@ -118,6 +127,14 @@
           width: 67px;
           font-size: 16px;
         }
+      }
+    }
+
+    .main-title {
+      margin-bottom: 0;
+
+      h3 {
+        margin: 0;
       }
     }
   }

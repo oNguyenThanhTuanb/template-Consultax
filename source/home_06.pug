@@ -18,41 +18,14 @@ append content
             .home06__about-inner__right
               p Sagittis sollicitudin porta ridiculus curae condimentum molesti praesent neque cras, magna blandit placerat ac dictumst litora tristique eleifend, diam pharetra nostra tellus erat himenaeos at dictum. Aliquet cubilia cum sociosqu iaculis dapibus tortor orci lobortis tincidunt
               a(href="#").btn-white ABOUT US
-  //- blog
-  .container
-    .row
-      .col-md-6
-        .post-type-03
-          .post-thumb
-            a(href='#')
-              img(src='images/home06-blog-01.jpg')
-          .post-content
-            p.post__meta
-              span August 27, 2018
-              span.divider | 
-              a(href='#') Finance
-            h3.post__title
-              a(href='#') Investment Update, Fourth Quarter 2018
-            p.post__desc
-              | Posuere vestibulum arcu nostra nascetur vel nisi laoreet fusce, torquent...
-            .post__meta-info
-              a.read-more(href='#') Read More
-      .col-md-6
-        .post-type-03
-          .post-thumb
-            a(href='#')
-              img(src='images/home06-blog-02.jpg')
-          .post-content
-            p.post__meta
-              span August 27, 2018
-              span.divider | 
-              a(href='#') Business
-            h3.post__title
-              a(href='#') Cutting Your Restaurant's Operations Costs
-            p.post__desc
-              | Posuere vestibulum arcu nostra nascetur vel nisi laoreet fusce, torquent...
-            .post__meta-info
-              a.read-more(href='#') Read More
+  //- services
+  .home06-services.ssp.bg-blue-light
+    .container
+      .row
+        .main-title
+          p MAIN SERVICES
+          h3 What we bring to you
+          a(href="#") View all services
   //- cta
   .home06-cta-01
     .container
@@ -79,25 +52,133 @@ append content
               .form-row.last
                 .form-field
                   button.btn-orange SUBMIT
-  .h-40
-  .container
-    .testimonial.testimonial6
-      ul.testimonial6__content
-        li.list-item.active
-          .row
-            .col-sm-3
-              .thumb-img
-                img(src="images/h3_avatar1.png" alt="")
-            .col-sm-9
-              .testimonial__desc.testimonial6__desc
-                | “I am so happy, my dear friend, so absorbed in the exquisite sense of mere tranquil existence, that I neglect my talents. I should be incapable of drawing a single stroke at the present moment.”
-              .testimonial6__bottom.d-flex
-                .testimonial6__info
-                  h3.testimonial-title.pull-left Alexis Paradol
-                  p.testimonial-from.pull-left from Berlin		
-                span.testimonial__star
-                  img(src="images/star.png" alt="")
-  .h-40
+  //- testimonials
+  .home06-testimonials.ssp
+    .container
+      .main-title
+        p TESTIMONIAL & PARTNER
+        h3 What our clients say
+        a(href="#") <>
+      .testimonial.testimonial6
+        ul.testimonial6__content
+          li.list-item.active
+            .row
+              .col-sm-3
+                .thumb-img
+                  img(src="images/h3_avatar1.png" alt="")
+              .col-sm-9
+                .testimonial__desc.testimonial6__desc
+                  | “I am so happy, my dear friend, so absorbed in the exquisite sense of mere tranquil existence, that I neglect my talents. I should be incapable of drawing a single stroke at the present moment.”
+                .testimonial6__bottom.d-flex
+                  .testimonial6__info
+                    h3.testimonial-title.pull-left Alexis Paradol
+                    p.testimonial-from.pull-left from Berlin		
+                  span.testimonial__star
+                    img(src="images/star.png" alt="")
+  //- blog
+  .home06-blog.ssp.bg-blue-light
+    .container
+      .row
+        .main-title
+          p OUR BLOG
+          h3 Our latest news
+          a(href="#") View all post
+      .row
+        .col-md-6
+          .post-type-03
+            .post-thumb
+              a(href='#')
+                img(src='images/home06-blog-01.jpg')
+            .post-content
+              p.post__meta
+                span August 27, 2018
+                span.divider | 
+                a(href='#') Finance
+              h3.post__title
+                a(href='#') Investment Update, Fourth Quarter 2018
+              p.post__desc
+                | Posuere vestibulum arcu nostra nascetur vel nisi laoreet fusce, torquent...
+              .post__meta-info
+                a.read-more(href='#') Read More
+        .col-md-6
+          .post-type-03
+            .post-thumb
+              a(href='#')
+                img(src='images/home06-blog-02.jpg')
+            .post-content
+              p.post__meta
+                span August 27, 2018
+                span.divider | 
+                a(href='#') Business
+              h3.post__title
+                a(href='#') Cutting Your Restaurant's Operations Costs
+              p.post__desc
+                | Posuere vestibulum arcu nostra nascetur vel nisi laoreet fusce, torquent...
+              .post__meta-info
+                a.read-more(href='#') Read More
+  //- team
+  .home02-team.ssp
+    .container
+      .row
+        .main-title
+          p OUR TEAM
+          h3 Meet our team
+        .home02-team__inner
+          .col-md-4
+            .team02__item
+              .overlay02
+                p.team02__name James Patterson
+                p.team02__job Founder & CEO
+                .team02__divider
+                p.team02__desc Enim nisi dui potenti tempor lacinia elementum massa nascetur, curabitur augue netus imperdiet nam.
+                ul.list-social01
+                  li
+                    a(href="#").facebook
+                      i.fa.fa-facebook
+                  li
+                    a(href="#").twitter
+                      i.fa.fa-twitter
+                  li
+                    a(href="#").pinterest
+                      i.fa.fa-pinterest
+              img(src="images/team01.png" alt="demo")
+          .col-md-4
+            .team02__item
+              .overlay02
+                p.team02__name James Patterson
+                p.team02__job Founder & CEO
+                .team02__divider
+                p.team02__desc Enim nisi dui potenti tempor lacinia elementum massa nascetur, curabitur augue netus imperdiet nam.
+                ul.list-social01
+                  li
+                    a(href="#").facebook
+                      i.fa.fa-facebook
+                  li
+                    a(href="#").twitter
+                      i.fa.fa-twitter
+                  li
+                    a(href="#").pinterest
+                      i.fa.fa-pinterest
+              img(src="images/team02.png" alt="demo")
+          .col-md-4
+            .team02__item
+              .overlay02
+                p.team02__name James Patterson
+                p.team02__job Founder & CEO
+                .team02__divider
+                p.team02__desc Enim nisi dui potenti tempor lacinia elementum massa nascetur, curabitur augue netus imperdiet nam.
+                ul.list-social01
+                  li
+                    a(href="#").facebook
+                      i.fa.fa-facebook
+                  li
+                    a(href="#").twitter
+                      i.fa.fa-twitter
+                  li
+                    a(href="#").pinterest
+                      i.fa.fa-pinterest
+              img(src="images/team03.png" alt="demo")
+ 
   //- footer
   include modules/footer/footer01.pug
   append script

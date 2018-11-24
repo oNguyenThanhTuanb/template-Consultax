@@ -3,8 +3,16 @@ append head
   title="Index - HomePage 04"
 append header
 append content
+  //- services
+  .home04-services.ssp
+    .container
+      .row
+        .main-title
+          p MAIN SERVICES
+          h3 What we bring to you
+          a(href="#").read-more All services
   //- who we are
-  .home04-wwa
+  .home04-wwa.ssp
     .container
       .row
         .home04-wwa__inner
@@ -37,39 +45,15 @@ append content
                   .home04-wwa__sm-block
                     h3.text-orange Reponsive
                     p Ornare porta vel mollis dignissi tempus phasellus tincidunt, augue nec.
-  //- testimonial
-  .h-40  
-  .container
-    .row
-      .col-sm-5
-      .col-sm-7
-        .testimonial.testimonial4
-          ul.testimonial4__thumb
-            li.thumb-item
-              img(src="images/h2_avatar1.jpg" alt="")
-            li.thumb-item.active
-              img(src="images/h2_avatar1.jpg" alt="")
-            li.thumb-item
-              img(src="images/h2_avatar1.jpg" alt="")
-            li.thumb-item
-              img(src="images/h2_avatar1.jpg" alt="")
-            li.thumb-item
-              img(src="images/h2_avatar1.jpg" alt="")
-          .testimonial4__content
-            li.list-item.active
-              .testimonial__desc.testimonial4__desc.text-italic
-                | “Viverra nam nunc hac posuere tristique vestibulum vehicula e molestie ultricies, etiam mauris eleifend urna himenaeos elementum phasellus eros, faucibus netus varius condimentum sociis augue.”
-              .testimonial4__bottom
-                .testimonial4__info
-                  h3.testimonial-title.pull-left Caroline Cummings
-                  p.testimonial-from.pull-left from Berlin
-                span.testimonial__star
-                  img(src="images/star.png" alt="")
-  .h-40
   //- blog
-  .home04-blog
+  .home04-blog.ssp
+    .overlay03
     .home04-blog__inner
       .container
+        .main-title--white
+          p WHO WE ARE
+          h3 Our latest news
+          a(href="#").read-more All services
         .row
           .col-md-6
             .post-type-05
@@ -100,46 +84,109 @@ append content
                 .post__meta-info
                   a.read-more(href='#') Read More
   //- team
-  .team04
+  .team04.mgt
     .container
       .row
-        .team04__inner
-          .col-md-4
-            .team04__item
-              .team04__item-img
-                img(src="images/team01.png" alt="demo")
-                .overlay03
-                  ul.list-social03
-                    li
-                      a(href="#").facebook
-                        i.fa.fa-facebook
-                    li
-                      a(href="#").twitter
-                        i.fa.fa-twitter
-                    li
-                      a(href="#").pinterest
-                        i.fa.fa-pinterest
-              .team04__item--info
-                p.team04__name Erica Romaguera
-                p.team04__job Founder & CEO
-          .col-md-4
-            .team04__item
-              .team04__item-img
-                img(src="images/team02.png" alt="demo")
-                .overlay03
-                  ul.list-social03
-                    li
-                      a(href="#").facebook
-                        i.fa.fa-facebook
-                    li
-                      a(href="#").twitter
-                        i.fa.fa-twitter
-                    li
-                      a(href="#").pinterest
-                        i.fa.fa-pinterest
-              .team04__item--info
-                p.team04__name James Patterson
-                p.team04__job Expert
+        .col-md-5
+          .main-title--vertical
+            p OUR TEAM
+            h3 Meet our team
+            span Odio leo parturient vehicula arcu donec mi scelerisque, ante maecenas cras luctus habitant.
+            a.read-more(href="#") View more
+        .col-md-7
+          .team04__inner
+            .col-md-4
+              .team04__item
+                .team04__item-img
+                  img(src="images/team01.png" alt="demo")
+                  .overlay03
+                    ul.list-social03
+                      li
+                        a(href="#").facebook
+                          i.fa.fa-facebook
+                      li
+                        a(href="#").twitter
+                          i.fa.fa-twitter
+                      li
+                        a(href="#").pinterest
+                          i.fa.fa-pinterest
+                .team04__item--info
+                  p.team04__name Erica Romaguera
+                  p.team04__job Founder & CEO
+            .col-md-4
+              .team04__item
+                .team04__item-img
+                  img(src="images/team02.png" alt="demo")
+                  .overlay03
+                    ul.list-social03
+                      li
+                        a(href="#").facebook
+                          i.fa.fa-facebook
+                      li
+                        a(href="#").twitter
+                          i.fa.fa-twitter
+                      li
+                        a(href="#").pinterest
+                          i.fa.fa-pinterest
+                .team04__item--info
+                  p.team04__name James Patterson
+                  p.team04__job Expert
+  //- location
+  .home04-location.mgt
+    .container
+      .row
+        .col-md-5
+          .main-title
+            p LOCATION
+            h3 Where we work
+          .home04-location__inner
+            p
+              span Phone: 
+              a(href="tel:+1253 1245 1245") +1253 1245 1245
+            p
+              span Office London: 
+              | Flat 60, Ross Green, South Lilyberg, Q7M 8ZV, London, England (
+              a(href="#") view map
+              |)
+            p
+              span Mail: 
+              | info.londonconsulting.com
+        .col-md-7
+          img(src="images/home04-location01.jpg", alt="demo")
+  //- testimonial
+  .home04-testimonials.ssp  
+    .container
+      .row
+        .col-md-5
+          .main-title--vertical
+            p TESTIMONIAL
+            h3 What our 
+              br
+              | customer say
+            a.read-more(href="#") View more
+        .col-md-7
+          .testimonial.testimonial4
+            ul.testimonial4__thumb
+              li.thumb-item
+                img(src="images/h2_avatar1.jpg" alt="")
+              li.thumb-item.active
+                img(src="images/h2_avatar1.jpg" alt="")
+              li.thumb-item
+                img(src="images/h2_avatar1.jpg" alt="")
+              li.thumb-item
+                img(src="images/h2_avatar1.jpg" alt="")
+              li.thumb-item
+                img(src="images/h2_avatar1.jpg" alt="")
+            .testimonial4__content
+              li.list-item.active
+                .testimonial__desc.testimonial4__desc.text-italic
+                  | “Viverra nam nunc hac posuere tristique vestibulum vehicula e molestie ultricies, etiam mauris eleifend urna himenaeos elementum phasellus eros, faucibus netus varius condimentum sociis augue.”
+                .testimonial4__bottom
+                  .testimonial4__info
+                    h3.testimonial-title.pull-left Caroline Cummings
+                    p.testimonial-from.pull-left from Berlin
+                  span.testimonial__star
+                    img(src="images/star.png" alt="")
   //- footer
   .footer04
     .overlay03

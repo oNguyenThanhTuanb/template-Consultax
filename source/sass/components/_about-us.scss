@@ -10,6 +10,7 @@
   display: flex;
   width: 100%;
   justify-content: space-between;
+  margin-top: 120px;
 
   &__cover {
     position: relative;
@@ -69,3 +70,26 @@
   }
 }
 
+.home04-location {
+  .main-title--vertical {
+    margin-bottom: 35px;
+  }
+
+  &__inner {
+    max-width: 385px;
+
+    p {
+      a {
+        color: $scolor;
+      }
+
+      span {
+        color: #a1a1a1;
+      }
+    }
+  }
+}
+
+.home06__about {
+  padding: 90px 0;
+}

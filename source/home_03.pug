@@ -6,7 +6,7 @@ append content
   //- about us
   .container
     .row
-      .home03-about-us
+      .home03-about-us.ssp
         .home03-about-us__cover
           .cover
             img.cover(src="images/home03-bg-about-us03.jpg")
@@ -30,46 +30,14 @@ append content
             h3 Who we are
             span A wonderful serenity has taken possession of my entire soul, like these sweet mornings of spring which I enjoy with my whole heart. I am alone, and feel the charm of existence in this spot, which was created for the bliss of souls like mine. I am so happy, my dear friend, so absorbed in the exquisite sense of mere tranquil existence, that I neglect my talents.
           a(href="#").btn-orange ABOUT US
-  //- blog
-  .container
-    .row
-      .col-md-6
-        .post-type-02
-          .post-thumb
-            a(href='#')
-              img(src='images/home03-blog-01.jpg')
-          .post-badge
-            img(src='images/post-icon-highlight.png')
-          .post-content
-            p.post__meta
-              span August 27, 2018
-              span.divider | 
-              a(href='#') Finance
-            h3.post__title
-              a(href='#') Porttitor auctor platea tristique neque, pellentesque suscipit.
-            .post__meta-info
-              a.read-more(href='#') Read More
-      .col-md-6
-        .post-type-01
-          .post-content
-            p.post__meta
-              span August 27, 2018
-              span.divider | 
-              a(href='#') Business
-            h3.post__title
-              a(href='#') Curabitur suspendisse ullamcorper volutpat tempor
-            .post__meta-info
-              a.read-more(href='#') Read More
-        .post-type-01
-          .post-content
-            p.post__meta
-              span August 27, 2018
-              span.divider | 
-              a(href='#') Business
-            h3.post__title
-              a(href='#') Ligula magnis et duis litora fusce potenti, leo dis fermentum auctor.
-            .post__meta-info
-              a.read-more(href='#') Read More
+  //- services
+  .home03-services.bg-blue-light.ssp
+    .container
+      .row
+        .home03-services__inner
+          .main-title.text-center
+            p OUR SERVICES
+            h3 What we bring to you
   //- cta 01
   .home03-cta01
     .overlay
@@ -82,6 +50,76 @@ append content
           .group-btn
             button.btn-white CONTACT US
             button.btn-orange GET A QUOTE
+  //- Testimonial Home Page 3
+  .home03-testimonials.ssp
+    .container
+      .testimonial.testimonial3
+        .main-title
+          p TESTIMONIAL & PARTNER
+          h3 What our clients say
+        ul.testimonial4__content
+          li.list-item.active
+            .row
+              .col-sm-5
+                .thumb-img
+                  img(src="images/h3_avatar1.png" alt="")
+              .col-sm-7
+                .testimonial__desc.testimonial3__desc
+                  | “A wonderful serenity has taken possession of my entire soul, like these sweet mornings of spring which I enjoy with my whole heart.”
+                .testimonial3__bottom
+                  .testimonial3__info
+                    h3.testimonial-title.pull-left Caroline Cummings
+                    p.testimonial-from.pull-left - from Berlin
+                  span.testimonial__star
+                    img(src="images/star.png" alt="")
+  //- blog
+  .home03-blog.ssp.bg-blue-light
+    .container
+      .main-title.text-center
+        p OUR BLOG
+        h3 Our latest news
+      .row
+        .home03-blog__inner
+          .home03-blog__left
+            .post-type-02
+              .post-thumb
+                a(href='#')
+                  img(src='images/home03-blog-01.jpg')
+              .post-badge
+                img(src='images/post-icon-highlight.png')
+              .post-content
+                p.post__meta
+                  span August 27, 2018
+                  span.divider | 
+                  a(href='#') Finance
+                h3.post__title
+                  a(href='#') Porttitor auctor platea tristique neque, pellentesque suscipit.
+                .post__meta-info
+                  a.read-more(href='#') Read More
+          .home03-blog__right
+            .post-type-01__content.bg-white
+              .post-content
+                p.post__meta
+                  span August 27, 2018
+                  span.divider | 
+                  a(href='#') Business
+                h3.post__title
+                  a(href='#') Curabitur suspendisse ullamcorper volutpat tempor
+                .post__meta-info
+                  a.read-more(href='#') Read More
+            .post-type-01__content.bg-white
+              .post-content
+                p.post__meta
+                  span August 27, 2018
+                  span.divider | 
+                  a(href='#') Business
+                h3.post__title
+                  a(href='#') Ligula magnis et duis litora fusce potenti, leo dis fermentum auctor.
+                .post__meta-info
+                  a.read-more(href='#') Read More
+      .row
+        .col-md-12.text-center
+          a(href="#").btn-orange View All Posts
   //- cta 02
   .home03-cta02
     .overlay
@@ -96,25 +134,22 @@ append content
               input.ct-input(type="email", placeholder="Email address")
               button.btn-orange(type="submit")
                 i.fa.fa-paper-plane
-  //- Testimonial Home Page 3
-  .container
-    .testimonial.testimonial3
-      ul.testimonial4__content
-        li.list-item.active
-          .row
-            .col-sm-5
-              .thumb-img
-                img(src="images/h3_avatar1.png" alt="")
-            .col-sm-7
-              .testimonial__desc.testimonial3__desc
-                | “A wonderful serenity has taken possession of my entire soul, like these sweet mornings of spring which I enjoy with my whole heart.”
-              .testimonial3__bottom
-                .testimonial3__info
-                  h3.testimonial-title.pull-left Caroline Cummings
-                  p.testimonial-from.pull-left - from Berlin
-                span.testimonial__star
-                  img(src="images/star.png" alt="")
-  .h-40
+  //- why us
+  .home03-wcu.ssp
+    .container
+      .row
+        .home03-wcu__inner
+          .main-title
+            p FEATURE
+            h3 Why Choose Us
+  //- counter
+  .home03-counter.ssp
+    .container
+      .row
+        .home03-counter__inner
+          .main-title
+            p ACHIEVEMENTS & STATISTICS
+            h3 Our 25 years of operation
   //- footer
   include modules/footer/footer02.pug
   append script
