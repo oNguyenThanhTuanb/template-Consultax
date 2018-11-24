@@ -14,7 +14,6 @@
     display: flex;
     position: relative;
     justify-content: center;
-    align-items: center;
 
     .cta-form,
     .desc {
@@ -51,6 +50,15 @@
     &.last {
       margin-bottom: 0;
     }
+  }
+}
+
+.home02-cta-02 {
+  border-radius: 4px;
+  @extend .home07-cta-01;
+
+  .main-title--white-sm {
+    margin-bottom: 100px;
   }
 }
 

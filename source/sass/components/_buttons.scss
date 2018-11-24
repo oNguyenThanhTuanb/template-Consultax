@@ -17,6 +17,8 @@
   &:focus {
     border-color: darken($mcolor, 5%);
     background-color: darken($mcolor, 5%);
+    text-decoration: none;
+    color: $white;
   }
 }
 
@@ -29,6 +31,8 @@
   &:focus {
     border-color: darken($scolor, 5%);
     background-color: darken($scolor, 5%);
+    text-decoration: none;
+    color: $white;
   }
 }
 

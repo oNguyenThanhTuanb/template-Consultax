@@ -3,43 +3,25 @@ append head
   title="Index - HomePage 02"
 append header
 append content
-  //- blog
-  .container
-    .row
-      .col-md-4
-        .post-type-01
-          .post-thumb
-            a(href='#')
-              img(src='images/home-blog-01.jpg')
-          .post-content
-            p.post__meta
-              span August 27, 2018
-              span.divider | 
-              a(href='#') Finance
-            h3.post__title
-              a(href='#') Investment Update, Fourth Quarter 2018
-            p.post__desc
-              | Felis curae augue mi risus sed non interdum commodo, cum sagitti praesent sollicitudin egestas per auctor...
-            .post__meta-info
-              a.read-more(href='#') Read More
-      .col-md-4
-        .post-type-01
-          .post-thumb
-            a(href='#')
-              img(src='images/home-blog-02.jpg')
-          .post-content
-            p.post__meta
-              span August 27, 2018
-              span.divider | 
-              a(href='#') Business
-            h3.post__title
-              a(href='#') Cutting Your Restaurant's Operations Costs
-            p.post__desc
-              | Felis curae augue mi risus sed non interdum commodo, cum sagitti praesent sollicitudin egestas per auctor...
-            .post__meta-info
-              a.read-more(href='#') Read More
-
-      .col-md-4
+  //- our feature
+  .home02-our-feature.bg-blue-light
+    .container
+      .row
+        .our-feature02__inner
+          .our-feature02__cover(style="background-image: url('images/home02-our-feature01.jpg')")
+          .our-feature02__content
+            .main-title
+              p OUR FEATURED
+              h3 Why choose us ?
+              span Roncus eu id tristique sollicitudin euismod vestibulum non lectus, senectus conub purusnatoque neque ullamcorper cubilia faucibus, ac eget ultrices hab aliquam molestie. Duis pulvinar ultricies accumsan tortor platea.
+  .home02-services.ssp.bg-blue-light
+    .container
+      .row
+        .home02-services__inner
+          .main-title
+            p OUR SERVICES
+            h3 What we bring to you
+            a(href="#") All services
   //- cta
   .home02-cta
     .container
@@ -68,48 +50,147 @@ append content
                 .form-row.last
                   .form-field
                     button.btn-orange SUBMIT
+  //- who we are
+  .home02-wwa.ssp
+    .container
+      .home02-wwa__inner
+        .home02-wwa__cover(style="background-image: url('images/home02-wwa01.jpg')")
+          .home02-wwa__cover-inner
+            h3 How Can We Help ?
+            .home02-wwa__divider
+            p.home02-wwa__sm-title
+              i.fa.fa-life-ring
+              | Hotline 24/7
+            p.home02-wwa__text (+917) 814 - 3527   -   (+917) 814 - 3527
+            p.home02-wwa__sm-title
+              i.fa.fa-location-arrow
+              | Location
+            p.home02-wwa__text 307 Jesse Centers
+              br
+              | London City, England 12568 
+            a(href="#").btn-orange CONTACT FORM
+        .home02-wwa__content
+          .main-title
+            p WHO WE ARE
+            h3 Our Mission, 
+              br  
+              | Values and Motto
+            span A putrid, nicotine-shaded mist loomed over Beijing on Thursday after a massive sandstorm slammed into the Chinese capital bringing the latest airpocalypse to this smog-choked city.
+          .home02-wwa__signature
+            p.text-signature Patterson 
+            p.name.text-orange James Patterson
+            p.job-title Founder & CEO
   //-testimonial
-  .h-40
-  .container
-    .testimonial.testimonial2
+  .home02-testimonial.ssp.bg-blue-light.ssb60
+    .container
       .row
-        .col-sm-8
-          ul.testimonial2__content
-            li.list-item.active
-              .testimonial__desc.testimonial2__desc.text-italic
-                | “A wonderful serenity has taken possession of my entire soul, like these sweet mornings of spring which.”
-              .testimonial2__bottom
-                span.testimonial__star
-                  img(src="images/star.png" alt="")
-                .testimonial2__info
-                  h3.testimonial-title.pull-right Caroline Cummings
-                  p.testimonial-from.pull-right - from Berlin	
-            li.list-item
-              .testimonial__desc.text-italic
-                | “A wonderful serenity has taken possession of my entire soul, like these sweet mornings of spring which.”
-              .testimonial2__bottom
-                span.testimonial__star
-                  img(src="images/star.png" alt="")
-                .testimonial2__info
-                  h3.testimonial-title.pull-right Caroline Cummings
-                  p.testimonial-from.pull-right - from Berlin
-        .col-sm-4
-          ul.testimonial2__thumb
-            li.thumb-item
-              img(src="images/h2_avatar1.jpg" alt="")
-            li.thumb-item.active
-              img(src="images/h2_avatar1.jpg" alt="")
-            li.thumb-item
-              img(src="images/h2_avatar1.jpg" alt="")
-            li.thumb-item
-              img(src="images/h2_avatar1.jpg" alt="")
-            li.thumb-item
-              img(src="images/h2_avatar1.jpg" alt="")
-            li.thumb-item
-              img(src="images/h2_avatar1.jpg" alt="")
-  .h-40
+        .main-title
+          p TESTIMONIALS
+          h3 What our clients say
+      .row
+        .testimonial.testimonial2
+          .row
+            .col-sm-8
+              ul.testimonial2__content
+                li.list-item.active
+                  .testimonial__desc.testimonial2__desc.text-italic
+                    | “A wonderful serenity has taken possession of my entire soul, like these sweet mornings of spring which.”
+                  .testimonial2__bottom
+                    span.testimonial__star
+                      img(src="images/star.png" alt="")
+                    .testimonial2__info
+                      h3.testimonial-title.pull-right Caroline Cummings
+                      p.testimonial-from.pull-right - from Berlin	
+                li.list-item
+                  .testimonial__desc.text-italic
+                    | “A wonderful serenity has taken possession of my entire soul, like these sweet mornings of spring which.”
+                  .testimonial2__bottom
+                    span.testimonial__star
+                      img(src="images/star.png" alt="")
+                    .testimonial2__info
+                      h3.testimonial-title.pull-right Caroline Cummings
+                      p.testimonial-from.pull-right - from Berlin
+            .col-sm-4
+              ul.testimonial2__thumb
+                li.thumb-item
+                  img(src="images/h2_avatar1.jpg" alt="")
+                li.thumb-item.active
+                  img(src="images/h2_avatar1.jpg" alt="")
+                li.thumb-item
+                  img(src="images/h2_avatar1.jpg" alt="")
+                li.thumb-item
+                  img(src="images/h2_avatar1.jpg" alt="")
+                li.thumb-item
+                  img(src="images/h2_avatar1.jpg" alt="")
+                li.thumb-item
+                  img(src="images/h2_avatar1.jpg" alt="")
+  //- blog
+  .home02-blog.ssp.sst60.bg-blue-light
+    .container
+      .row
+        .col-md-8
+          .main-title
+            p OUR BLOG
+            h3 Our latest news
+            a(href="#") View all post
+      .row
+        .home02-blog__inner
+          .col-md-4
+            .post-type-01
+              .post-thumb
+                a(href='#')
+                  img(src='images/home-blog-01.jpg')
+              .post-content
+                p.post__meta
+                  span August 27, 2018
+                  span.divider | 
+                  a(href='#') Finance
+                h3.post__title
+                  a(href='#') Investment Update, Fourth Quarter 2018
+                p.post__desc
+                  | Felis curae augue mi risus sed non interdum commodo, cum sagitti praesent sollicitudin egestas per auctor...
+                .post__meta-info
+                  a.read-more(href='#') Read More
+          .col-md-4
+            .post-type-01
+              .post-thumb
+                a(href='#')
+                  img(src='images/home-blog-02.jpg')
+              .post-content
+                p.post__meta
+                  span August 27, 2018
+                  span.divider | 
+                  a(href='#') Business
+                h3.post__title
+                  a(href='#') Cutting Your Restaurant's Operations Costs
+                p.post__desc
+                  | Felis curae augue mi risus sed non interdum commodo, cum sagitti praesent sollicitudin egestas per auctor...
+                .post__meta-info
+                  a.read-more(href='#') Read More
+          .col-md-4
+            .home02-cta-02
+              .main-title--white-sm
+                p SUBSCRIBE
+                h3  subscribe for the newsletter
+                span Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem.
+              .cta-form
+                form
+                  .form-row
+                    .form-field
+                      input.ct-input(type="email", placeholder="Email address")
+                  .form-row.last
+                    .form-field
+                      button.btn-orange SUBSCRIBE
+  //- couter
+  .home02-counter.ssp
+    .container
+      .row
+        .home02-counter__inner
+          .main-title--white
+            p ACHIEVEMENTS & STATISTICS
+            h3 Our 25 years of operation
   //- team
-  .home02-team
+  .home02-team.ssp
     .container
       .row
         .main-title

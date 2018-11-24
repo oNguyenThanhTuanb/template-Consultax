@@ -207,3 +207,81 @@
     }
   }  
 }
+
+.services__menu {
+  &--heading {
+    height: 100px;
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    color: $white;
+    font-weight: 900;
+    font-family: $hfont;
+    font-size: 20px;
+    background-color: $scolor;
+    flex-direction: column;
+    padding: 0 15px 0 40px;
+
+    h3 {
+      margin-top: 0;
+      margin-bottom: 15px;
+    }
+  }
+
+  &--divider {
+    width: 30px;
+    height: 2px;
+    background-color: $white;
+  }
+
+  &--item {
+    height: 75px;
+    display: flex;
+    align-items: center;
+    width: 100%;
+    background-color: $mcolor;
+    transition: $transition-base;
+    color: $white;
+    font-family: $hfont;
+    padding: 0 15px 0 40px;
+
+    i {
+      margin-right: 20px;
+      font-size: 24px;
+    }
+
+    &:hover {
+      background-color: #174b87;
+      text-decoration: none;
+      color: $white;
+    }
+  }
+
+  &--footer {
+    height: 200px;
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    background: url('../images/services-menu-bg01.jpg');
+    background-size: cover;
+    background-position: center center;
+  }
+
+  &--btn {
+    font-size: 12px;
+    font-weight: 900;
+    color: $white;
+    text-align: center;
+    background-color: rgba($white, .3);
+    width: 290px;
+    line-height: 45px;
+    transition: $transition-base;
+
+    &:hover {
+      color: $scolor;
+      text-decoration: none;
+      background-color: $white;
+    }
+  }
+}

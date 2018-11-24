@@ -35,6 +35,11 @@ body {
   font-style: italic;
 }
 
+.text-signature {
+  font-family: $sfont;
+  font-size: 48px;
+}
+
 .overlay02 {
   position: absolute;
   top: 0;
@@ -60,4 +65,24 @@ body {
   width: 100%;
   height: 100%;
   background-color: rgba($mcolor, .7);
+}
+
+.bg-blue-light{
+  background-color: $blue-light;
+}
+
+.ssp {
+  padding: 120px 0;
+}
+
+.ssb80 {
+  padding-bottom: 80px;
+}
+
+.ssb60 {
+  padding-bottom: 60px;
+}
+
+.sst60 {
+  padding-top: 60px;
 }

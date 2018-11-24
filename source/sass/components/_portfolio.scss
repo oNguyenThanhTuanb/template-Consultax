@@ -1,3 +1,58 @@
 //
 // Components :: Portfolio
 // --------------------------------------------------
+.home01-services {
+  
+}
+
+.home07-project {
+  background-color: $mcolor;
+  &__cover {
+
+  }
+
+  &__thumb {
+    &-item {
+      border-radius: 5px;
+      border: 1px solid rgba($white, .2);
+      color: $white;
+      padding: 35px 25px;
+      background-color: transparent;
+      transition: $transition-base;
+      opacity: .55;
+
+      p {
+        font-size: 12px;
+        font-family: $hfont;
+        margin-bottom: 8px;
+      }
+
+      h3 {
+        font-size: 20px;
+        font-weight: 900;
+        font-family: $hfont;
+        margin-top: 0;
+        margin-bottom: 20px;
+      }
+
+      .read-more {
+        color: $white;
+        font-weight: bold;
+        font-size: 12px;
+        font-family: $hfont;
+        text-decoration: underline;
+        transition: $transition-base;
+
+        &:hover {
+          color: $scolor;
+        }
+      }
+
+      &:hover {
+        background-color: rgba($white, .1);
+        cursor: pointer;
+        opacity: 1;
+      }
+    }
+  }
+}

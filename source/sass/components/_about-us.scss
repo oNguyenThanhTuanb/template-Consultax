@@ -1,0 +1,71 @@
+//
+// Components :: About us
+// --------------------------------------------------
+.home03-about-us {
+  background: url('../images/home03-bg-about-us01.png');
+  background-size: 508px 538px;
+  background-position: 36% top;
+  background-repeat: no-repeat;
+  padding-top: 162px;
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+
+  &__cover {
+    position: relative;
+    flex: 0 0 50%;
+    text-align: right;
+
+    .cover {
+      float: right;
+      position: relative;
+      img {box-shadow: 0px 20px 20px 0px rgba(0, 0, 0, 0.3);}
+
+      .home03-about-us__cover-content {
+        position: absolute;
+        bottom: 15px;
+        text-align: left;
+        left: 30px;
+      }
+    }
+
+    .cover02 {
+      position: absolute;
+      bottom: 144px;
+      right: 144px;
+      box-shadow: 0px 20px 20px 0px rgba(0, 0, 0, 0.3);
+      z-index: 2;
+    }
+
+    &-content {
+      .name {
+        font-size: 18px;
+        font-weight: 900;
+        color: $mcolor;
+        margin-bottom: 0;
+        margin-top: 0;
+      }
+
+      .job-title {
+        color: #a1a1a1;
+        font-size: 12px;
+      }
+
+      .list-social02--dark {
+        li {
+          margin-right: 0;
+        }
+      }
+    }
+  }
+
+  &__content {
+    flex: 0 0 50%;
+    padding-left: 100px;
+
+    .main-title {
+      margin-bottom: 50px;
+    }
+  }
+}
+
