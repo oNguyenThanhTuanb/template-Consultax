@@ -1,0 +1,34 @@
+.slick-slide {
+  height: auto;;
+}
+
+.group-slider-control01 {
+  right: 0;
+  top: 22px;
+  
+  .control {
+    width: 45px;
+    height: 45px;
+    border: 1px solid $grey-base;
+    border-radius: 3px;
+    text-align: center;
+    opacity: .4;
+    transition: $transition-base;
+    cursor: pointer;
+    margin-right: 10px;
+
+    &:last-of-type {
+      margin-right: 0;
+    }
+
+    i {
+      font-size: 30px;
+      line-height: 40px;
+    }
+
+    &:hover {
+      opacity: 1;
+    }
+  }
+}
+
