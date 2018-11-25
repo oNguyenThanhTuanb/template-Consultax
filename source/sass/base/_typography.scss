@@ -87,6 +87,12 @@ a {
       color: $scolor;
     }
   }
+
+  .group-control {
+    position: absolute;
+    white-space: nowrap;
+    display: flex;
+  }
 }
 
 .main-title--white {
