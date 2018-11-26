@@ -3,7 +3,7 @@
 // --------------------------------------------------
 // Testimonial 1
 ul {
-	padding-left: 0; 
+	padding-left: 0;
 }
 
 li {
@@ -29,6 +29,13 @@ li {
 		font-family: $hfont;
 		line-height: 24px;
 		font-size: 16px;
+	}
+	&__star {
+		i {
+			margin-right: 3px;
+			font-size: 16px;
+			color: $scolor;
+		}
 	}
 }
 
@@ -58,7 +65,7 @@ li {
 	&__star {
 		margin-bottom: 40px;
 		float: left;
-    width: 100%;
+    	width: 100%;
 	}
 
 	&__desc {
@@ -75,7 +82,7 @@ li {
 		padding: 25px 30px;
 		background-image: url('../images/h2_testimonial_bg.png');
 		background-repeat: no-repeat;
-		background-position: top 40px left 30px; 
+		background-position: top 40px left 30px;
 		width: 100%;
 		float: left;
 
@@ -121,13 +128,13 @@ li {
 		width: calc(33.33% - 15px);
 		border-radius: 5px;
 		overflow: hidden;
-		border: 1px solid transparent; 
-	
+		border: 1px solid transparent;
+
 		&:nth-child(3n+1) {
 			margin-left: 0;
 			clear: both;
 		}
-	
+
 		&.active,
 		&:hover {
 			border: 1px solid $scolor;
@@ -140,8 +147,8 @@ li {
 .testimonial3 {
 	.thumb-img {
 		margin-bottom: 70px;
-    float: right;
-    position: relative;
+		float: right;
+		position: relative;
 		width: 92%;
 
 		img {
@@ -179,6 +186,7 @@ li {
 	}
 
 	&__info {
+		min-width: 180px;
 		p {
 			clear: both;
 			margin-top: 5px;
@@ -234,7 +242,14 @@ li {
 		}
 	}
 }
-
+// testimonial 5
+.testimonial5 {
+	&__desc {
+		min-height: 100px;
+    float: left;
+    width: 100%;
+	}
+}
 // testimonial 6
 .testimonial6 {
 	&__content {
@@ -257,7 +272,7 @@ li {
 
 	&__info {
 		margin-right: 20px;
-
+		min-width: 120px;
 		p {
 			clear: both;
 			margin-top: 5px;
@@ -297,21 +312,12 @@ li {
 			border: 1px solid $white;
 			position: relative;
 			top: -12px;
-			padding: 1px 14px 2px 8px;
+			padding: 1px 8px 2px 8px;
 			border-radius: $border_radius_large;
 			color: $white;
 			font-size: 12px;
-
-			&:after {
-				content: '';
-				height: 10px;
-				width: 10px;
-				background: url('../images/start-2.png') no-repeat;
-				position: absolute;
-				top: 0;
-				bottom: 0;
-				margin: auto;
-				right: 3px;
+			i {
+				margin-left: 2px;
 			}
 		}
 	}
@@ -360,4 +366,8 @@ li {
 			clear: both;
 		}
 	}
+}
+
+.slick-initialized .slick-slide {
+    margin-right: 30px;
 }
