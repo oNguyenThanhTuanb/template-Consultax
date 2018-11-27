@@ -1,4 +1,25 @@
+.brand {
+  padding: 70px 0;
+}
+
 .brand__item {
-  height: 100px;
   overflow: hidden;
+
+  a {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+
+    img {
+      max-width: 100%;
+    }
+  }
+}
+
+.brand {
+  &.brand-slider-home03 {
+    padding: 100px 0 120px 0;
+    border-top: 1px solid #fafafa;
+  }
 }

@@ -4,8 +4,15 @@
 .post-type-01 {
   transition: $transition-base;
 
+  .post-thumb {
+    img {
+      width: 100%;
+    }
+  }
+
   .post-content {
     padding: 30px 28px 28px;
+    background-color: $white;
 
     .post__title {
       font-size: 20px;
@@ -79,6 +86,10 @@
 
   .post-thumb {
     position: relative;
+
+    img {
+      width: 100%;
+    }
 
     &:before {
       content: '';
@@ -181,6 +192,7 @@
   .post-content {
     flex-grow: 1;
     padding: 36px 30px;
+    background-color: $white;
   }
 
   .post__title {
@@ -258,6 +270,10 @@
 
   .post-thumb {
     position: relative;
+
+    img {
+      width: 100%;
+    }
   }
 
   .post-content {

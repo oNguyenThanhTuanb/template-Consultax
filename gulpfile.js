@@ -159,7 +159,7 @@ gulp.task('copy-images', function() {
 // Delete
 // ======================================================
 gulp.task('cleanup', function(cb) {
-  return del(options.del, cb);
+  return del(['dest/**/*', '!dest/revolution-slider', '!dest/revolution-slider/**/*'], cb);
 });
 
 

@@ -7,6 +7,12 @@ body {
   font-size: 14px;
 }
 
+@media (min-width: 1200px) {
+  .container {
+    width: 1200px;
+  }
+}
+
 .d-flex {
   display: flex;
   width: 100%;
@@ -22,7 +28,7 @@ body {
   left: 0;
   width: 100%;
   height: 100%;
-  background-color: rgba($mcolor, .8);
+  background-color: rgba($mcolor, 0.8);
 }
 
 .h-40 {
@@ -46,7 +52,7 @@ body {
   left: 0;
   width: 100%;
   height: 100%;
-  background-color: rgba($mcolor, .9);
+  background-color: rgba($mcolor, 0.9);
 }
 
 .overlay03 {
@@ -55,7 +61,7 @@ body {
   left: 0;
   width: 100%;
   height: 100%;
-  background-color: rgba(#1b293a, .9);
+  background-color: rgba(#1b293a, 0.9);
 }
 
 .overlay04 {
@@ -64,10 +70,10 @@ body {
   left: 0;
   width: 100%;
   height: 100%;
-  background-color: rgba($mcolor, .7);
+  background-color: rgba($mcolor, 0.7);
 }
 
-.bg-blue-light{
+.bg-blue-light {
   background-color: $blue-light;
 }
 
@@ -77,6 +83,10 @@ body {
 
 .ssp {
   padding: 120px 0;
+}
+
+.sst {
+  padding-top: 120px;
 }
 
 .ssb80 {
