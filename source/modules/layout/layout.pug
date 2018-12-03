@@ -1,4 +1,5 @@
-html
+doctype html
+html.no-js
   head
     meta(http-equiv="Content-Type" content="text/html; charset=UTF-8")
     meta(name="viewport" content="width=device-width, initial-scale=1")
@@ -9,14 +10,15 @@ html
     link(href="css/extention/bootstrap.min.css" rel="stylesheet")
     link(href="css/extention/slick.min.css" rel="stylesheet")
     link(href="css/extention/slick-theme.min.css" rel="stylesheet")
+    // REVOLUTION STYLE SHEETS
+    link(rel='stylesheet', type='text/css', href='revolution-slider/revolution/css/settings.css')
+    link(rel='stylesheet', type='text/css', href='revolution-slider/revolution/css/layers.css')
+    link(rel='stylesheet', type='text/css', href='revolution-slider/revolution/css/navigation.css')
     link(href="css/main.min.css" rel="stylesheet")
     block head
   body
     block header
     block content
     block footer
-    block script
-      script(src='js/extention/jquery-3.3.1.min.js')
-      script(src='js/extention/bootstrap.min.js')
-      script(src='js/extention/slick.min.js')
+
       

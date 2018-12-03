@@ -39,7 +39,7 @@
 
 .btn-white {
   @extend .btn-blue;
-  border-color: #a1a1a1;
+  border-color: $white;
   color: #555555;
   background-color: white;
 
@@ -48,5 +48,47 @@
     border-color: black;
     background-color: white;
     color: black;
+  }
+}
+
+.btn-white--outline {
+  @extend .btn-white;
+  border-color: $grey-base;
+  color: #555555;
+  background-color: white;
+
+  &:hover,
+  &:focus {
+    border-color: black;
+    background-color: white;
+    color: black;
+  }
+}
+
+.btn-scroll-next-section {
+  color: $white;
+  font-size: 20px;
+  font-weight: bold;
+  position: fixed;
+  top: 50vh;
+  left: -10px;
+  z-index: 999;
+  transform: rotate(-90deg);
+  font-size: 14px;
+  letter-spacing: 2px;
+  background-color: transparent;
+  border: 0;
+  line-height: 40px;
+  display: flex;
+
+  .icon {
+    font-size: 30px;
+    padding-right: 15px;
+  }
+
+  &:hover,
+  &:focus {
+    outline: 0;
+    box-shadow: none;
   }
 }

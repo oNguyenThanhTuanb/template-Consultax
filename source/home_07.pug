@@ -1,8 +1,90 @@
 extends modules/layout/layout.pug
+include modules/script/lib
 append head
   title="Index - HomePage 07"
 append header
 append content
+  section
+    .slider-home-07.rev_slider_wrapper.fullwidthbanner-container
+      // START REVOLUTION SLIDER 5.0.7 auto mode
+      #js-slider-home01.rev_slider.fullwidthabanner(style='display:none;', data-version="5.4.1")
+        ul
+          li
+            img.rev-slidebg(
+              src='images/home07-slide-01.jpg', 
+              alt='demo', 
+              data-bgposition='center center', 
+              data-bgfit='cover', 
+              data-bgrepeat='no-repeat')
+            .tp-caption.tp-resizeme.sh1--white(
+              data-x="['left']", 
+              data-hoffset="['0']", 
+              data-y='top', 
+              data-voffset='250', 
+              data-width="['580','580','480','320']", 
+              data-transform_idle='o:1;', 
+              data-transform_in='x:100px;opacity:0;s:800;e:Power3.easeOut;', 
+              data-transform_out='s:1000;e:Power3.easeInOut;s:1000;e:Power3.easeInOut;', 
+              data-start='1500', data-whitespace="['nowrap','nowrap','nowrap','normal']", 
+              data-fontsize="['14','14','14','14']", 
+              data-responsive_offset='on')
+              p WE'RE CONSULTAX
+            .tp-caption.tp-resizeme.sh2--white(
+              data-x="['left']", 
+              data-hoffset="['0']", 
+              data-y='center', 
+              data-voffset="['0','-55','-55','-55']", 
+              data-width="['670','580','480','320']", 
+              data-transform_idle='o:1;', 
+              data-transform_in='x:100px;opacity:0;s:800;e:Power3.easeOut;', 
+              data-transform_out='s:1000;e:Power3.easeInOut;s:1000;e:Power3.easeInOut;', 
+              data-start='1700', 
+              data-whitespace="['normal']", 
+              data-fontsize="['50','50','40','30']", 
+              data-lineheight="['60','60','50','40']", 
+              data-responsive_offset='on')
+              p Financial Consulting For Your Business
+            .tp-caption(
+              data-x="['left']", 
+              data-hoffset="['0']", 
+              data-y='bottom', 
+              data-voffset="['200','175','175','175']", 
+              data-transform_idle='o:1;', 
+              data-transform_in='x:100px;opacity:0;s:800;e:Power3.easeOut;', 
+              data-transform_out='s:1000;e:Power3.easeInOut;s:1000;e:Power3.easeInOut;', 
+              data-start='2100')
+              a.btn-white(href='#') GET QUOTE
+  //- main services
+  .home07-services.ssp
+    .container
+      .row
+        .home07-services__inner
+          .home07-services__content
+            p.rotate-title CONSULTAX 2003- 2018
+            .main-title
+              h3 Our Mission, Values 
+                br
+                | and Motto
+              span A wonderful serenity has taken possession of my entire soul, like these sweet mornings of spring which I enjoy with my whole heart. I am alone, and feel the charm of existence in this spot, which was created for the bliss of souls like mine. I am so happy, my dear friend, so absorbed in the exquisite sense of mere tranquil existence, that I neglect my talents.
+            a(href="#").btn-white--outline ABOUT US
+          .services__menu
+            .services__menu--heading
+              h3 The main services
+              .services__menu--divider
+            a(href="#").services__menu--item
+              i.icon.ion-umbrella
+              span Audit & Assurance
+            a(href="#").services__menu--item
+              i.fa.fa-briefcase 
+              span Financial Projections
+            a(href="#").services__menu--item
+              i.fa.fa-bar-chart
+              span Trades & Stocks
+            a(href="#").services__menu--item
+              i.fa.fa-file-text-o
+              span Strategic Planning
+            .services__menu--footer
+              a(href="#").services__menu--btn VIEW ALL SERVICES
   //- feature
   .home07-feature.bg-blue-light.ssp
     .container
@@ -27,37 +109,6 @@ append content
                 h4.title Budget Friendly
                 p.desc
                   | Conubia ut aliquam cubili gravida sed morbi accumsan hac du, ultrices hendrerit parturien.  
-  //- main services
-  .home07-services.ssp
-    .container
-      .row
-        .home07-services__inner
-          .home07-services__content
-            p.rotate-title CONSULTAX 2003- 2018
-            .main-title
-              h3 Our Mission, Values 
-                br
-                | and Motto
-              span A wonderful serenity has taken possession of my entire soul, like these sweet mornings of spring which I enjoy with my whole heart. I am alone, and feel the charm of existence in this spot, which was created for the bliss of souls like mine. I am so happy, my dear friend, so absorbed in the exquisite sense of mere tranquil existence, that I neglect my talents.
-            a(href="#").btn-white ABOUT US
-          .services__menu
-            .services__menu--heading
-              h3 The main services
-              .services__menu--divider
-            a(href="#").services__menu--item
-              i.icon.ion-umbrella
-              span Audit & Assurance
-            a(href="#").services__menu--item
-              i.fa.fa-briefcase 
-              span Financial Projections
-            a(href="#").services__menu--item
-              i.fa.fa-bar-chart
-              span Trades & Stocks
-            a(href="#").services__menu--item
-              i.fa.fa-file-text-o
-              span Strategic Planning
-            .services__menu--footer
-              a(href="#").services__menu--btn VIEW ALL SERVICES
   //- our services
   .home07-project.ssp
     .overlay
@@ -69,14 +120,37 @@ append content
             h3 We are the leaders
             a(href="#") All projects
           .home07-project__cover
-            img(src="images/home07-project01.jpg" alt="demo")
-          .home07-project__thumb
+            .group-control.group-slider-control03
+              .control.js-btn-prev__project.prev
+                i.fa.fa-angle-left
+              .control.js-btn-next__project.next
+                i.fa.fa-angle-right
+            .js-slick-project-main-home07
+              .home07-project__main-item
+                img(src="images/home07-project01.jpg" alt="demo")
+              .home07-project__main-item
+                img(src="images/home07-project02.jpg" alt="demo")
+              .home07-project__main-item
+                img(src="images/home07-project03.jpg" alt="demo")
+              .home07-project__main-item
+                img(src="images/home07-project01.jpg" alt="demo")
+              .home07-project__main-item
+                img(src="images/home07-project02.jpg" alt="demo")
+          .home07-project__thumb.js-slick-project-thumbs-home07
             .home07-project__thumb-item
               p Contract project: August 27, 2018
               h3 Planning the development for the viral world
               a.read-more(href="#") View Detail
             .home07-project__thumb-item
               p Contract project: August 22, 2018
+              h3 Planning the development for the viral world
+              a.read-more(href="#") View Detail
+            .home07-project__thumb-item
+              p Contract project: August 21, 2018
+              h3 Planning the development for the viral world
+              a.read-more(href="#") View Detail
+            .home07-project__thumb-item
+              p Contract project: August 21, 2018
               h3 Planning the development for the viral world
               a.read-more(href="#") View Detail
             .home07-project__thumb-item
@@ -273,192 +347,194 @@ append content
                       i.fa.fa-linkedin
               span.text-copyright © 2018 Finacial Consulting Theme by Ocean Themes
   #js-footer07__map.js-footer07__map
-  append script
-    script(src="js/extention/maplace.min.js")  
-    script(src='https://maps.googleapis.com/maps/api/js?key=AIzaSyBS5224HISbnpAiKW7mx6eyTrHxfGeCftk')
-    script(type='text/javascript').
-      var LocsA = [
-      {
-      lat: 37.774509,
-      lon: -122.411727,
-      title: 'San Francisco',
-      html: [
-      '<div class="map__info-window"><h3><i class="fa fa-location-arrow"></i>AREA ONE</h3>',
-      '<p>307 Jesse Centers London City, England 12568 </p>',
-      '<div class="control"><a href="#">Contact Us</a><a href="#">Get directions</a></div></div>'
-      ].join(''),
-      icon: 'images/map-icon01.png',
-      animation: google.maps.Animation.DROP,
-      zoom:4
-      },
-      {
-      lat: 34.298450,
-      lon: -111.714435,
-      title: 'Arizona',
-      html: [
-      '<div class="map__info-window"><h3><i class="fa fa-location-arrow"></i>AREA TWO</h3>',
-      '<p>307 Jesse Centers London City, England 12568 </p>',
-      '<div class="control"><a href="#">Contact Us</a><a href="#">Get directions</a></div></div>'
-      ].join(''),
-      icon: 'images/map-icon01.png',
-      show_infowindow: true,
-      animation: google.maps.Animation.DROP,
-      zoom:4
-      },
-      {
-      lat: 35.775319,
-      lon: -79.708533,
-      title: 'North Carolina',
-      html: [
-      '<div class="map__info-window"><h3><i class="fa fa-location-arrow"></i>AREA THREE</h3>',
-      '<p>307 Jesse Centers London City, England 12568 </p>',
-      '<div class="control"><a href="#">Contact Us</a><a href="#">Get directions</a></div></div>'
-      ].join(''),
-      icon: 'images/map-icon01.png',
-      animation: google.maps.Animation.DROP,
-      zoom:4
-      },
-      {
-      lat: 39.952644,
-      lon: -75.165247,
-      title: 'Philadelphia',
-      html: [
-      '<div class="map__info-window"><h3><i class="fa fa-location-arrow"></i>AREA FOUR</h3>',
-      '<p>307 Jesse Centers London City, England 12568 </p>',
-      '<div class="control"><a href="#">Contact Us</a><a href="#">Get directions</a></div></div>'
-      ].join(''),
-      icon: 'images/map-icon01.png',
-      animation: google.maps.Animation.DROP,
-      zoom:4
-      }
-      ];
-      new Maplace({
-      locations: LocsA,
-      map_div: '#js-footer07__map',
-      controls_type: 'list',
-      controls_on_map: false,
-      map_options: {
-      scrollwheel: false
-      },
-      start:1,
-      styles: {
-      "Ultra Light": [
-      {
-      "featureType": "landscape",
-      "stylers": [
-      {
-      "saturation": -100
-      },
-      {
-      "lightness": 65
-      },
-      {
-      "visibility": "on"
-      }
-      ]
-      },
-      {
-      "featureType": "poi",
-      "stylers": [
-      {
-      "saturation": -100
-      },
-      {
-      "lightness": 51
-      },
-      {
-      "visibility": "simplified"
-      }
-      ]
-      },
-      {
-      "featureType": "road.highway",
-      "stylers": [
-      {
-      "saturation": -100
-      },
-      {
-      "visibility": "simplified"
-      }
-      ]
-      },
-      {
-      "featureType": "road.arterial",
-      "stylers": [
-      {
-      "saturation": -100
-      },
-      {
-      "lightness": 30
-      },
-      {
-      "visibility": "on"
-      }
-      ]
-      },
-      {
-      "featureType": "road.local",
-      "stylers": [
-      {
-      "saturation": -100
-      },
-      {
-      "lightness": 40
-      },
-      {
-      "visibility": "on"
-      }
-      ]
-      },
-      {
-      "featureType": "transit",
-      "stylers": [
-      {
-      "saturation": -100
-      },
-      {
-      "visibility": "simplified"
-      }
-      ]
-      },
-      {
-      "featureType": "administrative.province",
-      "stylers": [
-      {
-      "visibility": "off"
-      }
-      ]
-      },
-      {
-      "featureType": "water",
-      "elementType": "labels",
-      "stylers": [
-      {
-      "visibility": "on"
-      },
-      {
-      "lightness": -25
-      },
-      {
-      "saturation": -100
-      }
-      ]
-      },
-      {
-      "featureType": "water",
-      "elementType": "geometry",
-      "stylers": [
-      {
-      "hue": "#ffff00"
-      },
-      {
-      "lightness": -25
-      },
-      {
-      "saturation": -97
-      }
-      ]
-      }
-      ],
-      }
-      }).Load();
+  +lib
+  script(src="js/slick-project-home07.min.js")  
+  script(src="js/extention/maplace.min.js")  
+  script(defer src="js/main-slider-home01.min.js")
+  script(src='https://maps.googleapis.com/maps/api/js?key=AIzaSyBS5224HISbnpAiKW7mx6eyTrHxfGeCftk')
+  script(type='text/javascript').
+    var LocsA = [
+    {
+    lat: 37.774509,
+    lon: -122.411727,
+    title: 'San Francisco',
+    html: [
+    '<div class="map__info-window"><h3><i class="fa fa-location-arrow"></i>AREA ONE</h3>',
+    '<p>307 Jesse Centers London City, England 12568 </p>',
+    '<div class="control"><a href="#">Contact Us</a><a href="#">Get directions</a></div></div>'
+    ].join(''),
+    icon: 'images/map-icon01.png',
+    animation: google.maps.Animation.DROP,
+    zoom:4
+    },
+    {
+    lat: 34.298450,
+    lon: -111.714435,
+    title: 'Arizona',
+    html: [
+    '<div class="map__info-window"><h3><i class="fa fa-location-arrow"></i>AREA TWO</h3>',
+    '<p>307 Jesse Centers London City, England 12568 </p>',
+    '<div class="control"><a href="#">Contact Us</a><a href="#">Get directions</a></div></div>'
+    ].join(''),
+    icon: 'images/map-icon01.png',
+    show_infowindow: true,
+    animation: google.maps.Animation.DROP,
+    zoom:4
+    },
+    {
+    lat: 35.775319,
+    lon: -79.708533,
+    title: 'North Carolina',
+    html: [
+    '<div class="map__info-window"><h3><i class="fa fa-location-arrow"></i>AREA THREE</h3>',
+    '<p>307 Jesse Centers London City, England 12568 </p>',
+    '<div class="control"><a href="#">Contact Us</a><a href="#">Get directions</a></div></div>'
+    ].join(''),
+    icon: 'images/map-icon01.png',
+    animation: google.maps.Animation.DROP,
+    zoom:4
+    },
+    {
+    lat: 39.952644,
+    lon: -75.165247,
+    title: 'Philadelphia',
+    html: [
+    '<div class="map__info-window"><h3><i class="fa fa-location-arrow"></i>AREA FOUR</h3>',
+    '<p>307 Jesse Centers London City, England 12568 </p>',
+    '<div class="control"><a href="#">Contact Us</a><a href="#">Get directions</a></div></div>'
+    ].join(''),
+    icon: 'images/map-icon01.png',
+    animation: google.maps.Animation.DROP,
+    zoom:4
+    }
+    ];
+    new Maplace({
+    locations: LocsA,
+    map_div: '#js-footer07__map',
+    controls_type: 'list',
+    controls_on_map: false,
+    map_options: {
+    scrollwheel: false
+    },
+    start:1,
+    styles: {
+    "Ultra Light": [
+    {
+    "featureType": "landscape",
+    "stylers": [
+    {
+    "saturation": -100
+    },
+    {
+    "lightness": 65
+    },
+    {
+    "visibility": "on"
+    }
+    ]
+    },
+    {
+    "featureType": "poi",
+    "stylers": [
+    {
+    "saturation": -100
+    },
+    {
+    "lightness": 51
+    },
+    {
+    "visibility": "simplified"
+    }
+    ]
+    },
+    {
+    "featureType": "road.highway",
+    "stylers": [
+    {
+    "saturation": -100
+    },
+    {
+    "visibility": "simplified"
+    }
+    ]
+    },
+    {
+    "featureType": "road.arterial",
+    "stylers": [
+    {
+    "saturation": -100
+    },
+    {
+    "lightness": 30
+    },
+    {
+    "visibility": "on"
+    }
+    ]
+    },
+    {
+    "featureType": "road.local",
+    "stylers": [
+    {
+    "saturation": -100
+    },
+    {
+    "lightness": 40
+    },
+    {
+    "visibility": "on"
+    }
+    ]
+    },
+    {
+    "featureType": "transit",
+    "stylers": [
+    {
+    "saturation": -100
+    },
+    {
+    "visibility": "simplified"
+    }
+    ]
+    },
+    {
+    "featureType": "administrative.province",
+    "stylers": [
+    {
+    "visibility": "off"
+    }
+    ]
+    },
+    {
+    "featureType": "water",
+    "elementType": "labels",
+    "stylers": [
+    {
+    "visibility": "on"
+    },
+    {
+    "lightness": -25
+    },
+    {
+    "saturation": -100
+    }
+    ]
+    },
+    {
+    "featureType": "water",
+    "elementType": "geometry",
+    "stylers": [
+    {
+    "hue": "#ffff00"
+    },
+    {
+    "lightness": -25
+    },
+    {
+    "saturation": -97
+    }
+    ]
+    }
+    ],
+    }
+    }).Load();

@@ -154,3 +154,35 @@ a {
   font-size: 12px;
   font-weight: 900;
 }
+
+.title02 {
+  position: relative;
+  width: 100%;
+
+  &:after {
+    content: '';
+    width: 100%;
+    top: 50%;
+    left: 0;
+    background-color: rgba(0,0,0,.4);
+    display: block;
+    height: 1px;
+    position: absolute;
+  }
+
+  h3 {
+    position: relative;
+    font-family: $hfont;
+    color: rgba(0,0,0,.7);
+    letter-spacing: 4px;
+    font-size: 12px;
+    white-space: nowrap;
+    display: inline-block;
+    margin: 0;
+    background-color: $white;
+    font-weight: 900;
+    z-index: 2;
+    left: 44px;
+    padding: 0 8px;
+  }
+}

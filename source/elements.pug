@@ -1,4 +1,5 @@
 extends modules/layout/layout.pug
+include modules/script/lib
 append head
 append header
 append content
@@ -201,5 +202,5 @@ append content
 						.testimonial8__info
 							h3.testimonial-title.pull-left Caroline Cummings
 							p.testimonial-from.pull-left - from Berlin	
-append footer
-append script
+	append footer
+	+lib

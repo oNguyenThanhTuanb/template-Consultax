@@ -1,8 +1,156 @@
 extends modules/layout/layout.pug
+include modules/script/lib
 append head
   title="Index - HomePage 01"
 append header
 append content
+  section
+    .slider-home-01.rev_slider_wrapper.fullwidthbanner-container
+      // START REVOLUTION SLIDER 5.0.7 auto mode
+      #js-slider-home01.rev_slider.fullwidthabanner(style='display:none;', data-version="5.4.1")
+        ul
+          li
+            img.rev-slidebg(
+              src='images/home01-slide-bg.jpg', 
+              alt='demo', 
+              data-bgposition='center center', 
+              data-bgfit='cover', 
+              data-bgrepeat='no-repeat')
+            .tp-caption.tp-resizeme(
+              data-x='right',
+              data-hoffset='',
+              data-y='bottom',
+              data-voffset='',
+              data-transform_idle='o:1;',
+              data-transform_in='x:550px;opacity:0;s:800;e:Power3.easeOut;',
+              data-transform_out='s:1000;e:Power3.easeInOut;s:1000;e:Power3.easeInOut;',
+              data-start='1000',
+              data-responsive_offset='on')
+              img.img-responsive.hidden-sm.hidden-xs(src='images/home01-slide-e1.png', alt='Image')
+            .tp-caption.tp-resizeme.sh1(
+              data-x="['left']", 
+              data-hoffset="['0']", 
+              data-y='top', 
+              data-voffset='200', 
+              data-width="['580','580','480','320']", 
+              data-transform_idle='o:1;', 
+              data-transform_in='x:100px;opacity:0;s:800;e:Power3.easeOut;', 
+              data-transform_out='s:1000;e:Power3.easeInOut;s:1000;e:Power3.easeInOut;', 
+              data-start='1500', data-whitespace="['nowrap','nowrap','nowrap','normal']", 
+              data-fontsize="['14','14','14','14']", 
+              data-responsive_offset='on')
+              p WE'RE CONSULTAX
+            .tp-caption.tp-resizeme.sh2(
+              data-x="['left']", 
+              data-hoffset="['0']", 
+              data-y='center', 
+              data-voffset="['-55','-55','-55','-55']", 
+              data-width="['670','580','480','320']", 
+              data-transform_idle='o:1;', 
+              data-transform_in='x:100px;opacity:0;s:800;e:Power3.easeOut;', 
+              data-transform_out='s:1000;e:Power3.easeInOut;s:1000;e:Power3.easeInOut;', 
+              data-start='1700', 
+              data-whitespace="['normal']", 
+              data-fontsize="['50','50','40','30']", 
+              data-lineheight="['60','60','50','40']", 
+              data-responsive_offset='on')
+              p Financial Consulting For Your Business
+            .tp-caption.tp-resizeme.sh3(
+              data-x="['left']", 
+              data-hoffset="['0']", 
+              data-y='center', 
+              data-voffset="['60','60','60','60']", 
+              data-width="['580','580','480','300']", 
+              data-transform_idle='o:1;', 
+              data-whitespace="['normal','normal','normal','normal']", 
+              data-transform_in='x:100px;opacity:0;s:800;e:Power3.easeOut;', 
+              data-transform_out='s:1000;e:Power3.easeInOut;s:1000;e:Power3.easeInOut;', 
+              data-start='1900', 
+              data-fontsize="['16','16','14','12']", 
+              data-lineheight="['24','24','18','16']", 
+              data-responsive_offset='on')
+              p Augue cubilia habitasse nostra sed dui facilisi lacus varius, porttitor gravida ultrices tristique hendrerit quisque congue facilisis...
+            .tp-caption(
+              data-x="['left']", 
+              data-hoffset="['0']", 
+              data-y='bottom', 
+              data-voffset="['175','175','175','175']", 
+              data-transform_idle='o:1;', 
+              data-transform_in='x:100px;opacity:0;s:800;e:Power3.easeOut;', 
+              data-transform_out='s:1000;e:Power3.easeInOut;s:1000;e:Power3.easeInOut;', 
+              data-start='2100')
+              a.btn-blue(href='#') GET QUOTE
+          li
+            img.rev-slidebg(
+              src='images/home01-slide-bg.jpg', 
+              alt='demo', 
+              data-bgposition='center center', 
+              data-bgfit='cover', 
+              data-bgrepeat='no-repeat')
+            .tp-caption.tp-resizeme(
+              data-x='right',
+              data-hoffset='',
+              data-y='bottom',
+              data-voffset='',
+              data-transform_idle='o:1;',
+              data-transform_in='x:550px;opacity:0;s:800;e:Power3.easeOut;',
+              data-transform_out='s:1000;e:Power3.easeInOut;s:1000;e:Power3.easeInOut;',
+              data-start='1000',
+              data-responsive_offset='on')
+              img.img-responsive.hidden-sm.hidden-xs(src='images/home01-slide-e2.png', alt='Image')
+            .tp-caption.tp-resizeme.sh1(
+              data-x="['left']", 
+              data-hoffset="['0']", 
+              data-y='top', 
+              data-voffset='200', 
+              data-width="['580','580','480','320']", 
+              data-transform_idle='o:1;', 
+              data-transform_in='x:100px;opacity:0;s:800;e:Power3.easeOut;', 
+              data-transform_out='s:1000;e:Power3.easeInOut;s:1000;e:Power3.easeInOut;', 
+              data-start='1500', data-whitespace="['nowrap','nowrap','nowrap','normal']", 
+              data-fontsize="['14','14','14','14']", 
+              data-responsive_offset='on')
+              p WE'RE CONSULTAX
+            .tp-caption.tp-resizeme.sh2(
+              data-x="['left']", 
+              data-hoffset="['0']", 
+              data-y='center', 
+              data-voffset="['-55','-55','-55','-55']", 
+              data-width="['670','580','480','320']", 
+              data-transform_idle='o:1;', 
+              data-transform_in='x:100px;opacity:0;s:800;e:Power3.easeOut;', 
+              data-transform_out='s:1000;e:Power3.easeInOut;s:1000;e:Power3.easeInOut;', 
+              data-start='1700', 
+              data-whitespace="['normal']", 
+              data-fontsize="['50','50','40','30']", 
+              data-lineheight="['60','60','50','40']", 
+              data-responsive_offset='on')
+              p Financial Consulting For Your Business
+            .tp-caption.tp-resizeme.sh3(
+              data-x="['left']", 
+              data-hoffset="['0']", 
+              data-y='center', 
+              data-voffset="['60','60','60','60']", 
+              data-width="['580','580','480','300']", 
+              data-transform_idle='o:1;', 
+              data-whitespace="['normal','normal','normal','normal']", 
+              data-transform_in='x:100px;opacity:0;s:800;e:Power3.easeOut;', 
+              data-transform_out='s:1000;e:Power3.easeInOut;s:1000;e:Power3.easeInOut;', 
+              data-start='1900', 
+              data-fontsize="['16','16','14','12']", 
+              data-lineheight="['24','24','18','16']", 
+              data-responsive_offset='on')
+              p Augue cubilia habitasse nostra sed dui facilisi lacus varius, porttitor gravida ultrices tristique hendrerit quisque congue facilisis...
+            .tp-caption(
+              data-x="['left']", 
+              data-hoffset="['0']", 
+              data-y='bottom', 
+              data-voffset="['175','175','175','175']", 
+              data-transform_idle='o:1;', 
+              data-transform_in='x:100px;opacity:0;s:800;e:Power3.easeOut;', 
+              data-transform_out='s:1000;e:Power3.easeInOut;s:1000;e:Power3.easeInOut;', 
+              data-start='2100')
+              a.btn-blue(href='#') GET QUOTE
   //- who we are
   .home01-wwa.ssp
     .container
@@ -82,6 +230,30 @@ append content
             p OUR PROJECT
             h3 We are leader
             a(href="#") All projects
+    .js-slick-project-home01.slick-project-home01
+      .slick-project__item
+        .overlay-white
+        img(src="images/home01-project-01.jpg" alt='demo')
+      .slick-project__item
+        .overlay-white
+        img(src="images/home01-project-02.jpg" alt='demo')
+      .slick-project__item
+        .overlay-white
+        img(src="images/home01-project-03.jpg" alt='demo')
+    .container
+      .home01-projects__content
+        .home01-projects__logo
+          img(src="images/home-01-project-logo.png" alt='demo')
+          p Contract project: August 27, 2018
+        .home01-projects__desc
+          h4 Planning the development for the viral world
+          p Fames integer pretium commodo sed orci magnis euismod a, fusce felis leo habitant ridiculus auctor nisl id, cras nisi porta mus enim dapibus aenean.
+          a(href="#").read-more View details
+          .group-control.group-slider-control01
+            .control.js-btn-prev__project
+              i.fa.fa-angle-left
+            .control.js-btn-next__project
+              i.fa.fa-angle-right
   //- call to action
   .home01-cta
     .overlay
@@ -284,28 +456,29 @@ append content
                 p.testimonial__desc.testimonial1__desc
                   | I am so happy, my dear friend, so absorbed in the exquisite sense of mere tranquil existence, that I neglect my talents.
   //- brand
-  .brand.bg-blue-light.ssb
+  .brand.bg-blue-light
     .container
-      .row
-        .slider.js-brand-slider.brand-slider
-          .brand__item
-            a(href="#")
-              img(src="images/brand01.png", alt="demo")
-          .brand__item
-            a(href="#")
-              img(src="images/brand02.png", alt="demo")
-          .brand__item
-            a(href="#")
-              img(src="images/brand03.png", alt="demo")
-          .brand__item
-            a(href="#")
-              img(src="images/brand04.png", alt="demo")
-          .brand__item
-            a(href="#")
-              img(src="images/brand05.png", alt="demo")
+      .slider.js-brand-slider.brand-slider
+        .brand__item
+          a(href="#")
+            img(src="images/brand01.png", alt="demo")
+        .brand__item
+          a(href="#")
+            img(src="images/brand02.png", alt="demo")
+        .brand__item
+          a(href="#")
+            img(src="images/brand03.png", alt="demo")
+        .brand__item
+          a(href="#")
+            img(src="images/brand04.png", alt="demo")
+        .brand__item
+          a(href="#")
+            img(src="images/brand05.png", alt="demo")
   //- footer
   include modules/footer/footer01.pug 
-  append script
-    script(defer src="js/slick-testimonial-01.min.js")
-    script(defer src="js/brand-carousel.min.js")
-    
+  +lib
+  script(defer src="js/main-slider-home01.min.js")
+  script(defer src="js/slick-testimonial-01.min.js")
+  script(defer src="js/slick-project-home01.min.js")
+  script(defer src="js/brand-carousel.min.js")
+

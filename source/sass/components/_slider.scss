@@ -1,0 +1,114 @@
+//
+// Components :: Slider
+// --------------------------------------------------
+.sh1 {
+  opacity: .9;
+  letter-spacing: 2px;
+  font-weight: 900;
+  font-family: $hfont;
+  color: $mcolor;
+}
+
+.sh2 {
+  font-weight: 900;
+  font-family: $hfont;
+  color: $mcolor;
+}
+
+.sh3 {
+  font-size: 16px;
+}
+
+.sh1--white {
+  @extend .sh1;
+  color: $white;
+}
+
+.sh2--white {
+  @extend .sh2;
+  color: $white;
+}
+
+.sh3--white {
+  @extend .sh3;
+  color: $white;
+}
+
+.sh1--dark {
+  @extend .sh1;
+  color: $dmcolor;
+}
+
+.sh2--dark {
+  @extend .sh2;
+  color: $dmcolor;
+}
+
+.sh3--dark {
+  @extend .sh3;
+  color: $dmcolor;
+}
+
+.slider-home-03 {
+  .btn-play-video {
+    border: 2px solid $white;
+    background-color: $scolor;
+    color: $white;
+    width: 50px;
+    height: 50px;
+    text-align: center;
+    font-size: 30px;
+    display: block;
+    border-radius: 50%;
+    cursor: pointer;
+
+    i {
+      line-height: 46px;
+    }
+  }
+
+  .video-desc {
+    color: $white;
+    font-weight: 900;
+  }
+  
+  .btn-close-video {
+    font-size: 30px;
+    color: $white;
+  }
+}
+
+
+.slider-home-05 {
+  width: 100vw;
+  overflow: hidden;
+}
+
+.slider-home-07 {
+  max-height: 700px;
+}
+
+.slider-home-08 {
+  .btn-play-video {
+    color: $white;
+    font-size: 14px;
+    font-weight: 900;
+    font-family: $hfont;
+
+    i {
+      color: $scolor;
+      font-size: 30px;
+      padding-right: 8px;
+    }
+  }
+
+  ul.list-social02 {
+    display: flex;
+    flex-direction: column;
+    width: 30px;
+
+    li {
+      margin: 0;
+    }
+  }
+}
