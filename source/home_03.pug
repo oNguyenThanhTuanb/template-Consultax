@@ -297,18 +297,84 @@ append content
   .home03-wcu.ssp
     .container
       .row
-        .home03-wcu__inner
-          .main-title
-            p FEATURE
-            h3 Why Choose Us
+        .col-md-6
+          .home03-feature-img
+            img(src="images/img_feature_03.jpg")
+        .col-md-6
+          .home03-wcu__inner
+            .main-title
+              p FEATURE
+              h3 Why Choose Us
+            .main-content
+                #accordion.panel-group(role='tablist', aria-multiselectable='true')
+                  .panel.panel-default
+                    #headingOne.panel-heading(role='tab')
+                      h4.panel-title
+                        a(role='button', data-toggle='collapse', data-parent='#accordion', href='#collapseOne', aria-expanded='true', aria-controls='collapseOne')
+                          span.icon-block.icon.ion-ribbon-b
+                          span.text-item
+                            | responsive all devices
+                    #collapseOne.panel-collapse.collapse.in(role='tabpanel', aria-labelledby='headingOne')
+                      .panel-body
+                        | Montes sapien potenti congue vulputate faucibus erat sed  sociis, litora varius tortor magnis non etiam purus libero laore, commodo ultrices aliquam molestie mus risus vehicula pharetra.
+                  .panel.panel-default
+                    #headingTwo.panel-heading(role='tab')
+                      h4.panel-title
+                        a.collapsed(role='button', data-toggle='collapse', data-parent='#accordion', href='#collapseTwo', aria-expanded='false', aria-controls='collapseTwo')
+                          span.icon-block.icon.ion-ribbon-b
+                          span.text-item
+                            | support online 24/7
+                    #collapseTwo.panel-collapse.collapse(role='tabpanel', aria-labelledby='headingTwo')
+                      .panel-body
+                        | Montes sapien potenti congue vulputate faucibus erat sed  sociis, litora varius tortor magnis non etiam purus libero laore, commodo ultrices aliquam molestie mus risus vehicula pharetra.
+                  .panel.panel-default
+                    #headingThree.panel-heading(role='tab')
+                      h4.panel-title
+                        a.collapsed(role='button', data-toggle='collapse', data-parent='#accordion', href='#collapseThree', aria-expanded='false', aria-controls='collapseThree')
+                          span.icon-block.icon.ion-ribbon-b
+                          span.text-item
+                            | smart setting
+                    #collapseThree.panel-collapse.collapse(role='tabpanel', aria-labelledby='headingThree')
+                      .panel-body
+                        | Montes sapien potenti congue vulputate faucibus erat sed  sociis, litora varius tortor magnis non etiam purus libero laore, commodo ultrices aliquam molestie mus risus vehicula pharetra.
+
   //- counter
-  .home03-counter.ssp
+  .home03-counter.home-counter.ssp
     .container
       .row
         .home03-counter__inner
           .main-title
             p ACHIEVEMENTS & STATISTICS
             h3 Our 25 years of operation
+          .main-content
+            .row
+              .col-md-4
+                .content-block
+                  .top-block
+                    span.number
+                      | 750 +
+                  .bottom-block
+                    span.icon-block.icon.ion-ios-people
+                    span.text-block
+                     | 350 clients in the world  
+              .col-md-4
+                .content-block
+                  .top-block
+                    span.number
+                      | 1080 +
+                  .bottom-block
+                    span.icon-block.icon.ion-ribbon-b
+                    span.text-block
+                     | 1080 the project had finished 
+              .col-md-4
+                .content-block
+                  .top-blocks
+                    span.number
+                      |52 +
+                  .bottom-block
+                    span.icon-block.icon.ion-ios-person
+                    span.text-block
+                     | 52 experts are working         
   //- footer
   include modules/footer/footer02.pug
   +lib
