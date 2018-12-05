@@ -11,6 +11,37 @@
     color: $white;
     box-shadow: 0px 20px 50px 0px rgba(0, 0, 0, 0.3); 
     position: relative;
+
+    .main-content {
+      .content-block {
+        border-radius: 4px;
+        border: 1px solid $grey-lighten-8;
+        text-align: center;
+        padding: 20px;
+        width: 100%;
+        float: left;
+        transition: all 0.2s ease-in-out;
+        &:hover {
+          box-shadow: 1px 2px 20px $grey-lighten-7;
+        }
+      }
+
+      .icon-block {
+        font-size: 40px;
+        color: $scolor;
+        width: 100%;
+        float: left;
+      }
+
+      .text-block {
+        padding-bottom: 15px;
+        padding-top: 15px;
+        color: $grey-lighten-9;
+        width: 100%;
+        float: left;
+        font-size: 14px;
+      }
+    }
   }
 
   &__cover {

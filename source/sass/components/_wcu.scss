@@ -1,0 +1,66 @@
+.home03-wcu {
+    .main-title {
+        margin-top: 30px;
+    }
+    .panel {
+      box-shadow: none;
+      margin-bottom: 0;
+    }
+    .heading-panel {
+      box-shadow: none;
+      border-bottom: 1px solid $blue-light;
+      .icon-block {
+          font-size: 18px;
+      }
+      a {
+        padding: 10px;
+        display: block;
+        position: relative;
+        .icon-plus {
+          display: none;
+        }
+        .icon-minus {
+          color: $scolor;
+        }
+        .icon-minus,
+        .icon-plus {
+          position: absolute;
+          right: 10px;
+          top: 10px;
+          bottom: 0;
+        }
+        &.collapsed {
+          .icon-minus {
+            display: none;
+          }
+          .icon-plus {
+            display: block;
+          }
+        }
+      }
+      a:hover,
+      a:focus,
+      a:active {
+        text-decoration: none;
+      }
+    }
+    .panel.first {
+        .heading-panel {
+          border-top: 1px solid $blue-light;
+        }
+    }
+    .panel-title {
+      .text-item {
+        padding-left: 10px;
+        text-decoration: none;
+        text-transform: capitalize;
+        font-size: 14px;
+        font-weight: bold;
+      }
+    }
+    .panel-body {
+      background-color: $blue-light;
+      padding: 30px 40px;
+    }
+}
+  

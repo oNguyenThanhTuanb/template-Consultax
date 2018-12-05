@@ -52,6 +52,11 @@
   }
   
   /*home1 feature*/
+  .home01-feature {
+    position: relative;
+    margin-top: -80px;
+  }
+
   .home1_feature {
     .content-block {
         box-shadow: 1px 2px 20px $grey-lighten-7;
@@ -93,6 +98,8 @@
     }
     .content-block:hover {
         background-image: url('../images/h2_services_bg.jpg');
+        background-repeat: no-repeat;
+        background-size: cover;
     }
   
     .content-block:hover .title,
@@ -332,4 +339,3 @@
       align-items: center;
     }
   }
-  
