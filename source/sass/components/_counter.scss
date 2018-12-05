@@ -14,6 +14,7 @@
 		font-weight: bold;
 		color: $scolor;
 		font-family: "Open Sans",sans-serif;
+		transition: all 0.2s ease-in-out;
 	}
 	.icon-block {
 		float: right;
@@ -27,6 +28,7 @@
 		display: flex;
 		justify-content: center;
 		align-items: center;
+		transition: all 0.2s ease-in-out;
 	}
 	.text-block {
 		clear: both;
@@ -36,6 +38,7 @@
 		font-size: 16px;
 		font-family: "Montserrat", sans-serif;
 		font-weight: bold;
+		transition: all 0.2s ease-in-out;
 	}
 }
 .home02-counter {
@@ -72,7 +75,37 @@
 }
 .home03-counter {
 	.content-block {
-		background-color: $blue-lighter-3;
+		background-color: $blue-light;
+		transition: all 0.2s ease-in-out;
+		position: relative;
+		overflow: hidden;
+		
+		.content-center {
+			position: relative;
+			z-index: 1;
+		}
+
+		&:before {
+			content: "";
+			background-color: rgba(0,56,122,0.7);
+			position: absolute;
+			width: 100%;
+			height: 100%;
+			top: 0;
+			left: 0;
+			visibility: hidden;
+		}
+		&:hover {
+			transition: all 0.2s ease-in-out;
+			background: url("../images/home03_bg_counter.jpg") no-repeat;
+			background-size: cover;
+			&::before { 
+				visibility: visible;
+			}
+			.text-block {
+				color: $white;
+			}
+		}
 		.icon-block { 
 			background-color: $white;
 		}
