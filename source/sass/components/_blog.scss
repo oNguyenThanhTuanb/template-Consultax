@@ -76,7 +76,7 @@
   }
 
   &:hover {
-    box-shadow: 0px 0px 40px 0px rgba(0, 0, 0, 0.1);
+    box-shadow: 0px 0px 40px 0px rgba(0, 0, 0, 0.1); 
   }
 }
 
@@ -256,7 +256,7 @@
   }
 
   &:hover {
-    box-shadow: 0px 0px 40px 0px rgba(0, 0, 0, 0.1);
+    box-shadow: 0px 0px 40px 0px rgba(0, 0, 0, 0.1); 
   }
 }
 
@@ -319,39 +319,16 @@
     }
 
     .post__meta-info {
-      justify-content: flex-start;
-      margin-bottom: 30px;
       .read-more {
-        padding: 10px 20px;
-        background-color: $scolor;
-        text-decoration: none;
+        color: #a1a1a1;
+        font-weight: bold;
+        font-size: 12px;
         font-family: $hfont;
-        color: $white;
-        text-transform: uppercase;
-        border-radius: $border_radius_base - 2px;
-        font-weight: 600;
+        text-decoration: underline;
         transition: $transition-base;
-        &:hover, &:focus {
-          border-color: #ed560e;
-          background-color: #ed560e;
-          text-decoration: none;
-          color: $white;
-        }
-      }
-      .blog-page {
-        padding: 10px 20px;
-        text-decoration: none;
-        font-family: $hfont;
-        color: $black;
-        text-transform: uppercase;
-        border: 1px solid #e3e3e3;
-        border-radius: $border_radius_base - 2px;
-        margin-left: 20px;
-        font-weight: 600;
-        transition: $transition-base;
-        &:hover, &:focus {
-          border-color: $black;
-          text-decoration: none;
+
+        &:hover {
+          color: $scolor;
         }
       }
     }
