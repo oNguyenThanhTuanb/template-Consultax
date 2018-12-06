@@ -3,6 +3,118 @@ include modules/script/lib
 append head
   title="Index - HomePage 07"
 append header
+  .home07__topbar
+    .container
+      .home04__topbar-inner
+        .left
+          span
+            i.fa.fa-map-marker
+            | London City, England ( 
+            a(href="#") View map 
+            | )
+          a(href="tel:+911  125 814 - 3527") 
+            i.fa.fa-phone
+            | +911  125 814 - 3527
+        span
+          i.fa.fa-clock-o
+          | Mon to Fri  / 08:00 am  -  05:00pm
+  .header04
+    .container
+      .header04__inner
+        .header04__logo
+          img(src="images/logo-bg-white.png", alt="demo")
+        .header04__menu
+          ul.navi-level-1.dark
+            li
+              a(href="#") HOME
+                i.fa.fa-caret-down
+              ul.navi-level-2
+                li
+                  a(href='index.html') Home Version  1
+                li
+                  a(href='home_02.html') Home Version  2
+                li
+                  a(href='home_03.html') Home Version  3
+                li
+                  a(href='home_04.html') Home Version  4
+                li
+                  a(href='home_05.html') Home Version  5
+                li
+                  a(href='home_06.html') Home Version  6
+                li
+                  a(href='home_07.html') Home Version  7
+                li
+                  a(href='home_08.html') Home Version  8
+            li
+              a(href="#") ABOUT
+                i.fa.fa-caret-down               
+            li
+              a(href="#") PAGES
+                i.fa.fa-caret-down 
+              ul.navi-level-2
+                li
+                  a(href='#') Shop
+                    i.fa.fa-caret-right
+                  ul.navi-level-3
+                    li
+                      a(href='#') Shop 2
+                    li
+                      a(href='#') Shop 3
+                li
+                  a(href='#') Event
+                    i.fa.fa-caret-right
+                  ul.navi-level-3
+                    li
+                      a(href='#') Event 2
+                    li
+                      a(href='#') Event 3
+                li
+                  a(href='#') Case Study
+                    i.fa.fa-caret-right
+                  ul.navi-level-3
+                    li
+                      a(href='#') Event 2
+                    li
+                      a(href='#') Event 3
+                li
+                  a(href='home_04.html') Coming Soon
+                li
+                  a(href='home_05.html') 404 Error              
+            li
+              a(href="#") SERVICES 
+                i.fa.fa-caret-down                          
+            li
+              a(href="#") BLOG
+                i.fa.fa-caret-down
+              ul.navi-level-2
+                li
+                  a(href='#') Blog Default
+                li
+                  a(href='#') Blog Grid
+                    i.fa.fa-caret-right
+                  ul.navi-level-3
+                    li
+                      a(href='#') Blog Grid No SideBar
+                    li
+                      a(href="#") Blog Grid with Left Sidebar
+                    li
+                      a(href="#") Blog Grid with Right Sidebar
+                li
+                  a(href='#') Blog List
+                li
+                  a(href='#') Single Blog
+            li
+              a(href="#") CONTACTS
+          .header04__control
+            a(href='#').header01-btn-cart
+              i.fa.fa-shopping-cart(aria-hidden='true')
+            .header01-search
+              a.header01-btn-search.btn-search-navi(href='#/')
+                i.fa.fa-search(aria-hidden='true')
+              .search-popup
+                form.form-search-navi
+                  .input-group
+                    input.form-control(placeholder='Enter keyword...', type='text')
 append content
   section
     .slider-home-07.rev_slider_wrapper.fullwidthbanner-container
@@ -419,10 +531,11 @@ append content
               span.text-copyright © 2018 Finacial Consulting Theme by Ocean Themes
   #js-footer07__map.js-footer07__map
   +lib
-  script(src="js/slick-project-home07.min.js")
+  script(defer src="js/slick-project-home07.min.js")
   script(defer src="js/slick-testimonial-home07.min.js")   
-  script(src="js/extention/maplace.min.js")  
   script(defer src="js/main-slider-home01.min.js")
+  script(defer src="js/main-menu-desktop.min.js")
+  script(src="js/extention/maplace.min.js")  
   script(src='https://maps.googleapis.com/maps/api/js?key=AIzaSyBS5224HISbnpAiKW7mx6eyTrHxfGeCftk')
   script(type='text/javascript').
     var LocsA = [

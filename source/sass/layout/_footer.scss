@@ -101,7 +101,10 @@
 }
 
 .footer02__slider-address01 {
+  padding: 0 100px;
+
   .footer02__slider-address01-item {
+    
     p {
       margin-bottom: 0;
       font-size: 12px;
@@ -125,6 +128,33 @@
     a {
       color: $scolor;
     }
+  }
+
+  .slick-prev, .slick-next {
+    width: 45px;
+    height: 45px;
+    background-color: rgba(255, 255, 255, .2);
+    border-radius: 3px;
+  }
+
+  .slick-next {
+    right: 0;
+  }
+
+  .slick-prev {
+    left: 0;
+  }
+
+  .slick-prev:before {
+    content: "\f104";
+    font-family: 'FontAwesome';
+    font-size: 30px;
+  }
+
+  .slick-next:before {
+    content: "\f105";
+    font-family: 'FontAwesome';
+    font-size: 30px;
   }
 }
 

@@ -3,9 +3,177 @@ include modules/script/lib
 append head
   title="Index - HomePage 06"
 append header
+  .header06
+    .container.container-lg
+      .header06__inner
+        .header06__logo
+          img(src="images/logo-white.png", alt="demo")
+        .header06__menu
+          ul.navi-level-1
+            li
+              a(href="#") HOME
+                i.fa.fa-caret-down
+              ul.navi-level-2
+                li
+                  a(href='index.html') Home Version  1
+                li
+                  a(href='home_02.html') Home Version  2
+                li
+                  a(href='home_03.html') Home Version  3
+                li
+                  a(href='home_04.html') Home Version  4
+                li
+                  a(href='home_05.html') Home Version  5
+                li
+                  a(href='home_06.html') Home Version  6
+                li
+                  a(href='home_07.html') Home Version  7
+                li
+                  a(href='home_08.html') Home Version  8
+            li
+              a(href="#") ABOUT
+                i.fa.fa-caret-down               
+            li
+              a(href="#") PAGES
+                i.fa.fa-caret-down 
+              ul.navi-level-2
+                li
+                  a(href='#') Shop
+                    i.fa.fa-caret-right
+                  ul.navi-level-3
+                    li
+                      a(href='#') Shop 2
+                    li
+                      a(href='#') Shop 3
+                li
+                  a(href='#') Event
+                    i.fa.fa-caret-right
+                  ul.navi-level-3
+                    li
+                      a(href='#') Event 2
+                    li
+                      a(href='#') Event 3
+                li
+                  a(href='#') Case Study
+                    i.fa.fa-caret-right
+                  ul.navi-level-3
+                    li
+                      a(href='#') Event 2
+                    li
+                      a(href='#') Event 3
+                li
+                  a(href='home_04.html') Coming Soon
+                li
+                  a(href='home_05.html') 404 Error              
+            li
+              a(href="#") SERVICES 
+                i.fa.fa-caret-down                          
+            li
+              a(href="#") BLOG
+                i.fa.fa-caret-down
+              ul.navi-level-2
+                li
+                  a(href='#') Blog Default
+                li
+                  a(href='#') Blog Grid
+                    i.fa.fa-caret-right
+                  ul.navi-level-3
+                    li
+                      a(href='#') Blog Grid No SideBar
+                    li
+                      a(href="#") Blog Grid with Left Sidebar
+                    li
+                      a(href="#") Blog Grid with Right Sidebar
+                li
+                  a(href='#') Blog List
+                li
+                  a(href='#') Single Blog
+            li
+              a(href="#") CONTACTS
+          .header06__control
+            .header01-search
+              a.header01-btn-search.btn-search-navi(href='#/')
+                i.fa.fa-search(aria-hidden='true')
+              .search-popup
+                form.form-search-navi
+                  .input-group
+                    input.form-control(placeholder='Enter keyword...', type='text')
+            a(href='#').header01-btn-cart
+              i.fa.fa-shopping-cart(aria-hidden='true')
+          a(href="tel:09447644545").header06__btn-call
+            span.icon.ion-ios-telephone
+            div
+              p FREE
+              p CONSULTATION
 append content
+  section
+    .slider-home-01.rev_slider_wrapper.fullwidthbanner-container
+      // START REVOLUTION SLIDER 5.0.7 auto mode
+      #js-slider-home01.rev_slider.fullwidthabanner(style='display:none;', data-version="5.4.1")
+        ul
+          li
+            img.rev-slidebg(
+              src='images/home04-slide-bg.jpg', 
+              alt='demo', 
+              data-bgposition='center center', 
+              data-bgfit='cover', 
+              data-bgrepeat='no-repeat')
+            .tp-caption.tp-resizeme.sh1--dark(
+              data-x="['left']", 
+              data-hoffset="['0']", 
+              data-y='top', 
+              data-voffset='200', 
+              data-width="['580','580','480','320']", 
+              data-transform_idle='o:1;', 
+              data-transform_in='x:100px;opacity:0;s:800;e:Power3.easeOut;', 
+              data-transform_out='s:1000;e:Power3.easeInOut;s:1000;e:Power3.easeInOut;', 
+              data-start='1500', data-whitespace="['nowrap','nowrap','nowrap','normal']", 
+              data-fontsize="['14','14','14','14']", 
+              data-responsive_offset='on')
+              p WE'RE CONSULTAX
+            .tp-caption.tp-resizeme.sh2--dark(
+              data-x="['left']", 
+              data-hoffset="['0']", 
+              data-y='center', 
+              data-voffset="['-55','-55','-55','-55']", 
+              data-width="['670','580','480','320']", 
+              data-transform_idle='o:1;', 
+              data-transform_in='x:100px;opacity:0;s:800;e:Power3.easeOut;', 
+              data-transform_out='s:1000;e:Power3.easeInOut;s:1000;e:Power3.easeInOut;', 
+              data-start='1700', 
+              data-whitespace="['normal']", 
+              data-fontsize="['50','50','40','30']", 
+              data-lineheight="['60','60','50','40']", 
+              data-responsive_offset='on')
+              p Your success is our pleasure
+            .tp-caption.tp-resizeme.sh3--dark(
+              data-x="['left']", 
+              data-hoffset="['0']", 
+              data-y='center', 
+              data-voffset="['60','60','60','60']", 
+              data-width="['580','580','480','300']", 
+              data-transform_idle='o:1;', 
+              data-whitespace="['normal','normal','normal','normal']", 
+              data-transform_in='x:100px;opacity:0;s:800;e:Power3.easeOut;', 
+              data-transform_out='s:1000;e:Power3.easeInOut;s:1000;e:Power3.easeInOut;', 
+              data-start='1900', 
+              data-fontsize="['16','16','14','12']", 
+              data-lineheight="['24','24','18','16']", 
+              data-responsive_offset='on')
+              p Augue cubilia habitasse nostra sed dui facilisi lacus varius, porttitor gravida ultrices tristique hendrerit quisque congue facilisis...
+            .tp-caption(
+              data-x="['left']", 
+              data-hoffset="['0']", 
+              data-y='bottom', 
+              data-voffset="['175','175','175','175']", 
+              data-transform_idle='o:1;', 
+              data-transform_in='x:100px;opacity:0;s:800;e:Power3.easeOut;', 
+              data-transform_out='s:1000;e:Power3.easeInOut;s:1000;e:Power3.easeInOut;', 
+              data-start='2100')
+              a.btn-white(href='#') ABOUT US
+  //- feature
   .home06home1_feature
-    .container
+    .container.container-lg
       .home6-feature.block-icon-home
         .row
           .col-sm-4
@@ -35,7 +203,7 @@ append content
   //- about us
   .home06__about
     .home06__about-inner
-      .container
+      .container.container-lg
         .row
           .col-md-6
             .main-title
@@ -49,7 +217,7 @@ append content
               a(href="#").btn-white--outline ABOUT US
   //- services
   .home06-services.ssp.bg-blue-light
-    .container
+    .container.container-lg
       .row
         .main-title
           p MAIN SERVICES
@@ -83,7 +251,7 @@ append content
                 a.links-read-more(href='#') Read more      
   //- cta
   .home06-cta-01
-    .container
+    .container.container-lg
       .row
         .col-md-6
           .main-title--white
@@ -109,7 +277,7 @@ append content
                   button.btn-orange SUBMIT
   //- testimonials
   .home06-testimonials
-    .container
+    .container.container-lg
       .main-title
         p TESTIMONIAL & PARTNER
         h3 What our clients say
@@ -195,7 +363,7 @@ append content
                       i.icon.ion-ios-star-half
   //- brand
   .brand.brand-slider-home04
-    .container
+    .container.container-lg
       .title02
         h3 OUR PARTNER
       .slider.js-brand-slider.brand-slider
@@ -216,7 +384,7 @@ append content
             img(src="images/brand05.png", alt="demo")
   //- blog
   .home06-blog.ssp.bg-blue-light
-    .container
+    .container.container-lg
       .row
         .main-title
           p OUR BLOG
@@ -257,7 +425,7 @@ append content
                 a.read-more(href='#') Read More
   //- team
   .home02-team.ssp
-    .container
+    .container.container-lg
       .main-title
         p OUR TEAM
         h3 Meet our team
@@ -380,6 +548,8 @@ append content
   //- footer
   include modules/footer/footer01.pug
   +lib
+  script(defer src="js/main-slider-home01.min.js")
   script(defer src="js/slick-team-home02.min.js")
   script(defer src="js/brand-carousel.min.js")
   script(defer src="js/slick-testimonial-home06.min.js")
+  script(defer src="js/main-menu-desktop.min.js")
