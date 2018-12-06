@@ -2,7 +2,7 @@
 // Components :: Who We Are
 // --------------------------------------------------
 .home01-wwa {
-
+  
 }
 
 .home01-wwa {
@@ -169,7 +169,7 @@
 .home04-wwa__description-inner {
   padding-left: 45px;
   position: relative;
-
+  
   .rotate-title {
     top: 10px;
   }
@@ -223,7 +223,7 @@
 
 .home07-services {
   padding-top: 175px;
-  padding-bottom: 175px;
+  margin-bottom: 300px;
 
   &__inner {
     position: relative;
@@ -247,7 +247,7 @@
   .services__menu {
     position: absolute;
     right: 0;
-    top: -276px;
+    top: 0;
     width: 370px;
   }
 }

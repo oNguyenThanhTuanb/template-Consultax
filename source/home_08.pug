@@ -171,36 +171,19 @@ append content
               li
                 a(href="#").linkedin
                   i.fa.fa-linkedin
-  .home08-wwa.ssp
-    .container
-      .row
-        .col-md-5
-          .home04-wwa__description-inner
-            p.rotate-title WHO WE ARE
-            .main-title
-              h3 Our Mission 
-                br
-                | Values and Motto
-              span Porta dictum imperdiet inceptos sodales quam felis luctus ac molestie magna semper, tristique congue sociis libero nibh pretium per gravida varius praesent montes, tincidunt facilisis donec curabitur dapibus id hac mattis.
-            .home02-wwa__signature
-              p.text-signature Patterson 
-              p.name James Patterson
-              p.job-title Founder & CEO
-        .col-md-7
-          .home08-wwa-img
-            img(src="images/bg-wwa-right.jpg")
   //-home08 services
-  .home08-services.section
+  .home08-services.ssp.section
     .home08-services__top
-      .container
-        .main-title
-          p our services
-          h3 what we bring to you
+      .container  
+        .row
+          .main-title
+            p our services
+            h3 what we bring to you
     .home08-services__bottom
       .container
-        .home8-sevives
-          .sevives-items
-            .js-slick-sevives-home08
+        .row
+          .home8-sevives
+            .sevives-items.d-flex
               .sevives-item.sevives-item-1
                 .sevives-top
                   h4 Audit & Assurance
@@ -225,137 +208,30 @@ append content
                 .sevives-bottom
                   span.image-icon
                     img(src='images/h8_services_icon4.png').image-item
-              .sevives-item.sevives-item-1
-                .sevives-top
-                  h4 Audit & Assurance
-                .sevives-bottom
-                  span.image-icon
-                    img(src='images/h8_services_icon1.png').image-item
-              .sevives-item.sevives-item-2
-                .sevives-top
-                  h4 Trades & Stocks
-                .sevives-bottom
-                  span.image-icon
-                    img(src='images/h8_services_icon2.png').image-item
-              .sevives-item.sevives-item-3
-                .sevives-top
-                  h4 Strategic Planning
-                .sevives-bottom
-                  span.image-icon
-                    img(src='images/h8_services_icon3.png').image-item
-              .sevives-item.sevives-item-4
-                .sevives-top
-                  h4 Financial Projections
-                .sevives-bottom
-                  span.image-icon
-                    img(src='images/h8_services_icon4.png').image-item
-          .sevives-items-bottom.d-flex
-            a(href="#").view-all-link 
-              | all services
-            .group-control.group-slider-control07
-              .control.js-btn-prev__sevives
-                i.fa.fa-angle-left
-              .control.js-btn-next__sevives
-                i.fa.fa-angle-right            
-  //-testimonial
-  .section.home08-testimonial.ssp
+  //- blog
+  .section
     .container
-      .testimonial.testimonial8
-        .main-title--vertical
-          p 
-           | What our clients tsay
-        .testimonial8__content
-          .group-control.group-slider-control06
-            .control.js-btn-prev__testimonial
-              i.fa.fa-angle-left
-            .control.js-btn-next__testimonial
-              i.fa.fa-angle-right
-          .js-slick-testimonial-home08
-            .testimonial8-item
-              .testimonial8__top
-                p.testimonial__desc.testimonial8__desc
-                  | “ I am alone, and feel the charm of existence in this spot, which was created for the bliss of souls like mine. ”
-              .testimonial8__bottom.d-flex
-                .testimonial8__avatar
-                  img(src="images/h8_avatar.png" alt="")
-                .testimonial8__bottom-right
-                  span.testimonial8__star.testimonial__star
-                    i.icon.ion-ios-star
-                    i.icon.ion-ios-star
-                    i.icon.ion-ios-star
-                    i.icon.ion-ios-star
-                    i.icon.ion-ios-star-half
-                  .testimonial8__info
-                    h3.testimonial-title.pull-left Caroline Cummings
-                    p.testimonial-from.pull-left from Berlin
-            .testimonial8-item
-              .testimonial8__top
-                p.testimonial__desc.testimonial8__desc
-                  | “ I am alone, and feel the charm of existence in this spot, which was created for the bliss of souls like mine. ”
-              .testimonial8__bottom.d-flex
-                .testimonial8__avatar
-                  img(src="images/h8_avatar.png" alt="")
-                .testimonial8__bottom-right
-                  span.testimonial8__star.testimonial__star
-                    i.icon.ion-ios-star
-                    i.icon.ion-ios-star
-                    i.icon.ion-ios-star
-                    i.icon.ion-ios-star
-                    i.icon.ion-ios-star-half
-                  .testimonial8__info
-                    h3.testimonial-title.pull-left Caroline Cummings
-                    p.testimonial-from.pull-left from Berlin    
-            .testimonial8-item
-              .testimonial8__top
-                p.testimonial__desc.testimonial8__desc
-                  | “ I am alone, and feel the charm of existence in this spot, which was created for the bliss of souls like mine. ”
-              .testimonial8__bottom.d-flex
-                .testimonial8__avatar
-                  img(src="images/h8_avatar.png" alt="")
-                .testimonial8__bottom-right
-                  span.testimonial8__star.testimonial__star
-                    i.icon.ion-ios-star
-                    i.icon.ion-ios-star
-                    i.icon.ion-ios-star
-                    i.icon.ion-ios-star
-                    i.icon.ion-ios-star-half
-                  .testimonial8__info
-                    h3.testimonial-title.pull-left Caroline Cummings
-                    p.testimonial-from.pull-left from Berlin    
-  //-Subscribe
-  .home08-subscribe
-    .home08-blog
-      .container
-        .post-type-04
-          .post-thumb
-            a(href='#')
-              img(src='images/home08-blog-01.jpg')
-            .post-badge
-              img(src='images/post-icon-highlight.png')
-          .post-content
-            p.post__meta
-              span August 27, 2018
-              span.divider | 
-              a(href='#') Finance
-            h3.post__title
-              a(href='#') Touch New Stamp and Presto, Total Solar 
-              br
-              | Eclipse Becomes Moon
-            .post__meta-info.d-flex
-              a.read-more(href='#') Read More
-              a.blog-page(href='#') Blog Pages
-    .subscribe-content.ssp
-      .container
-        .main-title--vertical
-          p 
-           | never miss out !
-        form
-          input(type="text" name="subscribe" placeholder="Your E-mail address")
-          button.icon.ion-ios-arrow-thin-right
-  //-Address
-  .home08-address
-      .home08-Blog
-        .container
+      .row
+        .col-md-12
+          .post-type-04
+            .post-thumb
+              a(href='#')
+                img(src='images/home08-blog-01.jpg')
+              .post-badge
+                img(src='images/post-icon-highlight.png')
+            .post-content
+              p.post__meta
+                span August 27, 2018
+                span.divider | 
+                a(href='#') Finance
+              h3.post__title
+                a(href='#') Touch New Stamp and Presto, Total Solar 
+                br
+                | Eclipse Becomes Moon
+              .post__meta-info
+                a.read-more(href='#') Read More
+      .row
+        .col-md-12
           .post-type-04
             .post-thumb
               a(href='#')
@@ -367,7 +243,26 @@ append content
                 a(href='#') 007 Mr.Bang, Broughton Rd,  London England
               .post__meta-info
                 a.read-more(href='#') Read More
-                a.blog-page(href='#') Blog Pages
+  .section
+    .container
+      .testimonial.testimonial8
+        .testimonial8__content
+          .testimonial8__top
+            p.testimonial__desc.testimonial8__desc
+              | “ I am alone, and feel the charm of existence in this spot, which was created for the bliss of souls like mine. ”
+          .testimonial8__bottom.d-flex
+            .testimonial8__avatar
+              img(src="images/h8_avatar.png" alt="")
+            .testimonial8__bottom-right
+              span.testimonial8__star.testimonial__star
+                i.icon.ion-ios-star
+                i.icon.ion-ios-star
+                i.icon.ion-ios-star
+                i.icon.ion-ios-star
+                i.icon.ion-ios-star-half
+              .testimonial8__info
+                h3.testimonial-title.pull-left Caroline Cummings
+                p.testimonial-from.pull-left - from Berlin
   .section
     include modules/footer/footer08.pug
   button.btn-scroll-next-section.js-btn-scroll-next-section
@@ -375,8 +270,6 @@ append content
     span SCROLL 
   +lib
   script(defer src="js/main-slider-home08.min.js")
-  script(defer src="js/slick-testimonial-home08.min.js")
-  script(defer src="js/slick-sevives-home08.min.js")
   script.
     $.fn.isInViewport = function() {
       var elementTop = $(this).offset().top;
