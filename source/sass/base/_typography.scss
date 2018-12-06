@@ -155,7 +155,8 @@ a {
   font-weight: 900;
 }
 
-.title02 {
+.title02,
+.title03 {
   position: relative;
   width: 100%;
 
@@ -182,7 +183,12 @@ a {
     background-color: $white;
     font-weight: 900;
     z-index: 2;
-    left: 44px;
     padding: 0 8px;
+  }
+}
+
+.title02 {
+  h3 {
+    left: 44px;
   }
 }
