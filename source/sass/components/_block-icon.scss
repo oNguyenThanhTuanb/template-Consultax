@@ -6,12 +6,12 @@
       float: left;
       width: 100%;
     }
-  
+
     .icon-block {
         font-size: 30px;
         color: $scolor;
     }
-  
+
     .title {
         color: $black;
         font-size: 20px;
@@ -19,7 +19,7 @@
         font-weight: bold;
         transition: all 0.2s ease-in-out;
     }
-  
+
      .desc {
         color: $dark-light-2;
         width: 100%;
@@ -27,7 +27,7 @@
         min-height: 80px;
         transition: all 0.2s ease-in-out;
     }
-  
+
     .links-read-more {
         text-decoration: underline;
         color: $black;
@@ -36,11 +36,11 @@
         font-weight: bold;
         transition: all 0.2s ease-in-out;
     }
-  
+
     .sevives-item {
         margin-bottom: 30px;
     }
-  
+
     .hr_border {
       border-bottom: 1px solid rgba($grey-lighten-7, .6);
       margin-left: -30px;
@@ -50,7 +50,7 @@
       width: calc(100% + 60px);
     }
   }
-  
+
   /*home1 feature*/
   .home01-feature {
     position: relative;
@@ -61,36 +61,36 @@
     .content-block {
         box-shadow: 1px 2px 20px $grey-lighten-7;
     }
-  
+
     .desc {
       min-height: 60px;
       margin-top: 10px;
       margin-bottom: 0;
     }
   }
-  
+
   /*home1 sevives*/
   .home1-sevives {
     .content-block:hover {
         background-color: $mcolor;
     }
-  
+
     .sevives-item {
       &:nth-child(3n+4) {
           clear: both;
       }
     }
-  
+
     .content-block:hover .links-read-more {
         color: $scolor;
     }
-  
+
     .content-block:hover .title,
     .content-block:hover .desc {
         color: $white;
     }
   }
-  
+
   /*home2 sevives*/
   .home2-sevives {
     .sevives-item:nth-child(3n+4) {
@@ -101,36 +101,36 @@
         background-repeat: no-repeat;
         background-size: cover;
     }
-  
+
     .content-block:hover .title,
     .content-block:hover .desc {
         color: $white;
     }
-  
+
     .content-block:hover .links-read-more {
         color: $scolor;
     }
   }
-  
+
   /*home3 sevives*/
   .home3-sevives {
     .content-block {
         background-size: 100% 100%;
         position: relative;
     }
-  
+
     .content-block--item1 {
         background-image: url('../images/h3_service_bg_1.jpg');
     }
-  
+
     .content-block--item2 {
         background-image: url('../images/h3_service_bg_2.jpg');
     }
-  
+
     .content-block--item3 {
         background-image: url('../images/h3_service_bg_3.jpg');
     }
-  
+
     .content-block--bottom {
       background-color: $scolor;
       position: absolute;
@@ -140,16 +140,16 @@
       padding: 10px 30px;
       transition: all 0.2s ease-in-out;
     }
-  
+
     .content-block {
         overflow: hidden;
     }
-  
+
     .content-block:hover .content-block--bottom {
         bottom: 0;
         transition: all 0.2s ease-in-out;
     }
-  
+
     .content-block .links-read-more {
         color: $white;
     }
@@ -158,37 +158,49 @@
         margin-bottom: 64px;
     }
   }
-  
+
   /*home4 sevives*/
   .home4-sevives {
     .content-block {
         border-bottom: 4px solid $scolor;
     }
-  
+
     .content-block:hover {
         background-color: $dmcolor;
     }
-  
+
     .content-block:hover .title,
     .content-block:hover .desc,
     .content-block:hover .links-read-more {
         color: $white;
     }
   }
-  
+
   /*home5 feature*/
+  .home05-feature {
+    .icon-block svg {
+      fill: $scolor;
+    }
+  }
+
   .home5-feature {
     .content-block {
       background-color: $blue-light;
     }
-  
+
    .desc {
         min-height: auto;
     }
   }
-  
+
   /*home5 sevices*/
   .home5-sevices {
+
+    .list-items {
+      display: flex;
+      flex-wrap: wrap;
+    }
+
     .list-items .item {
         width: 33.33%;
         float: left;
@@ -196,39 +208,44 @@
         border-right: 1px solid $blue-lighter-1;
         border-bottom: 1px solid $blue-lighter-1;
     }
-  
+
+    .icon-block svg {
+      fill: $white;
+    }
+
     .list-items .item:hover {
         background-color: rgba($white, .2);
     }
-  
+
     .list-items .item:nth-child(3n + 3) {
         border-right: 0;
     }
-  
+
     .list-items .item:nth-child(4),
     .list-items .item:nth-child(5),
     .list-items .item:nth-child(6) {
         border-bottom: 0;
     }
-  
+
     .desc {
         min-height: auto;
     }
-  
+
     .list-items .title,
     .list-items .desc {
       color: $white;
     }
   }
-  
+
   /*home6 sevives*/
   .home6-sevives {
-    .content-block:hover .links-read-more{
+    .content-block .links-read-more:hover {
         color: $scolor;
     }
   }
   /*home6 feature*/
   .home6-feature {
+    margin-top: 40px;
     .content-block {
         justify-content: space-between;
         background-color: $pink-base;
@@ -236,32 +253,37 @@
           box-shadow: 0px 0px 40px 0px rgba($black,.1);
       }
     }
-  
+
     .feature-left {
-        padding-top: 10px;
+        .icon-block {
+          font-size: 36px;
+        }
     }
-  
+
     .feature-right {
         width: calc(100% - 50px);
+        .desc {
+          min-height: 60px;
+        }
     }
   }
-  
+
   /*home7 feature*/
   .home7-feature {
     .title {
         color: $scolor;
     }
-  
+
     .desc {
         min-height: 60px;
       margin-bottom: 0
     }
-  
+
     .content-block:hover {
         box-shadow: 0px 0px 40px 0px rgba($black, .1);
     }
   }
-  
+
   /*home8 sevives*/
   .home08-services {
     &__bottom {
@@ -271,62 +293,82 @@
       padding-bottom: 60px;
     }
   }
-  
+
   .home8-sevives {
     .sevives-items {
       position: relative;
       top: -60px;
     }
-  
+    .sevives-items-bottom {
+      justify-content: space-between;
+      padding-bottom: 50px;
+
+      .view-all-link {
+        padding: 10px 20px;
+        background-color: $scolor;
+        text-decoration: none;
+        font-family: $hfont;
+        color: $white;
+        text-transform: uppercase;
+        border-radius: $border_radius_base;
+        &:hover, &:focus {
+          border-color: #ed560e;
+          background-color: #ed560e;
+          text-decoration: none;
+          color: $white;
+        }
+      }
+
+    }
     .sevives-item {
         margin-left: 30px;
         width: 25%;
         background-color: $white;
-  
+
       &:hover {
         .sevives-bottom {
           background: url('../images/h8_services_bg.jpg');
           background-size: cover;
         }
-  
+
         .sevives-top {
           background-color: $oranger-1;
           h4 {
             color: $white;
           }
         }
-        
+
         .image-item {
           visibility: hidden;
           opacity: 0;
         }
       }
     }
-  
+
     .sevives-item:first-child {
         margin-left: 0;
     }
-  
+
     .sevives-top {
         background-color: $blue-light;
       padding: 10px 30px;
       text-align: center;
       height: 60px;
     }
-  
+
     .sevives-bottom {
         padding-bottom: 70%;
         text-align: center;
         position: relative;
     }
-  
+
     .sevives-top h4 {
         font-size: 16px;
         font-weight: bold;
         color: $dmcolor;
       font-family: "Montserrat", sans-serif;
     }
-  
+
     .image-icon {
       position: absolute;
       top: 0;

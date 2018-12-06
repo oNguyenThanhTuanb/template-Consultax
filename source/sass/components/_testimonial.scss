@@ -37,13 +37,14 @@ li {
 			color: $scolor;
 		}
 	}
-	.slick-slide {
-		padding-left: 15px;
-		padding-right: 15px;
-	}
 }
 
 .testimonial1 {
+	.slick-slide > div {
+		padding-left: 15px;
+		padding-right: 15px;
+	}
+
 	&-content {
 		background-color: $white;
 		float: left;
@@ -227,6 +228,7 @@ li {
 	&__content {
 		margin-top: 30px;
 		float: left;
+		position: relative;
 
 		.list-item {
 			list-style: none;
@@ -285,6 +287,10 @@ li {
 }
 
 // testimonial 7
+.testimonial07__item-carousel {
+	padding-left: 15px;
+	padding-right: 15px;
+}
 .testimonial7 {
 	&__content {
 		background-color: $white;
@@ -294,6 +300,10 @@ li {
 		border-bottom: 1px solid rgba($scolor, .2);
 		position: relative;
 		padding: 40px;
+	}
+
+	&__desc {
+		min-height: 80px;
 	}
 
 	&__avatar {
@@ -344,10 +354,15 @@ li {
 	}
 
 	&__desc {
-		font-size: 38px;
+		font-size: 30px;
 		color: $gray-green;
 		line-height: 40px;
-		font-weight: 600;
+		font-weight: bold;
+		letter-spacing: -1px;
+	}
+
+	&__content {
+		position: relative;
 	}
 
 	&__avatar {
@@ -359,7 +374,7 @@ li {
 	}
 
 	&__star {
-		margin-bottom: 20px;
+		margin-bottom: 10px;
     float: left;
     width: 100%;
     margin-top: 5px;
@@ -370,4 +385,20 @@ li {
 			clear: both;
 		}
 	}
+	.main-title--vertical {
+		margin-bottom: 0;
+	}
+}
+
+.home06-testimonials {
+	width: 80%;
+	margin: 0 auto;
+	background-color: $white;
+	margin-top: -100px;
+	position: relative;
+	padding-top: 50px;
+}
+
+.home08-testimonial {
+	padding-bottom: 80px;
 }

@@ -4,8 +4,24 @@ append head
   title="Index - HomePage 06"
 append header
 append content
-  .home06home1_feature
+  //- about us
+  .home06__about-inner
     .container
+      .row
+        .col-md-6
+          .main-title
+            p ABOUT US
+            h3 Our Mission, 
+              br
+              | Values and Motto
+        .col-md-6
+          .home06__about-inner__right
+            p Sagittis sollicitudin porta ridiculus curae condimentum molesti praesent neque cras, magna blandit placerat ac dictumst litora tristique eleifend, diam pharetra nostra tellus erat himenaeos at dictum. Aliquet cubilia cum sociosqu iaculis dapibus tortor orci lobortis tincidunt
+            a(href="#").btn-white--outline ABOUT US
+  .home06home1_feature.ssp
+    .container
+      .title03
+        h3 WHY CHOOSE US ?
       .home6-feature.block-icon-home
         .row
           .col-sm-4
@@ -32,21 +48,6 @@ append content
                 h4.title Budget Friendly
                 p.desc
                   | Conubia ut aliquam cubili gravida sed morbi accumsan hac du, ultrices hendrerit parturien.
-  //- about us
-  .home06__about
-    .home06__about-inner
-      .container
-        .row
-          .col-md-6
-            .main-title
-              p ABOUT US
-              h3 Our Mission, 
-                br
-                | Values and Motto
-          .col-md-6
-            .home06__about-inner__right
-              p Sagittis sollicitudin porta ridiculus curae condimentum molesti praesent neque cras, magna blandit placerat ac dictumst litora tristique eleifend, diam pharetra nostra tellus erat himenaeos at dictum. Aliquet cubilia cum sociosqu iaculis dapibus tortor orci lobortis tincidunt
-              a(href="#").btn-white--outline ABOUT US
   //- services
   .home06-services.ssp.bg-blue-light
     .container
@@ -108,32 +109,91 @@ append content
                 .form-field
                   button.btn-orange SUBMIT
   //- testimonials
-  .home06-testimonials.ssp
+  .home06-testimonials
     .container
       .main-title
         p TESTIMONIAL & PARTNER
         h3 What our clients say
-        a(href="#") <>
+        .group-control.group-slider-control01
+          .control.js-btn-prev__testimonial
+            i.fa.fa-angle-left
+          .control.js-btn-next__testimonial
+            i.fa.fa-angle-right
       .testimonial.testimonial6
-        ul.testimonial6__content
-          li.list-item.active
-            .row
-              .col-sm-3
-                .thumb-img
-                  img(src="images/h3_avatar1.png" alt="")
-              .col-sm-9
-                .testimonial__desc.testimonial6__desc
-                  | “I am so happy, my dear friend, so absorbed in the exquisite sense of mere tranquil existence, that I neglect my talents. I should be incapable of drawing a single stroke at the present moment.”
-                .testimonial6__bottom.d-flex
-                  .testimonial6__info
-                    h3.testimonial-title.pull-left Alexis Paradol
-                    p.testimonial-from.pull-left from Berlin		
-                  span.testimonial1__star.testimonial__star
-                    i.icon.ion-ios-star
-                    i.icon.ion-ios-star
-                    i.icon.ion-ios-star
-                    i.icon.ion-ios-star
-                    i.icon.ion-ios-star-half
+        .testimonial6__content
+          .js-slick-testimonial-home06
+            .list-item
+              .row
+                .col-sm-3
+                  .thumb-img
+                    img(src="images/h3_avatar1.png" alt="")
+                .col-sm-9
+                  .testimonial__desc.testimonial6__desc
+                    | “I am so happy, my dear friend, so absorbed in the exquisite sense of mere tranquil existence, that I neglect my talents. I should be incapable of drawing a single stroke at the present moment.”
+                  .testimonial6__bottom.d-flex
+                    .testimonial6__info
+                      h3.testimonial-title.pull-left Alexis Paradol
+                      p.testimonial-from.pull-left from Berlin		
+                    span.testimonial1__star.testimonial__star
+                      i.icon.ion-ios-star
+                      i.icon.ion-ios-star
+                      i.icon.ion-ios-star
+                      i.icon.ion-ios-star
+                      i.icon.ion-ios-star-half
+            .list-item
+              .row
+                .col-sm-3
+                  .thumb-img
+                    img(src="images/h3_avatar2.png" alt="")
+                .col-sm-9
+                  .testimonial__desc.testimonial6__desc
+                    | “I am so happy, my dear friend, so absorbed in the exquisite sense of mere tranquil existence, that I neglect my talents. I should be incapable of drawing a single stroke at the present moment.”
+                  .testimonial6__bottom.d-flex
+                    .testimonial6__info
+                      h3.testimonial-title.pull-left Alexis Paradol
+                      p.testimonial-from.pull-left from Berlin		
+                    span.testimonial1__star.testimonial__star
+                      i.icon.ion-ios-star
+                      i.icon.ion-ios-star
+                      i.icon.ion-ios-star
+                      i.icon.ion-ios-star
+                      i.icon.ion-ios-star-half                
+            .list-item
+              .row
+                .col-sm-3
+                  .thumb-img
+                    img(src="images/h3_avatar1.png" alt="")
+                .col-sm-9
+                  .testimonial__desc.testimonial6__desc
+                    | “I am so happy, my dear friend, so absorbed in the exquisite sense of mere tranquil existence, that I neglect my talents. I should be incapable of drawing a single stroke at the present moment.”
+                  .testimonial6__bottom.d-flex
+                    .testimonial6__info
+                      h3.testimonial-title.pull-left Alexis Paradol
+                      p.testimonial-from.pull-left from Berlin		
+                    span.testimonial1__star.testimonial__star
+                      i.icon.ion-ios-star
+                      i.icon.ion-ios-star
+                      i.icon.ion-ios-star
+                      i.icon.ion-ios-star
+                      i.icon.ion-ios-star-half                  
+            .list-item
+              .row
+                .col-sm-3
+                  .thumb-img
+                    img(src="images/h3_avatar2.png" alt="")
+                .col-sm-9
+                  .testimonial__desc.testimonial6__desc
+                    | “I am so happy, my dear friend, so absorbed in the exquisite sense of mere tranquil existence, that I neglect my talents. I should be incapable of drawing a single stroke at the present moment.”
+                  .testimonial6__bottom.d-flex
+                    .testimonial6__info
+                      h3.testimonial-title.pull-left Alexis Paradol
+                      p.testimonial-from.pull-left from Berlin		
+                    span.testimonial1__star.testimonial__star
+                      i.icon.ion-ios-star
+                      i.icon.ion-ios-star
+                      i.icon.ion-ios-star
+                      i.icon.ion-ios-star
+                      i.icon.ion-ios-star-half
   //- brand
   .brand.brand-slider-home04
     .container
@@ -323,3 +383,4 @@ append content
   +lib
   script(defer src="js/slick-team-home02.min.js")
   script(defer src="js/brand-carousel.min.js")
+  script(defer src="js/slick-testimonial-home06.min.js")
