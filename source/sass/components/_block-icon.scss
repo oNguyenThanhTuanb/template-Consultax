@@ -178,6 +178,9 @@
   
   /*home5 feature*/
   .home5-feature {
+    .icon-block svg {
+        fill: $scolor;
+    }
     .content-block {
       background-color: $blue-light;
     }
@@ -189,6 +192,11 @@
   
   /*home5 sevices*/
   .home5-sevices {
+    .list-items {
+        display: flex;
+        flex-wrap: wrap;
+    }
+
     .list-items .item {
         width: 33.33%;
         float: left;
@@ -196,7 +204,9 @@
         border-right: 1px solid $blue-lighter-1;
         border-bottom: 1px solid $blue-lighter-1;
     }
-  
+    .icon-block svg {
+        fill: $white;
+    }
     .list-items .item:hover {
         background-color: rgba($white, .2);
     }
@@ -277,12 +287,30 @@
       position: relative;
       top: -60px;
     }
-  
+    .sevives-items-bottom {
+			justify-content: space-between;
+			padding-bottom: 50px;
+
+			.view-all-link {
+				padding: 10px 20px;
+				background-color: $scolor;
+				text-decoration: none;
+				font-family: $hfont;
+				color: $white;
+				text-transform: uppercase;
+				border-radius: $border_radius_base;
+				&:hover, &:focus {
+					border-color: #ed560e;
+					background-color: #ed560e;
+					text-decoration: none;
+					color: $white;
+				}
+			}
+		}
     .sevives-item {
-        margin-left: 30px;
-        width: 25%;
-        background-color: $white;
-  
+			margin-left: 30px;
+			width: 25%;
+			background-color: $white;
       &:hover {
         .sevives-bottom {
           background: url('../images/h8_services_bg.jpg');

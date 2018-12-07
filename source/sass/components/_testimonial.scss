@@ -227,7 +227,8 @@ li {
 	&__content {
 		margin-top: 30px;
 		float: left;
-
+		position: relative;
+		
 		.list-item {
 			list-style: none;
 		}
@@ -350,6 +351,10 @@ li {
 		font-weight: 600;
 	}
 
+	&__content {
+		position: relative;
+	}
+	
 	&__avatar {
 		width: 80px;
 		height: 80px;
@@ -370,4 +375,20 @@ li {
 			clear: both;
 		}
 	}
+	.main-title--vertical {
+		margin-bottom: 0;
+	}
+}
+
+.home06-testimonials {
+	width: 80%;
+	margin: 0 auto;
+	background-color: $white;
+	margin-top: -100px;
+	position: relative;
+	padding-top: 50px;
+}
+
+.home08-testimonial {
+	padding-bottom: 80px;
 }

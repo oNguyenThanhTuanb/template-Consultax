@@ -223,7 +223,7 @@
 
 .home07-services {
   padding-top: 175px;
-  margin-bottom: 300px;
+  padding-bottom: 175px;
 
   &__inner {
     position: relative;
@@ -247,7 +247,7 @@
   .services__menu {
     position: absolute;
     right: 0;
-    top: 0;
+    top: -276px;
     width: 370px;
   }
 }
