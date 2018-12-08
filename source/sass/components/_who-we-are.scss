@@ -251,3 +251,15 @@
     width: 370px;
   }
 }
+
+.home08-wwa__inner {
+  display: flex;
+  
+  .home02-wwa__content {
+    flex: 0 0 40%;
+  }
+
+  .home08-wwa__cover {
+    flex: 0 0 60%;
+  }
+}

@@ -276,6 +276,18 @@
   .home08-services {
     &__bottom {
       background-color: $dmcolor;
+      padding-bottom: 220px;
+      position: relative;
+
+      &:before {
+          content: '';
+          background-color: $white;
+          height: 60px;
+          width: 100%;
+          top: 0;
+          left: 0;
+          position: absolute;
+      }
     }
     &__top {
       padding-bottom: 60px;
@@ -283,34 +295,9 @@
   }
   
   .home8-sevives {
-    .sevives-items {
-      position: relative;
-      top: -60px;
-    }
-    .sevives-items-bottom {
-			justify-content: space-between;
-			padding-bottom: 50px;
-
-			.view-all-link {
-				padding: 10px 20px;
-				background-color: $scolor;
-				text-decoration: none;
-				font-family: $hfont;
-				color: $white;
-				text-transform: uppercase;
-				border-radius: $border_radius_base;
-				&:hover, &:focus {
-					border-color: #ed560e;
-					background-color: #ed560e;
-					text-decoration: none;
-					color: $white;
-				}
-			}
-		}
     .sevives-item {
-			margin-left: 30px;
-			width: 25%;
-			background-color: $white;
+        background-color: $white;
+  
       &:hover {
         .sevives-bottom {
           background: url('../images/h8_services_bg.jpg');
@@ -331,9 +318,6 @@
       }
     }
   
-    .sevives-item:first-child {
-        margin-left: 0;
-    }
   
     .sevives-top {
         background-color: $blue-light;

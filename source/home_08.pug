@@ -3,6 +3,195 @@ include modules/script/lib
 append head
   title="Index - HomePage 08"
 append header
+  .header03
+    .header03__inner
+      .heade03__logo
+        img(src="images/logo-bg-white-black.png", alt="demo")
+      a(href="#menu").btn-menu-mobile
+        i.fa.fa-bars
+      .header03__content
+        .header03__content-top
+          span
+            i.fa.fa-map-marker
+            | London City, England ( 
+            a(href="#") View map 
+            | )
+          a(href="tel:+911  125 814 - 3527") 
+            i.fa.fa-phone
+            | +911  125 814 - 3527
+        .header03__content-bottom  
+          ul.navi-level-1
+            li
+              a(href="#") HOME
+                i.fa.fa-caret-down
+              ul.navi-level-2
+                li
+                  a(href='index.html') Home Version  1
+                li
+                  a(href='home_02.html') Home Version  2
+                li
+                  a(href='home_03.html') Home Version  3
+                li
+                  a(href='home_04.html') Home Version  4
+                li
+                  a(href='home_05.html') Home Version  5
+                li
+                  a(href='home_06.html') Home Version  6
+                li
+                  a(href='home_07.html') Home Version  7
+                li
+                  a(href='home_08.html') Home Version  8
+            li
+              a(href="#") ABOUT
+                i.fa.fa-caret-down               
+            li
+              a(href="#") PAGES
+                i.fa.fa-caret-down 
+              ul.navi-level-2
+                li
+                  a(href='#') Shop
+                    i.fa.fa-caret-right
+                  ul.navi-level-3
+                    li
+                      a(href='#') Shop 2
+                    li
+                      a(href='#') Shop 3
+                li
+                  a(href='#') Event
+                    i.fa.fa-caret-right
+                  ul.navi-level-3
+                    li
+                      a(href='#') Event 2
+                    li
+                      a(href='#') Event 3
+                li
+                  a(href='#') Case Study
+                    i.fa.fa-caret-right
+                  ul.navi-level-3
+                    li
+                      a(href='#') Event 2
+                    li
+                      a(href='#') Event 3
+                li
+                  a(href='home_04.html') Coming Soon
+                li
+                  a(href='home_05.html') 404 Error              
+            li
+              a(href="#") SERVICES 
+                i.fa.fa-caret-down                          
+            li
+              a(href="#") BLOG
+                i.fa.fa-caret-down
+              ul.navi-level-2
+                li
+                  a(href='#') Blog Default
+                li
+                  a(href='#') Blog Grid
+                    i.fa.fa-caret-right
+                  ul.navi-level-3
+                    li
+                      a(href='#') Blog Grid No SideBar
+                    li
+                      a(href="#") Blog Grid with Left Sidebar
+                    li
+                      a(href="#") Blog Grid with Right Sidebar
+                li
+                  a(href='#') Blog List
+                li
+                  a(href='#') Single Blog
+            li
+              a(href="#") CONTACTS
+          .header01__control
+            select.language-select
+              option ENG
+              option FRA
+              option VNI
+            .header01__control-inner
+              a(href='#').header01-btn-cart
+                i.fa.fa-shopping-cart(aria-hidden='true')
+              .header01-search
+                a.header01-btn-search.btn-search-navi(href='#/')
+                  i.fa.fa-search(aria-hidden='true')
+                .search-popup
+                  form.form-search-navi
+                    .input-group
+                      input.form-control(placeholder='Enter keyword...', type='text')
+  // Mobile Menu
+  nav#menu
+    ul
+      li
+        a(href='#') Company
+        ul
+          li
+            a(href='index.html') Home Version  1
+          li
+            a(href='home_02.html') Home Version  2
+          li
+            a(href='home_03.html') Home Version  3
+          li
+            a(href='home_04.html') Home Version  4
+          li
+            a(href='home_05.html') Home Version  5
+          li
+            a(href='home_06.html') Home Version  6
+          li
+            a(href='home_07.html') Home Version  7
+          li
+            a(href='home_08.html') Home Version  8
+      li
+        a(href="#") ABOUT
+      li
+        a(href="#") PAGES
+        ul
+          li
+            a(href='#') Shop
+            ul
+              li
+                a(href='#') Shop 2
+              li
+                a(href='#') Shop 3
+          li
+            a(href='#') Event
+            ul.navi-level-3
+              li
+                a(href='#') Event 2
+              li
+                a(href='#') Event 3
+          li
+            a(href='#') Case Study
+            ul.navi-level-3
+              li
+                a(href='#') Event 2
+              li
+                a(href='#') Event 3
+          li
+            a(href='home_04.html') Coming Soon
+          li
+            a(href='home_05.html') 404 Error              
+      li
+        a(href="#") SERVICES 
+      li
+        a(href="#") BLOG
+        ul
+          li
+            a(href='#') Blog Default
+          li
+            a(href='#') Blog Grid
+            ul
+              li
+                a(href='#') Blog Grid No SideBar
+              li
+                a(href="#") Blog Grid with Left Sidebar
+              li
+                a(href="#") Blog Grid with Right Sidebar
+          li
+            a(href='#') Blog List
+          li
+            a(href='#') Single Blog
+      li
+        a(href="#") CONTACTS
+  // /Mobile Menu
+
 append content
   .section
     .slider-home-08.rev_slider_wrapper.fullwidthbanner-container
@@ -171,95 +360,79 @@ append content
               li
                 a(href="#").linkedin
                   i.fa.fa-linkedin
-  .home08-wwa.ssp
+  //- who we are
+  .home02-wwa.sst
     .container
-      .row
-        .col-md-5
-          .home04-wwa__description-inner
-            p.rotate-title WHO WE ARE
-            .main-title
-              h3 Our Mission 
-                br
-                | Values and Motto
-              span Porta dictum imperdiet inceptos sodales quam felis luctus ac molestie magna semper, tristique congue sociis libero nibh pretium per gravida varius praesent montes, tincidunt facilisis donec curabitur dapibus id hac mattis.
-            .home02-wwa__signature
-              p.text-signature Patterson 
-              p.name James Patterson
-              p.job-title Founder & CEO
-        .col-md-7
-          .home08-wwa-img
-            img(src="images/bg-wwa-right.jpg")
-  //-home08 services
-  .home08-services.section
-    .home08-services__top
-      .container  
-        .row
+      .home08-wwa__inner
+        .home02-wwa__content
           .main-title
-            p our services
-            h3 what we bring to you
+            p WHO WE ARE
+            h3 Our Mission, 
+              br  
+              | Values and Motto
+            span A putrid, nicotine-shaded mist loomed over Beijing on Thursday after a massive sandstorm slammed into the Chinese capital bringing the latest airpocalypse to this smog-choked city.
+          .home02-wwa__signature
+            p.text-signature Patterson 
+            p.name.text-orange James Patterson
+            p.job-title Founder & CEO
+        .home08-wwa__cover
+          img(src="images/home08-wwa01.png", alt='demo')
+  //-home08 services
+  .home08-services.ssb.section
+    .container  
+      .row
+        .main-title
+          p our services
+          h3 what we bring to you
     .home08-services__bottom
       .container
-        .home8-sevives
-          .sevives-items
-            .js-slick-sevives-home08
-              .sevives-item.sevives-item-1
-                .sevives-top
-                  h4 Audit & Assurance
-                .sevives-bottom
-                  span.image-icon
-                    img(src='images/h8_services_icon1.png').image-item
-              .sevives-item.sevives-item-2
-                .sevives-top
-                  h4 Trades & Stocks
-                .sevives-bottom
-                  span.image-icon
-                    img(src='images/h8_services_icon2.png').image-item
-              .sevives-item.sevives-item-3
-                .sevives-top
-                  h4 Strategic Planning
-                .sevives-bottom
-                  span.image-icon
-                    img(src='images/h8_services_icon3.png').image-item
-              .sevives-item.sevives-item-4
-                .sevives-top
-                  h4 Financial Projections
-                .sevives-bottom
-                  span.image-icon
-                    img(src='images/h8_services_icon4.png').image-item
-              .sevives-item.sevives-item-1
-                .sevives-top
-                  h4 Audit & Assurance
-                .sevives-bottom
-                  span.image-icon
-                    img(src='images/h8_services_icon1.png').image-item
-              .sevives-item.sevives-item-2
-                .sevives-top
-                  h4 Trades & Stocks
-                .sevives-bottom
-                  span.image-icon
-                    img(src='images/h8_services_icon2.png').image-item
-              .sevives-item.sevives-item-3
-                .sevives-top
-                  h4 Strategic Planning
-                .sevives-bottom
-                  span.image-icon
-                    img(src='images/h8_services_icon3.png').image-item
-              .sevives-item.sevives-item-4
-                .sevives-top
-                  h4 Financial Projections
-                .sevives-bottom
-                  span.image-icon
-                    img(src='images/h8_services_icon4.png').image-item
-          .sevives-items-bottom.d-flex
-            a(href="#").view-all-link 
-              | all services
-            .group-control.group-slider-control07
-              .control.js-btn-prev__sevives
-                i.fa.fa-angle-left
-              .control.js-btn-next__sevives
-                i.fa.fa-angle-right            
-  //-testimonial
-  .section.home08-testimonial.ssp
+        .row
+          .home8-sevives
+            .sevives-items.js-slick-services-home08
+              .sertices-item__carousel
+                .sevives-item
+                  .sevives-top
+                    h4 Audit & Assurance
+                  .sevives-bottom
+                    span.image-icon
+                      img(src='images/h8_services_icon1.png').image-item
+              .sertices-item__carousel
+                .sevives-item
+                  .sevives-top
+                    h4 Trades & Stocks
+                  .sevives-bottom
+                    span.image-icon
+                      img(src='images/h8_services_icon2.png').image-item
+              .sertices-item__carousel
+                .sevives-item
+                  .sevives-top
+                    h4 Strategic Planning
+                  .sevives-bottom
+                    span.image-icon
+                      img(src='images/h8_services_icon3.png').image-item
+              .sertices-item__carousel
+                .sevives-item
+                  .sevives-top
+                    h4 Financial Projections
+                  .sevives-bottom
+                    span.image-icon
+                      img(src='images/h8_services_icon4.png').image-item
+              .sertices-item__carousel
+                .sevives-item
+                  .sevives-top
+                    h4 Financial Projections
+                  .sevives-bottom
+                    span.image-icon
+                      img(src='images/h8_services_icon4.png').image-item
+        .home8-services__control
+          a(href="#").btn-orange ALL SERVICES
+          .group-control.group-slider-control01
+            .control.js-btn-prev__services
+              i.fa.fa-angle-left
+            .control.js-btn-next__services
+              i.fa.fa-angle-right
+  //- blog
+  .section
     .container
       .testimonial.testimonial8
         .main-title--vertical
@@ -377,7 +550,9 @@ append content
   +lib
   script(defer src="js/main-slider-home08.min.js")
   script(defer src="js/slick-testimonial-home08.min.js")
-  script(defer src="js/slick-sevives-home08.min.js")
+  script(defer src="js/slick-services-home08.min.js")
+  script(defer src="js/main-menu-desktop.min.js")
+  script(defer src="js/mobilemenu.min.js")
   script.
     $.fn.isInViewport = function() {
       var elementTop = $(this).offset().top;
