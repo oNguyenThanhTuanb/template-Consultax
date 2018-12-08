@@ -223,22 +223,25 @@ append content
   .home07-testimonial.ssp.bg-blue-light
     .container
       .testimonial.testimonial7
-        .row
-          .main-title
-            p TESTIMONIAL & PARTNER
-            h3 What our clients say
-            a(href="#") <>
-        .row
-          .col-sm-6
+        .main-title
+          p TESTIMONIAL & PARTNER
+          h3 What our clients say
+          .group-control.group-slider-control01
+            .control.js-btn-prev__testimonial
+              i.fa.fa-angle-left
+            .control.js-btn-next__testimonial
+              i.fa.fa-angle-right
+        .row.js-slick-testimonial-home07.slick-testimonial-home07        
+          .testimonial07__item-carousel
             .testimonial7__content
               .testimonial7__top
                 .testimonial7__avatar
-                  img(src="images/h2_avatar1.jpg" alt="")
+                  img(src="images/h4_avatar1.png" alt="")
                   .testimonial7__star
                     span 4.5
                       i.icon.ion-ios-star
               .testimonial7__bottom
-                p.testimonial__desc.testimonial__desc7
+                p.testimonial__desc.testimonial7__desc
                   | I should be incapable of drawing a single stroke at the present moment; and yet I feel that I never was a greater artist than now.
                 .testimonial7__bottom2.d-flex
                   .testimonial7__info
@@ -246,17 +249,85 @@ append content
                     p.testimonial-from from Hanoi
                   .testimonial7__time
                     | - on August 27, 2018
-          .col-sm-6
+          .testimonial07__item-carousel
             .testimonial7__content
               .testimonial7__top
                 .testimonial7__avatar
-                  img(src="images/h2_avatar1.jpg" alt="")
+                  img(src="images/h4_avatar4.png" alt="")
                   .testimonial7__star
                     span 4.5
                       i.icon.ion-ios-star
               .testimonial7__bottom
-                p.testimonial__desc.testimonial__desc7
+                p.testimonial__desc.testimonial7__desc
                   | O my friend -- but it is too much for my strength -- I sink under the weight of the splendour of these visions! A wonderful serenity has taken possession of my entire soul.
+                .testimonial7__bottom2.d-flex
+                  .testimonial7__info
+                    h3.testimonial-title Occhos deokinh
+                    p.testimonial-from from Beijing
+                  .testimonial7__time
+                    | - on August 27, 2018
+          .testimonial07__item-carousel
+            .testimonial7__content
+              .testimonial7__top
+                .testimonial7__avatar
+                  img(src="images/h4_avatar3.png" alt="")
+                  .testimonial7__star
+                    span 4.5
+                      i.icon.ion-ios-star
+              .testimonial7__bottom
+                p.testimonial__desc.testimonial7__desc
+                  |I should be incapable of drawing a single stroke at the present moment; and yet I feel that I never was a greater artist than now. 
+                .testimonial7__bottom2.d-flex
+                  .testimonial7__info
+                    h3.testimonial-title Occhos deokinh
+                    p.testimonial-from from Beijing
+                  .testimonial7__time
+                    | - on August 27, 2018
+          .testimonial07__item-carousel
+            .testimonial7__content
+              .testimonial7__top
+                .testimonial7__avatar
+                  img(src="images/h4_avatar3.png" alt="")
+                  .testimonial7__star
+                    span 4.5
+                      i.icon.ion-ios-star
+              .testimonial7__bottom
+                p.testimonial__desc.testimonial7__desc
+                  | I should be incapable of drawing a single stroke at the present moment; and yet I feel that I never was a greater artist than now. 
+                .testimonial7__bottom2.d-flex
+                  .testimonial7__info
+                    h3.testimonial-title Occhos deokinh
+                    p.testimonial-from from Beijing
+                  .testimonial7__time
+                    | - on August 27, 2018                        
+          .testimonial07__item-carousel
+            .testimonial7__content
+              .testimonial7__top
+                .testimonial7__avatar
+                  img(src="images/h4_avatar1.png" alt="")
+                  .testimonial7__star
+                    span 4.5
+                      i.icon.ion-ios-star
+              .testimonial7__bottom
+                p.testimonial__desc.testimonial7__desc
+                  | I should be incapable of drawing a single stroke at the present moment; and yet I feel that I never was a greater artist than now. 
+                .testimonial7__bottom2.d-flex
+                  .testimonial7__info
+                    h3.testimonial-title Occhos deokinh
+                    p.testimonial-from from Beijing
+                  .testimonial7__time
+                    | - on August 27, 2018                  
+          .testimonial07__item-carousel
+            .testimonial7__content
+              .testimonial7__top
+                .testimonial7__avatar
+                  img(src="images/h4_avatar5.png" alt="")
+                  .testimonial7__star
+                    span 4.5
+                      i.icon.ion-ios-star
+              .testimonial7__bottom
+                p.testimonial__desc.testimonial7__desc
+                  | I should be incapable of drawing a single stroke at the present moment; and yet I feel that I never was a greater artist than now. 
                 .testimonial7__bottom2.d-flex
                   .testimonial7__info
                     h3.testimonial-title Occhos deokinh
@@ -271,7 +342,7 @@ append content
           .main-title
             p OUR BLOG
             h3 Our latest news
-            a(href="#") <>
+            a(href="#") View all Post
       .row
         .col-md-8
           .post-type-01
@@ -348,7 +419,8 @@ append content
               span.text-copyright © 2018 Finacial Consulting Theme by Ocean Themes
   #js-footer07__map.js-footer07__map
   +lib
-  script(src="js/slick-project-home07.min.js")  
+  script(src="js/slick-project-home07.min.js")
+  script(defer src="js/slick-testimonial-home07.min.js")   
   script(src="js/extention/maplace.min.js")  
   script(defer src="js/main-slider-home01.min.js")
   script(src='https://maps.googleapis.com/maps/api/js?key=AIzaSyBS5224HISbnpAiKW7mx6eyTrHxfGeCftk')

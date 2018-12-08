@@ -1,0 +1,41 @@
+.consultation {
+  padding: 10px;
+  p {
+    margin: 4px 0;
+    color: $white;
+    font-size: 20px;
+    font-family: "Montserrat", sans-serif;
+    strong {
+      font-weight: 600;
+    }
+    span {
+      font-weight: 300;
+    }
+  }
+
+  .get-link {
+    background-color: $scolor;
+    color: $white;
+    font-size: 12px;
+    padding: 10px 20px;
+    text-decoration: none;
+    text-transform: uppercase;
+    display: block;
+    max-width: 120px;
+    text-align: center;
+    transition: $transition-fade;
+    border-radius: $border_radius_base;
+
+    &:hover {
+      opacity: 0.8;
+    }
+  }
+}
+
+.home04-consultation {
+  background-color: $dmcolor;
+}
+
+.home05-consultation {
+  background-color: $mcolor;
+}
