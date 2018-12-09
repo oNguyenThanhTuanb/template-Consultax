@@ -312,9 +312,14 @@
   
   .home02-wwa__content {
     flex: 0 0 40%;
+    padding-left: 0;
   }
 
   .home08-wwa__cover {
     flex: 0 0 60%;
+
+    img {
+      transform: translateY(-90px);
+    }
   }
 }

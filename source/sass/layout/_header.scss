@@ -531,11 +531,21 @@
 
     &__inner {
       align-items: center;
-      padding: 15px 30px;
+      padding: 15px;
 
       .heade03__logo {
         width: 120px;
       }
+    }
+  }
+
+  @include rwd(1200) {
+    .navi-level-1>li>a {
+      padding: 0 10px;
+    }
+
+    .header03__content-bottom .navi-level-1 {
+      margin-right: 30px;
     }
   }
 }
