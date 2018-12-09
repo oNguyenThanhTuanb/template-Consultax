@@ -7,11 +7,11 @@ body {
   font-size: 14px;
 }
 
-@media (min-width: 1200px) {
-  .container {
-    width: 1200px;
-  }
-}
+// @media (min-width: 1200px) {
+//   .container {
+//     width: 1200px;
+//   }
+// }
 
 @media (min-width: 1600px) {
   .container-lg {
@@ -113,4 +113,8 @@ body {
 
 .mgb {
   margin-bottom: 120px;
+}
+
+.ost {
+  margin-top: -120px;
 }
