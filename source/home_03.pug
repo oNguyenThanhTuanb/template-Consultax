@@ -612,8 +612,9 @@ append content
                 .content-block
                   .content-center
                     .top-block
-                      span.number
-                        | 750 +
+                      span.number.counter
+                        | 750 
+                      span.number +
                     .bottom-block
                       span.icon-block.icon.ion-ios-people
                       span.text-block
@@ -622,8 +623,9 @@ append content
                 .content-block
                   .content-center
                     .top-block
-                      span.number
-                        | 1080 +
+                      span.number.counter
+                        | 1080 
+                      span.number +
                     .bottom-block
                       span.icon-block.icon.ion-ribbon-b
                       span.text-block
@@ -632,14 +634,18 @@ append content
                 .content-block
                   .content-center
                     .top-block
-                      span.number
-                        |52 +
+                      span.number.counter
+                        |52 
+                      span.number +
                     .bottom-block
                       span.icon-block.icon.ion-ios-person
                       span.text-block
                        | 52 experts are working         
   //- footer
   include modules/footer/footer02.pug
+  //- back to top
+  a#to-the-top.fixbtt
+    i.fa.fa-chevron-up
   +lib
   script(defer src="js/brand-carousel.min.js")
   script(defer src="js/main-slider-home03.min.js")
@@ -647,3 +653,4 @@ append content
   script(defer src="js/main-menu-desktop.min.js")
   script(defer src="js/slick-slider-footer-home02.min.js")
   script(defer src="js/mobilemenu.min.js")
+  script(defer src="js/counter-up.min.js")

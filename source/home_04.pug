@@ -304,9 +304,22 @@ append content
       .row
         .home04-wwa__inner
           .home04-wwa__slider
-            .home04-wwa-item
-              img(src="images/home04-wwa-01.jpg", alt="demo")
-          .row
+            .group-slider-control02
+              .control.js-btn-prev__wwa.prev
+                i.fa.fa-angle-left
+              .control.js-btn-next__wwa.next
+                i.fa.fa-angle-right
+            .js-slick-wwa-home04
+              .item
+                .home04-wwa-item
+                  img(src="images/home04-wwa-01.jpg", alt="demo")
+              .item
+                .home04-wwa-item
+                  img(src="images/home04-wwa-02.jpg", alt="demo")
+              .item
+                .home04-wwa-item
+                  img(src="images/home04-wwa-03.jpg", alt="demo")
+            .row
             .home04-wwa__description
               .col-md-7
                 .home04-wwa__description-inner
@@ -521,7 +534,7 @@ append content
                       .team04__item--info
                         p.team04__name James Patterson
                         p.team04__job Expert
-      //- location
+  //- location
   .home04-location.mgt
     .container
       .row
@@ -562,17 +575,17 @@ append content
               .testimonial.testimonial4
                 .js-testimonial-thumbs-home04.testimonial4__thumb
                   .thumb-item
-                    img(src="images/h2_avatar1.jpg" alt="")
+                    img(src="images/home02-testimonial-thumb01.jpg" alt="")
                   .thumb-item
-                    img(src="images/h2_avatar1.jpg" alt="")
+                    img(src="images/home02-testimonial-thumb02.jpg" alt="")
                   .thumb-item
-                    img(src="images/h2_avatar1.jpg" alt="")
+                    img(src="images/home02-testimonial-thumb03.jpg" alt="")
                   .thumb-item
-                    img(src="images/h2_avatar1.jpg" alt="")
+                    img(src="images/home02-testimonial-thumb04.jpg" alt="")
                   .thumb-item
-                    img(src="images/h2_avatar1.jpg" alt="")
+                    img(src="images/home02-testimonial-thumb02.jpg" alt="")
                   .thumb-item
-                    img(src="images/h2_avatar1.jpg" alt="")
+                    img(src="images/home02-testimonial-thumb01.jpg" alt="")
                 .js-testimonial-main-home04.testimonial4__content
                   .list-item
                     .testimonial__desc.testimonial4__desc.text-italic
@@ -727,6 +740,9 @@ append content
                         a(href="#").linkedin
                           i.fa.fa-linkedin
                   span.text-copyright © 2018 Finacial Consulting Theme by Ocean Themes
+  //- back to top
+  a#to-the-top.fixbtt
+    i.fa.fa-chevron-up
   +lib
   script(defer src="js/main-slider-home01.min.js")
   script(defer src="js/slick-team-home04.min.js")
@@ -734,3 +750,4 @@ append content
   script(defer src="js/brand-carousel.min.js")
   script(defer src="js/main-menu-desktop.min.js")
   script(defer src="js/mobilemenu.min.js")
+  script(defer src="js/slick-wwa-home04.min.js")

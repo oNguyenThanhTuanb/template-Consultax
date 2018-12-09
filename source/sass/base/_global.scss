@@ -118,3 +118,25 @@ body {
 .ost {
   margin-top: -120px;
 }
+
+.fixbtt {
+  display: none;
+  position: fixed;
+  text-align: center;
+  right: 30px;
+  bottom: 30px;
+  color: $white;
+  cursor: pointer;
+  border-radius: 2px;
+  z-index: 10000;
+  height: 40px;
+  width: 40px;
+  line-height: 40px;
+  background-color: rgba(0, 0, 0, 0.4);
+  transition: background-color 0.1s linear;
+
+  &:hover {
+    background-color: $scolor;
+    color: $white;
+  }
+}
