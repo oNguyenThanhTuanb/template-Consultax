@@ -372,7 +372,9 @@
 .home02__topbar {
   color: $white;
   border-bottom: 1px solid rgba($color: $white, $alpha: .2);
-
+  @include lg { 
+    display: none;
+  }
   a {
     color: $white;
   }
@@ -434,7 +436,9 @@
     display: flex;
     flex-grow: 1;
     justify-content: flex-end;
-    
+    @include lg { 
+      display: none;
+    }
     .navi-level-1 {
       margin-right: 30px;
     }
