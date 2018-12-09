@@ -1,15 +1,15 @@
 .slick-testimonial-home02 {
   width: 100%;
-  @include min-md { 
+  @include min-lg {
     display: flex;
     justify-content: space-between;
   }
 
   .slick-list {
-    @include min-md {
+    @include min-lg {
       flex: 0 0 66.6667%;
     }
-    @include md {
+    @include lg {
       padding-left: 15px;
       padding-right: 15px;
     }
@@ -27,11 +27,11 @@
 
   .slick-dots {
     padding: 0 15px;
-    @include md {
+    @include lg {
       position: static;
       padding: 10px;
     }
-    @include min-md {
+    @include min-lg {
       flex: 0 0 33.3333%;
       position: static;
       display: flex;
@@ -47,7 +47,13 @@
       overflow: hidden;
       transition: $transition-base;
       border: 1px solid transparent;
-      
+      @include md-lg {
+        width: calc(16.666677% - 14px);
+        margin-right: 5px;
+      }
+      @include md {
+        margin-right: 5px;
+      }
       &:before {
         content: '';
         position: absolute;

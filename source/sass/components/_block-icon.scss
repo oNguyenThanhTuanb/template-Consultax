@@ -6,12 +6,12 @@
       float: left;
       width: 100%;
     }
-  
+
     .icon-block {
         font-size: 30px;
         color: $scolor;
     }
-  
+
     .title {
         color: $black;
         font-size: 20px;
@@ -19,7 +19,7 @@
         font-weight: bold;
         transition: all 0.2s ease-in-out;
     }
-  
+
      .desc {
         color: $dark-light-2;
         width: 100%;
@@ -27,7 +27,7 @@
         min-height: 80px;
         transition: all 0.2s ease-in-out;
     }
-  
+
     .links-read-more {
         text-decoration: underline;
         color: $black;
@@ -36,11 +36,11 @@
         font-weight: bold;
         transition: all 0.2s ease-in-out;
     }
-  
+
     .sevives-item {
         margin-bottom: 30px;
     }
-  
+
     .hr_border {
       border-bottom: 1px solid rgba($grey-lighten-7, .6);
       margin-left: -30px;
@@ -50,11 +50,11 @@
       width: calc(100% + 60px);
     }
   }
-  
+
   /*home1 feature*/
   .home01-feature {
     position: relative;
-    @include min-lg { 
+    @include min-lg {
 			margin-top: -80px;
     }
   }
@@ -65,20 +65,20 @@
             box-shadow: 0px 0 50px 0px rgba(0, 0, 0, 0.3);
         }
     }
-  
+
     .desc {
       min-height: 60px;
       margin-top: 10px;
       margin-bottom: 0;
     }
   }
-  
+
 	/*home1 sevives*/
   .home1-sevives {
     .content-block:hover {
         background-color: $mcolor;
     }
-  
+
     .sevives-item {
 			@include min-lg {
 				&:nth-child(3n+4) {
@@ -91,24 +91,24 @@
 				}
 			}
     }
-  
+
     .content-block:hover .links-read-more {
         color: $scolor;
     }
-  
+
     .content-block:hover .title,
     .content-block:hover .desc {
         color: $white;
     }
   }
-  
+
 	/*home2 sevives*/
   .home2-sevives {
-		@include md { 
+		@include md {
 			padding-left: 15px;
 			padding-right: 15px;
 		}
-		@include min-md { 
+		@include min-md {
 			.sevives-item:nth-child(3n+4) {
 				clear: both;
 			}
@@ -121,14 +121,14 @@
         .sevives-item {
             position: relative;
             background-color: $white;
-						@include min-md { 
+						@include min-md {
 							width: calc(33.333% - 20px);
 						}
-						@include md { 
+						@include md {
 							width: calc(50% - 20px);
 						}
-						
-						@include rwd(576) { 
+
+						@include rwd(576) {
 							width: calc(100%);
 						}
             &:hover {
@@ -189,7 +189,7 @@
         }
     }
   }
-  
+
   /*home3 sevives*/
   .home3-sevives {
 		@include md {
@@ -202,24 +202,28 @@
         }
       }
 		}
-		
+		@include md-lg {
+      .desc {
+        min-height: 150px;
+      }
+    }
     .content-block {
         background-size: 100% 100%;
         position: relative;
     }
-  
+
     .content-block--item1 {
         background-image: url('../images/h3_service_bg_1.jpg');
     }
-  
+
     .content-block--item2 {
         background-image: url('../images/h3_service_bg_2.jpg');
     }
-  
+
     .content-block--item3 {
         background-image: url('../images/h3_service_bg_3.jpg');
     }
-  
+
     .content-block--bottom {
       background-color: $scolor;
       position: absolute;
@@ -232,46 +236,64 @@
 				bottom: -30px;
 			}
     }
-  
+
     .content-block {
         overflow: hidden;
     }
-  
+
     .content-block:hover .content-block--bottom {
         bottom: 0;
         transition: all 0.2s ease-in-out;
     }
-  
+
     .content-block .links-read-more {
         color: $white;
     }
 
     &.block-icon-home {
 				margin-bottom: 64px;
-				
+
     }
   }
-  
+
+  .home03-feature-img {
+    @include lg {
+      display: none;
+    }
+  }
+
   /*home4 sevives*/
   .home4-sevives {
     .content-block {
         border-bottom: 4px solid $scolor;
     }
-  
     .content-block:hover {
         background-color: $dmcolor;
     }
-  
+
     .content-block:hover .title,
     .content-block:hover .desc,
     .content-block:hover .links-read-more {
         color: $white;
     }
+    @include md-lg {
+      .title {
+        min-height: 45px;
+      }
+      .desc {
+        min-height: 120px;
+      }
+    }
   }
-  
+
 	/*home5 feature*/
 	.home05-feature {
-		@include md {
+    @include md-lg {
+      .title {
+        min-height: 45px;
+      }
+    }
+		@include lg {
 			margin-top: 0;
 		}
 	}
@@ -294,12 +316,12 @@
     .content-block {
       background-color: $blue-light;
     }
-  
+
    .desc {
         min-height: auto;
     }
   }
-  
+
   /*home5 sevices*/
   .home5-sevices {
     .list-items {
@@ -351,16 +373,47 @@
       color: $white;
     }
   }
-  
+
 	/*home6 sevives*/
-	
+
   .home6-sevives {
     .content-block:hover .links-read-more{
         color: $scolor;
     }
+    @include md-lg {
+      .title {
+        min-height: 45px;
+      }
+      .desc {
+        min-height: 120px;
+      }
+    }
+    @include md {
+      .content-block {
+        margin-bottom: 10px;
+      }
+      .desc {
+        min-height: auto;
+      }
+    }
   }
 	/*home6 feature*/
-	
+  .home06_feature {
+    @include lg {
+      padding-bottom: 0;
+      .content-block {
+        padding: 15px;
+      }
+    }
+    @include md {
+      .content-block {
+        margin-bottom: 10px;
+      }
+      .desc {
+        min-height: auto;
+      }
+    }
+  }
   .home6-feature {
 		margin-top: 30px;
     .content-block {
@@ -370,32 +423,37 @@
           box-shadow: 0px 0px 40px 0px rgba($black,.1);
       }
     }
-  
+
     .feature-left {
         padding-top: 10px;
     }
-  
+
     .feature-right {
         width: calc(100% - 50px);
     }
   }
-  
+
   /*home7 feature*/
+  .home07-feature {
+    @include md {
+      padding-top: 30px;
+    }
+  }
   .home7-feature {
     .title {
         color: $scolor;
     }
-  
+
     .desc {
         min-height: 60px;
       margin-bottom: 0
     }
-  
+
     .content-block:hover {
         box-shadow: 0px 0px 40px 0px rgba($black, .1);
     }
   }
-  
+
   /*home8 sevives*/
   .home08-services {
     &__bottom {
@@ -423,52 +481,52 @@
         }
     }
   }
-  
+
   .home8-sevives {
     .sevives-item {
         background-color: $white;
-  
+
       &:hover {
         .sevives-bottom {
           background: url('../images/h8_services_bg.jpg');
           background-size: cover;
         }
-  
+
         .sevives-top {
           background-color: $oranger-1;
           h4 {
             color: $white;
           }
         }
-        
+
         .image-item {
           visibility: hidden;
           opacity: 0;
         }
       }
     }
-  
-  
+
+
     .sevives-top {
         background-color: $blue-light;
       padding: 10px 30px;
       text-align: center;
       height: 60px;
     }
-  
+
     .sevives-bottom {
         padding-bottom: 70%;
         text-align: center;
         position: relative;
     }
-  
+
     .sevives-top h4 {
         font-size: 16px;
         font-weight: bold;
         color: $dmcolor;
       font-family: "Montserrat", sans-serif;
     }
-  
+
     .image-icon {
       position: absolute;
       top: 0;
