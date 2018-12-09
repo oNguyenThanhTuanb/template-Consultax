@@ -71,9 +71,44 @@
 				}
 			}
 		}
-	} 
+  }
+  .main-content {
+    @include lg {
+      .row > div {
+        margin-bottom: 20px;
+        width: 100%;
+        float: left;
+        &:last-child {
+          margin-bottom: 0;
+        }
+      }
+    }
+    @include md {
+      padding-left: 30px;
+      padding-right: 30px;
+    }
+  }
 }
 .home03-counter {
+	@include md { 
+		padding-top: 0;
+	}
+	.main-content {
+		@include lg {
+		  .row > div {
+			margin-bottom: 20px;
+			width: 100%;
+			float: left;
+			&:last-child {
+			  margin-bottom: 0;
+			}
+		  }
+		}
+		@include md {
+		  padding-left: 30px;
+		  padding-right: 30px;
+		}
+	}
 	.content-block {
 		background-color: $blue-light;
 		transition: all 0.2s ease-in-out;

@@ -6,7 +6,9 @@ body {
   font-family: $bfont;
   font-size: 14px;
 }
-
+html {
+  overflow-x: hidden;
+}
 // @media (min-width: 1200px) {
 //   .container {
 //     width: 1200px;
@@ -89,6 +91,9 @@ body {
 
 .ssp {
   padding: 120px 0;
+  @include lg {  
+    padding: 60px 0;
+  }
 }
 
 .sst {

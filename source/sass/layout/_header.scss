@@ -172,7 +172,9 @@
     background-color: $dcolor;
     color: $white;
     font-size: 12px;
-
+    @include lg { 
+      display: none;
+    }
     &-inner {
       display: flex;
       width: 100%;

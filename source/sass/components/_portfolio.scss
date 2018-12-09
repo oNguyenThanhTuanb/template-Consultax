@@ -6,7 +6,6 @@
 }
 
 .slick-project-home01 {
-  width: 100vw;
   overflow: hidden;
 
   .slick-project__item {
@@ -37,8 +36,11 @@
 .home01-projects {
   &__content {
     padding-top: 60px;
-    display: flex;
     width: 100%;
+    @include min-md { 
+      display: flex;
+      padding-top: 30px;
+    }
   }
 
   &__logo {

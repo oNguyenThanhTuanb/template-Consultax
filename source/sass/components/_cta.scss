@@ -7,20 +7,33 @@
   background-position: center center;
   position: relative;
   color: white;
-  padding-top: 130px;
-  padding-bottom: 110px;
-
+  @include min-lg { 
+    padding-top: 130px;
+    padding-bottom: 110px;
+  }
+  @include lg {
+    padding-top: 60px;
+    padding-bottom: 60px;
+  }
   .inner {
-    display: flex;
     position: relative;
     justify-content: center;
-
+    @include min-lg { 
+      display: flex;
+    }
     .cta-form,
     .desc {
-      width: 50%;
-      min-width: 50%;
+      @include min-lg { 
+        width: 50%;
+        min-width: 50%;
+      }
     }
-
+    .cta-form {
+      @include md {
+        padding-left: 30px;
+        padding-right: 30px;
+      }
+    }
     .form-row {
       display: flex;
       justify-content: space-between;
@@ -46,7 +59,10 @@
 
   .form-row {
     margin-bottom: 20px;
-
+    @include lg {
+      padding-left: 30px;
+      padding-right: 30px;
+    }
     &.last {
       margin-bottom: 0;
     }
@@ -56,7 +72,11 @@
 .home02-cta-02 {
   border-radius: 4px;
   @extend .home07-cta-01;
-
+  @include md {
+    .main-title {
+      padding: 0;
+    }
+  }
   .main-title--white-sm {
     margin-bottom: 100px;
   }
@@ -68,16 +88,32 @@
   background-position: center center;
   position: relative;
   color: white;
-  padding-top: 130px;
-  padding-bottom: 110px;
-
+  
+  @include md { 
+    padding-top: 60px;
+    padding-bottom: 60px;
+  }
+  @include min-md { 
+    padding-top: 130px;
+    padding-bottom: 110px;
+  }
   .inner {
-    display: flex;
     position: relative;
-    justify-content: space-between;
-    align-items: flex-end;
-    position: relative;
-
+    @include min-md {
+      display: flex;
+      justify-content: space-between;
+      align-items: flex-end;
+    }
+    .group-btn {
+      @include md {
+        padding-left: 30px;
+        padding-right: 30px;
+        margin-top: 30px;
+        button {
+          padding: 12px 20px;
+        }
+      }
+    }
     .main-title {
       margin-bottom: 0;
 
@@ -94,20 +130,29 @@
   background-position: center center;
   position: relative;
   color: white;
-  padding-top: 130px;
-  padding-bottom: 110px;
   // height: 250px; wait until title done
-
+  @include min-md {
+    padding-top: 130px;
+    padding-bottom: 110px;
+  }
+  @include md {
+    padding-top: 60px;
+    padding-bottom: 60px;
+  }
   .inner {
-    display: flex;
     position: relative;
-    justify-content: space-between;
-    align-items: flex-end;
-    position: relative;
-
+    @include min-md {
+      display: flex;
+      justify-content: space-between;
+      align-items: flex-end;
+    }
     .subcribe-form {
       width: 370px;
-      
+      @include md {
+        padding-left: 30px;
+        padding-right: 30px;
+        margin-top: 30px;
+      }
       .form-group {
         position: relative;
         margin: 0;

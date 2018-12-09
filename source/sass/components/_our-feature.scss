@@ -2,16 +2,19 @@
 // Components :: Our Feature
 // --------------------------------------------------
 .home02-our-feature {
-
+  .main-title {
+    padding: 0;
+  }
 }
 
 .our-feature02 {
   &__inner {
-    display: flex;
     color: $white;
     box-shadow: 0px 20px 50px 0px rgba(0, 0, 0, 0.3); 
     position: relative;
-
+    @include min-md {
+      display: flex;
+    }
     .main-content {
       .content-block {
         border-radius: 4px;
@@ -53,9 +56,27 @@
   &__content {
     flex-grow: 1;
     background-color: $white;
-    padding: 84px 100px;
     display: flex;
     flex-direction: column;
     justify-content: center;
+    @include min-md {
+      padding: 84px 100px;
+    }
+    @include md {
+      padding: 60px 30px;
+    }
+  }
+  
+}
+@include md {
+  .home02-our-feature {
+    .col-feature-item {
+      margin-bottom: 20px;
+      float: left;
+      width: 100%;
+      &:last-child {
+        margin-bottom: 0;
+      }
+    }
   }
 }

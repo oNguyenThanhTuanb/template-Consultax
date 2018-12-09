@@ -6,8 +6,16 @@
   color: white;
 
   &__inner {
-    padding-top: 120px;
-    padding-bottom: 120px;
+    @include min-md { 
+      padding-top: 120px;
+      padding-bottom: 120px;
+    }
+    @include md { 
+      padding-top: 60px;
+      padding-bottom: 60px;
+      padding-left: 30px;
+      padding-right: 30px;
+    }
   }
 
   .form-subcribe {
@@ -53,12 +61,17 @@
   background-color: #002c60;
 
   .copyright__inner {
-    display: flex;
     width: 100%;
-    justify-content: space-between;
-    align-items: center;
     min-height: 50px;
-
+    @include min-md {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+    @include md { 
+      text-align: center;
+      padding: 10px;
+    }
     p {
       color: rgba($white, 0.6);
       font-weight: 300;
@@ -69,15 +82,27 @@
 
 .footer02 {
   background: $mcolor;
-
   .footer02__first-row {
-    padding-top: 90px;
-    padding-bottom: 70px;
+    @include min-md { 
+      padding-top: 90px;
+      padding-bottom: 70px;
+    }
+    @include md { 
+      padding-top: 40px;
+      padding-bottom: 40px;
+      padding-left: 15px;
+      padding-right: 15px;
+    }
   }
 
   .footer02__second-row {
-    padding: 90px 0;
     border-top: 1px solid rgba($white, 0.2);
+    @include min-md { 
+      padding: 90px 0;
+    }
+    @include md { 
+      padding: 40px 15px;
+    }
   }
 
   .form-contact {
@@ -102,7 +127,9 @@
 
 .footer02__slider-address01 {
   padding: 0 100px;
-
+  @include md {
+    padding: 0 50px;
+  }
   .footer02__slider-address01-item {
     
     p {
