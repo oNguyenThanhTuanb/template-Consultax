@@ -11,8 +11,8 @@ $(document).ready(function(){
     slidesToShow: 5,
     slidesToScroll: 1,
     asNavFor: '.js-testimonial-main-home04',
-    dots: true,
-    centerMode: true,
+    dots: false,
+    centerMode: false,
     focusOnSelect: true
   });
 });

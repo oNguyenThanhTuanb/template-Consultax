@@ -21,3 +21,15 @@
   float: none;
   overflow: hidden;
 }
+
+.home04-wwa__slider {
+  position: relative;
+}
+
+.testimonial4__thumb {
+  .slick-slide.slick-active.slick-current {
+    .thumb-item {
+      border: 1px solid $scolor;
+    }
+  }
+}
