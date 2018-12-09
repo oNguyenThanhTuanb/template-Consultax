@@ -203,7 +203,13 @@
     }
   }
 }
-
+@include lg { 
+  .header01__logo,
+  .header04__logo,
+  .header06__logo  {
+    max-width: 120px;
+  }
+}
 .header01 {
   &__top {
     background-color: $mcolor;
@@ -215,7 +221,7 @@
       align-items: center;
     }
   }
-
+  
   &__info {
     display: flex;
     color: $white;

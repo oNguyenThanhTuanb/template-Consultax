@@ -117,6 +117,10 @@
 
   &__thumb {
     display: flex;
+    @include md {
+      padding-left: 15px;
+      padding-right: 15px;
+    }
     
     &-item {
       border-radius: 5px;

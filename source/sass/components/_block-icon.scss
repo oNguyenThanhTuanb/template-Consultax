@@ -105,8 +105,8 @@
 	/*home2 sevives*/
   .home2-sevives {
 		@include md { 
-			padding-left: 30px;
-			padding-right: 30px;
+			padding-left: 15px;
+			padding-right: 15px;
 		}
 		@include min-md { 
 			.sevives-item:nth-child(3n+4) {
@@ -269,8 +269,25 @@
     }
   }
   
-  /*home5 feature*/
+	/*home5 feature*/
+	.home05-feature {
+		@include md {
+			margin-top: 0;
+		}
+	}
   .home5-feature {
+		padding-left: 15px;
+		padding-right: 15px;
+		@include md {
+      .row > div {
+        margin-bottom: 20px;
+        width: 100%;
+        float: left;
+        &:last-child {
+          margin-bottom: 0;
+        }
+      }
+		}
     .icon-block svg {
         fill: $scolor;
     }
@@ -291,11 +308,34 @@
     }
 
     .list-items .item {
-        width: 33.33%;
-        float: left;
-        background-color: rgba($white, .1);
-        border-right: 1px solid $blue-lighter-1;
-        border-bottom: 1px solid $blue-lighter-1;
+			float: left;
+			background-color: rgba($white, .1);
+			border-right: 1px solid $blue-lighter-1;
+			border-bottom: 1px solid $blue-lighter-1;
+			@include min-md {
+				width: 33.33%;
+				.list-items .item:nth-child(4),
+				.list-items .item:nth-child(5),
+				.list-items .item:nth-child(6) {
+						border-bottom: 0;
+				}
+				.list-items .item:nth-child(3n + 3) {
+					border-right: 0;
+				}
+			}
+			@include md {
+				width: 50%;
+				.list-items .item:nth-child(5),
+				.list-items .item:nth-child(6) {
+					border-bottom: 0;
+				}
+			}
+			@include rwd(480) {
+				width: 100%;
+				.list-items .item:nth-child(6) {
+					border-bottom: 0;
+				}
+			}
     }
     .icon-block svg {
         fill: $white;
@@ -303,35 +343,26 @@
     .list-items .item:hover {
         background-color: rgba($white, .2);
     }
-  
-    .list-items .item:nth-child(3n + 3) {
-        border-right: 0;
-    }
-  
-    .list-items .item:nth-child(4),
-    .list-items .item:nth-child(5),
-    .list-items .item:nth-child(6) {
-        border-bottom: 0;
-    }
-  
     .desc {
         min-height: auto;
     }
-  
     .list-items .title,
     .list-items .desc {
       color: $white;
     }
   }
   
-  /*home6 sevives*/
+	/*home6 sevives*/
+	
   .home6-sevives {
     .content-block:hover .links-read-more{
         color: $scolor;
     }
   }
-  /*home6 feature*/
+	/*home6 feature*/
+	
   .home6-feature {
+		margin-top: 30px;
     .content-block {
         justify-content: space-between;
         background-color: $pink-base;

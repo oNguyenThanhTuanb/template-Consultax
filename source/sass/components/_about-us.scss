@@ -108,7 +108,10 @@
 
   &__inner {
     max-width: 385px;
-
+    @include md {
+      padding-left: 15px;
+      padding-right: 15px;
+    }
     p {
       a {
         color: $scolor;
@@ -123,5 +126,8 @@
 
 .home06__about {
   padding: 90px 0;
+  @include md { 
+    padding: 40px 0;
+  }
 }
 

@@ -13,8 +13,8 @@
     @include md { 
       padding-top: 60px;
       padding-bottom: 60px;
-      padding-left: 30px;
-      padding-right: 30px;
+      padding-left: 15px;
+      padding-right: 15px;
     }
   }
 
@@ -194,6 +194,10 @@
   padding: 100px 0;
 
   .cta-form {
+    @include md {
+      padding-left: 15px;
+      padding-right: 15px;
+    }
     .form-row {
       display: flex;
       justify-content: space-between;
@@ -206,6 +210,13 @@
       &.last {
         margin-bottom: 0;
       }
+    }
+  }
+  &__second-row {
+    @include md {
+      padding-left: 15px;
+      padding-right: 15px;
+      text-align: center;
     }
   }
 }
@@ -252,6 +263,9 @@
 .footer08__block02 {
   color: $white;
   text-align: right;
+  @include md {
+    text-align: center;
+  }
 
   .list__link03--white {
     margin-bottom: 30px;

@@ -131,6 +131,11 @@
   left: 420px;	
   z-index: 99;	
   width: 45px;	
+  @include md {
+    left: 20px;
+    width: 62px;
+    bottom: -30px;
+  }
   .control {	
     width: 45px;	
     height: 105px;	
@@ -142,6 +147,12 @@
     background-color: rgba($black, .3);	
     transition: $transition-base;	
     cursor: pointer;	
+    @include md {
+      width: 30px;
+      height: 30px;
+      float: right;
+      margin-right: 1px;
+    }
     &:hover {	
       background-color: $scolor;	
       transition: $transition-base;	

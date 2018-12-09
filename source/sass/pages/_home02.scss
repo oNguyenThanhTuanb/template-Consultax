@@ -1,10 +1,18 @@
 .slick-testimonial-home02 {
-  display: flex;
   width: 100%;
-  justify-content: space-between;
-  
+  @include min-md { 
+    display: flex;
+    justify-content: space-between;
+  }
+
   .slick-list {
-    flex: 0 0 66.6667%;
+    @include min-md {
+      flex: 0 0 66.6667%;
+    }
+    @include md {
+      padding-left: 15px;
+      padding-right: 15px;
+    }
   }
 
   .list-item {
@@ -18,13 +26,18 @@
   }
 
   .slick-dots {
-    flex: 0 0 33.3333%;
-    position: static;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
     padding: 0 15px;
-
+    @include md {
+      position: static;
+      padding: 10px;
+    }
+    @include min-md {
+      flex: 0 0 33.3333%;
+      position: static;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+    }
     li {
       width: calc(33.333% - 14px);
       margin: 0;

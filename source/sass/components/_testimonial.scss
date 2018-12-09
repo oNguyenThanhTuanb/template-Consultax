@@ -48,8 +48,8 @@ li {
   }
 	.main-title {
 		@include lg {
-			padding-left: 30px;
-			padding-right: 30px;
+			padding-left: 15px;
+			padding-right: 15px;
 		}
 	}
 }
@@ -178,7 +178,20 @@ li {
 .testimonial3 {
   @include md { 
     padding-bottom: 0;
+    .main-title {
+      padding-left: 30px;
+      padding-right: 30px;
+    }
   }
+  @include min-md { 
+    .main-title {
+      width: calc(58.33333333% - 115px);
+      position: absolute;
+      right: 0;
+      top: 80px;
+    }
+  }
+  
 	.thumb-img {
 		margin-bottom: 30px;
 		float: right;
@@ -208,11 +221,12 @@ li {
 	}
 
 	&__desc {
-		padding-left: 30px;
+		padding-left: 15px;
 		background-image: url('../images/h3_testimonial_bg.png');
 		background-repeat: no-repeat;
     padding-top: 20px;
     @include min-md {
+      padding-left: 30px;
       margin-top: 200px;
       margin-left: 80px;
     }
@@ -226,8 +240,8 @@ li {
       padding-left: 30px;
     }
     @include md { 
-      padding-left: 30px;
-      padding-right: 30px;
+      padding-left: 15px;
+      padding-right: 15px;
     }
 	}
 
@@ -272,7 +286,8 @@ li {
 		position: relative;
 		
 		.list-item {
-			list-style: none;
+      list-style: none; 
+      margin-top: 20px;
 		}
 	}
 
@@ -290,6 +305,11 @@ li {
 	}
 }
 // testimonial 5
+.home05-testimonial {
+  @include md {
+    padding-top: 40px;
+  }
+}
 .testimonial5 {
 	&__desc {
 		min-height: 100px;
@@ -304,17 +324,21 @@ li {
 	}
 
 	&__desc {
-		margin-top: 30px;
-		margin-left: 20px;
+		margin-top: 30px;	
 		padding-top: 50px;
 		background-image: url(../images/h2_testimonial_bg.png);
 		background-repeat: no-repeat;
 		font-style: italic;
-		margin-bottom: 20px;
+    margin-bottom: 20px;
+    @include min-md {
+      margin-left: 20px;
+    }
 	}
 
 	&__bottom {
-		margin-left: 20px;
+		@include min-md {
+      margin-left: 20px;
+    }
 	}
 
 	&__info {
