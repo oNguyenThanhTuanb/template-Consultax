@@ -7,7 +7,7 @@
   color: white;
   border: 1px solid $mcolor;
   text-align: center;
-  font-weight: bold;
+  font-weight: 900;
   font-family: $hfont;
   padding: 12px 38px;
   font-size: 12px;
@@ -90,5 +90,18 @@
   &:focus {
     outline: 0;
     box-shadow: none;
+  }
+}
+
+
+.btn-scroll-top-home08 {
+  @extend .btn-scroll-next-section;
+  color: $scolor;
+  top: auto;
+  bottom: 148px;
+
+  .icon {
+    padding-right: 0;
+    padding-left: 15px;
   }
 }

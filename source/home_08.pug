@@ -360,9 +360,27 @@ append content
               li
                 a(href="#").linkedin
                   i.fa.fa-linkedin
+          .tp-caption.tp-static-layer(
+            data-transform_in='y:100px;opacity:0;s:800;e:Power3.easeOut;', 
+            data-transform_out='s:1000;e:Power3.easeInOut;s:1000;e:Power3.easeInOut;', 
+            data-start='1900',
+            data-width="['auto']",
+            data-basealign="slide" 
+            data-responsive_offset="off",
+            data-responsive="off",
+            data-startslide="0",
+            data-endslide="2",
+            data-paddingtop="[0,0,0,0]"
+            data-paddingright="[0,0,0,0]"
+            data-paddingbottom="[0,0,0,0]"
+            data-paddingleft="[0,0,0,0]"
+            data-actions='[{"event":"click","action":"scrollbelow","offset":"px","delay":""}]')
+            button.btn-scroll-next-section.js-btn-scroll-next-section
+              span.icon.ion-ios-arrow-thin-left
+              span SCROLL 
   //- who we are
   .home02-wwa.sst
-    .container
+    .container.container-lg.vertical-right
       .home08-wwa__inner
         .home02-wwa__content
           .main-title
@@ -379,13 +397,12 @@ append content
           img(src="images/home08-wwa01.png", alt='demo')
   //-home08 services
   .home08-services.ssb.section
-    .container  
-      .row
-        .main-title
-          p our services
-          h3 what we bring to you
+    .container.container-lg.vertical-right
+      .main-title
+        p our services
+        h3 what we bring to you
     .home08-services__bottom
-      .container
+      .container.container-lg.vertical-right
         .row
           .home8-sevives
             .sevives-items.js-slick-services-home08
@@ -424,21 +441,22 @@ append content
                   .sevives-bottom
                     span.image-icon
                       img(src='images/h8_services_icon4.png').image-item
-        .home8-services__control
-          a(href="#").btn-orange ALL SERVICES
-          .group-control.group-slider-control01
-            .control.js-btn-prev__services
-              i.fa.fa-angle-left
-            .control.js-btn-next__services
-              i.fa.fa-angle-right
+        .container.vertical-left
+          .home8-services__control
+            a(href="#").btn-orange ALL SERVICES
+            .group-control.group-slider-control01
+              .control.js-btn-prev__services
+                i.fa.fa-angle-left
+              .control.js-btn-next__services
+                i.fa.fa-angle-right
   //- blog
-  .section
-    .container
+  .section.ssp
+    .container.container-lg.vertical-right
       .testimonial.testimonial8
         .main-title--vertical
           p 
            | What our clients tsay
-        .testimonial8__content
+        .testimonial8__content.container.vertical-left
           .group-control.group-slider-control06
             .control.js-btn-prev__testimonial
               i.fa.fa-angle-left
@@ -499,7 +517,7 @@ append content
   //-Subscribe
   .home08-subscribe
     .home08-blog
-      .container
+      .container.container-lg.vertical-right
         .post-type-04
           .post-thumb
             a(href='#')
@@ -515,21 +533,22 @@ append content
               a(href='#') Touch New Stamp and Presto, Total Solar 
               br
               | Eclipse Becomes Moon
-            .post__meta-info.d-flex
-              a.read-more(href='#') Read More
-              a.blog-page(href='#') Blog Pages
+            .post__meta-info.group-btn
+              a.btn-orange(href='#') READ MORE
+              a.btn-white--outline(href='#') BLOG PAGES
     .subscribe-content.ssp
-      .container
-        .main-title--vertical
-          p 
-           | never miss out !
-        form
-          input(type="text" name="subscribe" placeholder="Your E-mail address")
-          button.icon.ion-ios-arrow-thin-right
+      .container.container-lg.vertical-right
+        .container.vertical-left
+          .main-title--vertical
+            p 
+            | never miss out !
+          form
+            input(type="text" name="subscribe" placeholder="Your E-mail address")
+            button.icon.ion-ios-arrow-thin-right
   //-Address
   .home08-address
       .home08-Blog
-        .container
+        .container.container-lg.vertical-right
           .post-type-04
             .post-thumb
               a(href='#')
@@ -539,14 +558,14 @@ append content
                 span CONTACT US
               h3.post__title
                 a(href='#') 007 Mr.Bang, Broughton Rd,  London England
-              .post__meta-info
-                a.read-more(href='#') Read More
-                a.blog-page(href='#') Blog Pages
+              .post__meta-info.group-btn
+                a.btn-orange(href='#') READ MORE
+                a.btn-white--outline(href='#') GET DERECTIONS
   .section
     include modules/footer/footer08.pug
-  button.btn-scroll-next-section.js-btn-scroll-next-section
-    span.icon.ion-ios-arrow-thin-left
-    span SCROLL 
+  button.btn-scroll-top-home08#to-the-top
+    span TO TOP 
+    span.icon.ion-ios-arrow-thin-right
   +lib
   script(defer src="js/main-slider-home08.min.js")
   script(defer src="js/slick-testimonial-home08.min.js")

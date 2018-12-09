@@ -72,3 +72,29 @@
 .home08-wwa-img {
   margin-top: -250px;
 }
+
+.vertical-right {
+  margin-right: 0;
+  padding: 0;
+}
+
+.vertical-left {
+  margin-left: 0;
+  padding: 0;
+}
+
+.group-btn {
+  .btn-orange {
+    margin-right: 10px;
+  }
+}
+
+.subscribe-content {
+  .main-title--vertical {
+    margin-bottom: 20px;
+    color: $white;
+    text-transform: uppercase;
+    font-family: $hfont;
+    font-weight: 900;
+  }
+}
