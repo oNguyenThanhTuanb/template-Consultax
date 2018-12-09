@@ -12,6 +12,11 @@
     bottom: 20px;
     left: 20px;
     padding: 30px;
+    @include md {
+      max-width: 90%;
+      padding: 10px 15px;
+      bottom: 5px;
+    }
     .date {
       font-size: 12px;
       color: $black;
@@ -22,6 +27,9 @@
       font-family: $hfont;
       font-weight: bold;
       color: $black;
+      @include md {
+        font-size: 16px;
+      }
     }
 
     .desc {

@@ -3,6 +3,9 @@
   
   &.ssp {
     padding: 120px 0;
+    @include md {
+      padding: 40px 0;
+    }
   }
 }
 

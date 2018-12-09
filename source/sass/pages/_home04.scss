@@ -1,5 +1,12 @@
 .brand.brand-slider-home04 {
-  padding-bottom: 120px;
+  
+  @include min-md {
+    padding-bottom: 120px;
+  }
+
+  @include md {
+    padding-bottom: 60px;
+  }
 
   .brand-slider {
     padding: 50px 0 0 0;
@@ -15,7 +22,11 @@
     padding: 0 15px;
   }
 }
-
+.team04 {
+  @include md {
+    padding-top: 0;
+  }
+}
 .testimonial4__content {
   width: 100%;
   float: none;

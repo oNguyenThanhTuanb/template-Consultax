@@ -50,8 +50,8 @@ a {
   position: relative;
   color: $black;
   @include md { 
-    padding-left: 30px;
-    padding-right: 30px;
+    padding-left: 15px;
+    padding-right: 15px;
   }
   @include min-sm {
     margin-bottom: 56px;

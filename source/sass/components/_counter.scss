@@ -47,6 +47,9 @@
 	background-size: cover;
 	background-repeat: no-repeat;
 	position: relative;
+	@include md {
+		display: block;
+	}
 	&:before {
 		background-color: rgba(0, 0, 0, 0.7);
 		top: 0;
@@ -84,8 +87,8 @@
       }
     }
     @include md {
-      padding-left: 30px;
-      padding-right: 30px;
+      padding-left: 15px;
+      padding-right: 15px;
     }
   }
 }
@@ -105,8 +108,8 @@
 		  }
 		}
 		@include md {
-		  padding-left: 30px;
-		  padding-right: 30px;
+		  padding-left: 15px;
+		  padding-right: 15px;
 		}
 	}
 	.content-block {
