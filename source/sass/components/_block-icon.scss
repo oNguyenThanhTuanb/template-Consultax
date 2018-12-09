@@ -54,7 +54,9 @@
   /*home1 feature*/
   .home01-feature {
     position: relative;
-    margin-top: -80px;
+    @include min-lg { 
+			margin-top: -80px;
+    }
   }
 
   .home1_feature {
@@ -71,16 +73,23 @@
     }
   }
   
-  /*home1 sevives*/
+	/*home1 sevives*/
   .home1-sevives {
     .content-block:hover {
         background-color: $mcolor;
     }
   
     .sevives-item {
-      &:nth-child(3n+4) {
-          clear: both;
-      }
+			@include min-lg {
+				&:nth-child(3n+4) {
+						clear: both;
+				}
+			}
+			@include lg {
+				&:nth-child(2n+3) {
+						clear: both;
+				}
+			}
     }
   
     .content-block:hover .links-read-more {
@@ -93,22 +102,35 @@
     }
   }
   
-  /*home2 sevives*/
+	/*home2 sevives*/
   .home2-sevives {
-    .sevives-item:nth-child(3n+4) {
-        clear: both;
-    }
-
+		@include md { 
+			padding-left: 30px;
+			padding-right: 30px;
+		}
+		@include min-md { 
+			.sevives-item:nth-child(3n+4) {
+				clear: both;
+			}
+		}
     &__inner {
         display: flex;
         flex-wrap: wrap;
         justify-content: space-between;
 
         .sevives-item {
-            width: calc(33.333% - 20px);
             position: relative;
             background-color: $white;
-
+						@include min-md { 
+							width: calc(33.333% - 20px);
+						}
+						@include md { 
+							width: calc(50% - 20px);
+						}
+						
+						@include rwd(576) { 
+							width: calc(100%);
+						}
             &:hover {
                 .overlay {
                     opacity: 1;
@@ -170,6 +192,17 @@
   
   /*home3 sevives*/
   .home3-sevives {
+		@include md {
+      .row > div {
+        margin-bottom: 20px;
+        width: 100%;
+        float: left;
+        &:last-child {
+          margin-bottom: 0;
+        }
+      }
+		}
+		
     .content-block {
         background-size: 100% 100%;
         position: relative;
@@ -192,9 +225,12 @@
       position: absolute;
       width: 100%;
       left: 0;
-      bottom: -30px;
+      bottom: 0;
       padding: 10px 30px;
-      transition: all 0.2s ease-in-out;
+			transition: all 0.2s ease-in-out;
+			@include min-lg {
+				bottom: -30px;
+			}
     }
   
     .content-block {
@@ -211,7 +247,8 @@
     }
 
     &.block-icon-home {
-        margin-bottom: 64px;
+				margin-bottom: 64px;
+				
     }
   }
   

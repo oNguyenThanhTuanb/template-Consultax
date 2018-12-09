@@ -5,7 +5,9 @@
 .group-slider-control01 {
   right: 0;
   top: 22px;
-  
+  @include md {
+    right: 30px;
+  }
   .control {
     width: 45px;
     height: 45px;
@@ -101,13 +103,16 @@
 
 .group-slider-control04 {	
   position: absolute;	
-  bottom: 30px;	
+  bottom: 23px;	
   left: 33.7%;	
-  z-index: 99;	
+  z-index: 99;
   min-width: 80px;	
   display: flex;	
   justify-content: space-around;	
   text-align: center;	
+  @include min-md {
+    bottom: 30px;	
+  }
   .control {	
     width: 40%;	
     color: $grey-base;	

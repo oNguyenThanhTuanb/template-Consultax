@@ -2,43 +2,70 @@
 // Components :: About us
 // --------------------------------------------------
 .home03-about-us {
-  background: url('../images/home03-bg-about-us01.png');
-  background-size: 508px 538px;
-  background-position: 36% top;
-  background-repeat: no-repeat;
-  padding-top: 162px;
-  display: flex;
   width: 100%;
-  justify-content: space-between;
-  margin-top: 120px;
-
+  @include min-md { 
+    background: url('../images/home03-bg-about-us01.png');
+    background-size: 508px 538px;
+    background-position: 36% top;
+    background-repeat: no-repeat;
+    margin-top: 120px;
+    padding-top: 162px;
+    display: flex;
+    justify-content: space-between;
+  }
   &__cover {
     position: relative;
-    flex: 0 0 50%;
     text-align: right;
-
+    @include min-md { 
+      flex: 0 0 50%;
+    }
+    @include md { 
+      text-align: center;
+      margin-bottom: 30px;
+    }
     .cover {
       float: right;
       position: relative;
-      img {box-shadow: 0px 20px 20px 0px rgba(0, 0, 0, 0.3);}
+      @include md { 
+        width: 100%;
+      }
+      img {
+        box-shadow: 0px 20px 20px 0px rgba(0, 0, 0, 0.3);
+        @include md {
+          &.cover {
+            display: none;
+          }
+        }
+      }
 
       .home03-about-us__cover-content {
-        position: absolute;
-        bottom: 15px;
-        text-align: left;
-        left: 30px;
+        @include min-md { 
+          position: absolute;
+          bottom: 15px;
+          text-align: left;
+          left: 30px;
+        }
       }
     }
 
     .cover02 {
-      position: absolute;
-      bottom: 144px;
-      right: 144px;
       box-shadow: 0px 20px 20px 0px rgba(0, 0, 0, 0.3);
-      z-index: 2;
+      @include min-md { 
+        position: absolute;
+        bottom: 144px;
+        right: 144px;
+        z-index: 2;
+      }
+      @include md {
+        margin: 10px auto;
+        clear: both;
+      }
     }
 
     &-content {
+      @include md {
+        text-align: center;
+      }
       .name {
         font-size: 18px;
         font-weight: 900;
@@ -61,9 +88,13 @@
   }
 
   &__content {
-    flex: 0 0 50%;
-    padding-left: 100px;
-
+    @include min-md {  
+      flex: 0 0 50%;
+      padding-left: 100px;
+    }
+    @include md {
+      text-align: center;
+    }
     .main-title {
       margin-bottom: 50px;
     }

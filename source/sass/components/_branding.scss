@@ -1,6 +1,6 @@
 .brand {
   padding: 70px 0;
-
+  
   &.ssp {
     padding: 120px 0;
   }
@@ -25,5 +25,16 @@
   .brand-slider-home03__inner {
     padding: 100px 0 120px 0;
     border-top: 1px solid rgba(0, 0, 0, 0.1);
+    @include min-md {
+      padding: 100px 0 120px 0;
+    }
+    @include md {
+      padding: 60px 0 0;
+    }
+  }
+}
+.brand-slider-home03 {
+  @include md {
+    padding-top: 0;
   }
 }

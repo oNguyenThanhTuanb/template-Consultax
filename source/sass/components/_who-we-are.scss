@@ -6,9 +6,15 @@
 }
 
 .home01-wwa {
+  @include lg { 
+    padding: 0;
+  }
   &__inner {
     display: flex;
     color: $white;
+    @include lg { 
+      display: block;
+    }
   }
 
   &__cover {
@@ -18,12 +24,16 @@
   }
 
   &__content {
-    flex: 0 0 50%;
     background-color: $mcolor;
-    padding: 100px 55px;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
+    padding: 60px 30px;
+    
+    @include min-lg {  
+      padding: 100px 55px;
+      flex: 0 0 50%;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+    }
   }
 
   &__signature {
@@ -55,26 +65,37 @@
 }
 
 .home02-wwa {
-  &__inner {
-    display: flex;
+  @include md {
+    padding-bottom: 0;
   }
-
+  &__inner {
+    @include min-md {
+      display: flex;
+    }
+  }
   &__cover {
-    flex: 0 0 50%;
     background-size: cover;
     background-position: center center;
     position: relative;
     color: $white;
-
+    @include min-md {
+      flex: 0 0 50%;
+    }
     &-inner {
       background-color: rgba($mcolor, .9);
-      position: absolute;
-      top: 32px;
-      left: 32px;
-      bottom: 32px;
-      right: 32px;
-      padding: 72px;
-
+      padding: 60px 0;
+      @include min-md {
+        position: absolute;
+        top: 32px;
+        left: 32px;
+        bottom: 32px;
+        right: 32px;
+        padding: 72px;
+      }
+      @include md { 
+        padding-left: 30px;
+        padding-right: 30px;
+      }
       h3 {
         font-size: 30px;
         font-weight: 900;
@@ -118,12 +139,19 @@
   }
 
   &__content {
-    flex: 0 0 50%;
     background-color: $white;
-    padding: 100px 55px;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
+    padding: 60px 30px;
+    
+    @include min-md { 
+      flex: 0 0 50%;
+      padding: 100px 55px;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+    }
+    .main-title {
+      padding: 0;
+    }
   }
 
   &__signature {
