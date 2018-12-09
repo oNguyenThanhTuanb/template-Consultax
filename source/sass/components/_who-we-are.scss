@@ -317,5 +317,9 @@
 
   .home08-wwa__cover {
     flex: 0 0 60%;
+
+    img {
+      transform: translateY(-90px);
+    }
   }
 }

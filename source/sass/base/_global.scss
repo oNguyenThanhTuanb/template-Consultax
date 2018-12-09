@@ -9,15 +9,20 @@ body {
 html {
   overflow-x: hidden;
 }
-// @media (min-width: 1200px) {
-//   .container {
-//     width: 1200px;
-//   }
-// }
 
-@media (min-width: 1600px) {
+@media (min-width: 1630px) {
   .container-lg {
     width: 1600px;
+  }
+
+  .vertical-right {
+    margin-right: 0;
+    padding: 0;
+  }
+  
+  .vertical-left {
+    margin-left: 0;
+    // padding: 0;
   }
 }
 

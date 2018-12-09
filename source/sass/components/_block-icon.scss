@@ -416,6 +416,12 @@
     &__top {
       padding-bottom: 60px;
     }
+
+    @include md {
+        &__bottom {
+            padding-bottom: 80px;
+        }
+    }
   }
   
   .home8-sevives {
