@@ -7,6 +7,8 @@ append header
     .header03__inner
       .heade03__logo
         img(src="images/logo-bg-white.png", alt="demo")
+      a(href="#menu").btn-menu-mobile
+        i.fa.fa-bars  
       .header03__content
         .header03__content-top
           span
@@ -114,6 +116,82 @@ append header
                     form.form-search-navi
                       .input-group
                         input.form-control(placeholder='Enter keyword...', type='text')
+  // Mobile Menu
+  nav#menu
+    ul
+      li
+        a(href='#') Company
+        ul
+          li
+            a(href='index.html') Home Version  1
+          li
+            a(href='home_02.html') Home Version  2
+          li
+            a(href='home_03.html') Home Version  3
+          li
+            a(href='home_04.html') Home Version  4
+          li
+            a(href='home_05.html') Home Version  5
+          li
+            a(href='home_06.html') Home Version  6
+          li
+            a(href='home_07.html') Home Version  7
+          li
+            a(href='home_08.html') Home Version  8
+      li
+        a(href="#") ABOUT
+      li
+        a(href="#") PAGES
+        ul
+          li
+            a(href='#') Shop
+            ul
+              li
+                a(href='#') Shop 2
+              li
+                a(href='#') Shop 3
+          li
+            a(href='#') Event
+            ul.navi-level-3
+              li
+                a(href='#') Event 2
+              li
+                a(href='#') Event 3
+          li
+            a(href='#') Case Study
+            ul.navi-level-3
+              li
+                a(href='#') Event 2
+              li
+                a(href='#') Event 3
+          li
+            a(href='home_04.html') Coming Soon
+          li
+            a(href='home_05.html') 404 Error              
+      li
+        a(href="#") SERVICES 
+      li
+        a(href="#") BLOG
+        ul
+          li
+            a(href='#') Blog Default
+          li
+            a(href='#') Blog Grid
+            ul
+              li
+                a(href='#') Blog Grid No SideBar
+              li
+                a(href="#") Blog Grid with Left Sidebar
+              li
+                a(href="#") Blog Grid with Right Sidebar
+          li
+            a(href='#') Blog List
+          li
+            a(href='#') Single Blog
+      li
+        a(href="#") CONTACTS
+  // /Mobile Menu
+
 append content
   .slider-home-03.rev_slider_wrapper.fullwidthbanner-container
     // START REVOLUTION SLIDER 5.0.7 auto mode
@@ -568,3 +646,4 @@ append content
   script(defer src="js/slick-testimonial-home03.min.js")
   script(defer src="js/main-menu-desktop.min.js")
   script(defer src="js/slick-slider-footer-home02.min.js")
+  script(defer src="js/mobilemenu.min.js")

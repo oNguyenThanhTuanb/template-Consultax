@@ -219,6 +219,9 @@
     color: $white;
     font-size: 14px;
     line-height: 22px;
+    @include lg { 
+      display: none;
+    }
 
     p {
       margin: 0;
@@ -257,7 +260,9 @@
 
   &__bottom {
     background-color: $mcolor;
-
+    @include lg { 
+      display: none;
+    }
     &-inner {
       display: flex;
 
@@ -372,7 +377,9 @@
 .home02__topbar {
   color: $white;
   border-bottom: 1px solid rgba($color: $white, $alpha: .2);
-
+  @include lg { 
+    display: none;
+  }
   a {
     color: $white;
   }
@@ -434,7 +441,9 @@
     display: flex;
     flex-grow: 1;
     justify-content: flex-end;
-    
+    @include lg { 
+      display: none;
+    }
     .navi-level-1 {
       margin-right: 30px;
     }
@@ -527,6 +536,9 @@
 .home04__topbar {
   background-color: $dmcolor;
   color: $white;
+  @include lg { 
+    display: none;
+  }
 
   a {
     color: $white;
@@ -566,7 +578,9 @@
     flex-grow: 1;
     justify-content: flex-end;
     padding: 25px 0;
-    
+    @include lg { 
+      display: none;
+    }
     .navi-level-1 {
       margin-right: 30px;
     }
@@ -595,6 +609,9 @@
       border-left: 1px solid rgba($color: $white, $alpha: .1);
     }
   }
+  .btn-menu-mobile {
+    color: $black;
+  }
 }
 
 // header 07
@@ -619,7 +636,9 @@
       display: flex;
       flex-grow: 1;
       justify-content: flex-end;
-
+      @include lg { 
+        display: none;
+      }
       .navi-level-1 {
         display: flex;
         align-items: center;
