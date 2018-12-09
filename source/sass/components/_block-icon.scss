@@ -59,7 +59,9 @@
 
   .home1_feature {
     .content-block {
-        box-shadow: 1px 2px 20px $grey-lighten-7;
+        &:hover {
+            box-shadow: 0px 0 50px 0px rgba(0, 0, 0, 0.3);
+        }
     }
   
     .desc {
@@ -96,19 +98,73 @@
     .sevives-item:nth-child(3n+4) {
         clear: both;
     }
-    .content-block:hover {
-        background-image: url('../images/h2_services_bg.jpg');
-        background-repeat: no-repeat;
-        background-size: cover;
+
+    &__inner {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+
+        .sevives-item {
+            width: calc(33.333% - 20px);
+            position: relative;
+            background-color: $white;
+
+            &:hover {
+                .overlay {
+                    opacity: 1;
+                }
+
+                .content-block {
+                    .title,
+                    .desc {
+                        color: $white;
+                    }
+
+                    a {
+                        color: $scolor;
+                    }
+
+                    &:before {
+                        opacity: 1;
+                    }
+                }
+            }
+        }
+
+        .content-block {
+            position: relative;
+            z-index: 2;
+            background-color: transparent;
+
+            &:before {
+                content: '';
+                position: absolute;
+                top: 0;
+                left: 0;
+                display: block;
+                width: 100%;
+                height: 100%;
+                background-color: rgba($color: $mcolor, $alpha: .8);
+                z-index: -1;
+                opacity: 0;
+                transition: $transition-base;
+            }
+        }
     }
-  
-    .content-block:hover .title,
-    .content-block:hover .desc {
-        color: $white;
-    }
-  
-    .content-block:hover .links-read-more {
-        color: $scolor;
+
+    .overlay {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        overflow: hidden;
+        opacity: 0;
+        transition: $transition-base;
+
+        img {
+            width: 100%;
+        }
     }
   }
   

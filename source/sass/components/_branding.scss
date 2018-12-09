@@ -1,5 +1,9 @@
 .brand {
   padding: 70px 0;
+
+  &.ssp {
+    padding: 120px 0;
+  }
 }
 
 .brand__item {
@@ -18,8 +22,8 @@
 }
 
 .brand {
-  &.brand-slider-home03 {
+  .brand-slider-home03__inner {
     padding: 100px 0 120px 0;
-    border-top: 1px solid #fafafa;
+    border-top: 1px solid rgba(0, 0, 0, 0.1);
   }
 }

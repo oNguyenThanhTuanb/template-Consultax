@@ -130,7 +130,7 @@ append header
                     .input-group
                       input.form-control(placeholder='Enter keyword...', type='text')
 append content
-  section
+  section.bg-blue-light
     .slider-home-01.rev_slider_wrapper.fullwidthbanner-container
       // START REVOLUTION SLIDER 5.0.7 auto mode
       #js-slider-home01.rev_slider.fullwidthabanner(style='display:none;', data-version="5.4.1")
@@ -145,8 +145,8 @@ append content
             .tp-caption.tp-resizeme.sh1--white(
               data-x="['left']", 
               data-hoffset="['0']", 
-              data-y='top', 
-              data-voffset='200', 
+              data-y='center', 
+              data-voffset='-90', 
               data-width="['580','580','480','320']", 
               data-transform_idle='o:1;', 
               data-transform_in='x:100px;opacity:0;s:800;e:Power3.easeOut;', 
@@ -159,7 +159,7 @@ append content
               data-x="['left']", 
               data-hoffset="['0']", 
               data-y='center', 
-              data-voffset="['-55','-55','-55','-55']", 
+              data-voffset="['0','0','0','0']", 
               data-width="['670','580','480','320']", 
               data-transform_idle='o:1;', 
               data-transform_in='x:100px;opacity:0;s:800;e:Power3.easeOut;', 
@@ -174,7 +174,7 @@ append content
               data-x="['left']", 
               data-hoffset="['0']", 
               data-y='center', 
-              data-voffset="['70','70','70','70']",
+              data-voffset="['120','120','120','120']",
               data-transform_idle='o:1;', 
               data-transform_in='x:100px;opacity:0;s:800;e:Power3.easeOut;', 
               data-transform_out='s:1000;e:Power3.easeInOut;s:1000;e:Power3.easeInOut;', 
@@ -190,8 +190,8 @@ append content
             .tp-caption.tp-resizeme.sh1--white(
               data-x="['left']", 
               data-hoffset="['0']", 
-              data-y='top', 
-              data-voffset='200', 
+              data-y='center', 
+              data-voffset='-90', 
               data-width="['580','580','480','320']", 
               data-transform_idle='o:1;', 
               data-transform_in='x:100px;opacity:0;s:800;e:Power3.easeOut;', 
@@ -204,7 +204,7 @@ append content
               data-x="['left']", 
               data-hoffset="['0']", 
               data-y='center', 
-              data-voffset="['-55','-55','-55','-55']", 
+              data-voffset="['0','0','0','0']", 
               data-width="['670','580','480','320']", 
               data-transform_idle='o:1;', 
               data-transform_in='x:100px;opacity:0;s:800;e:Power3.easeOut;', 
@@ -219,14 +219,14 @@ append content
               data-x="['left']", 
               data-hoffset="['0']", 
               data-y='center', 
-              data-voffset="['70','70','70','70']",
+              data-voffset="['120','120','120','120']",
               data-transform_idle='o:1;', 
               data-transform_in='x:100px;opacity:0;s:800;e:Power3.easeOut;', 
               data-transform_out='s:1000;e:Power3.easeInOut;s:1000;e:Power3.easeInOut;', 
               data-start='2100')
               a.btn-orange(href='#') GET QUOTE
   //- our feature
-  .home02-our-feature.bg-blue-light
+  .home02-our-feature.bg-blue-light.ost
     .container
       .row
         .our-feature02__inner
@@ -261,9 +261,12 @@ append content
             p OUR SERVICES
             h3 What we bring to you
             a(href="#") All services
-        .home2-sevives.block-icon-home
-          .row
-            .sevives-item.col-md-4.col-sm-6
+      .home2-sevives.block-icon-home
+        .row
+          .home2-sevives__inner
+            .sevives-item
+              .overlay
+                img(src="images/home02-bg-services01.jpg", alt="demo")
               .content-block
                 span.icon-block.icon.ion-cube
                 h4.title Financial Consulting
@@ -271,7 +274,9 @@ append content
                 p.desc
                   | Justo luctus mus ultricies habitasse dictumst senectus habitant, primis erat mauris odio faucibus cras non interdum.
                 a.links-read-more(href='#') Read more
-            .sevives-item.col-md-4.col-sm-6
+            .sevives-item
+              .overlay
+                img(src="images/home02-bg-services01.jpg", alt="demo")
               .content-block
                 span.icon-block.icon.ion-umbrella
                 h4.title Audit & Assurance
@@ -279,7 +284,9 @@ append content
                 p.desc
                   | Senectus accumsan malesuada cursus dapibus sem primis cubilia, per potenti fermentu massa pulvinar turpis taciti, pellentesque.
                 a.links-read-more(href='#') Read more
-            .sevives-item.col-md-4.col-sm-6
+            .sevives-item
+              .overlay
+                img(src="images/home02-bg-services01.jpg", alt="demo")
               .content-block
                 span.icon-block.icon.ion-podium
                 h4.title Trades & Stocks
@@ -287,7 +294,9 @@ append content
                 p.desc
                   | Mus leo mauris nec erat ullamcorper orci nascetur, est faucibus auctor natoque tempus eu, eros condimentum et taciti rhoncus.
                 a.links-read-more(href='#') Read more
-            .sevives-item.col-md-4.col-sm-6
+            .sevives-item
+              .overlay
+                img(src="images/home02-bg-services01.jpg", alt="demo")
               .content-block
                 span.icon-block.icon.ion-ios-paper
                 h4.title Strategic Planning
@@ -295,7 +304,9 @@ append content
                 p.desc
                   | Risus aenean ultricies integer purus sociis luctus tristique, sodales fusce ante maecenas massa cum est, ligula hac cursus.
                 a.links-read-more(href='#') Read more
-            .sevives-item.col-md-4.col-sm-6
+            .sevives-item
+              .overlay
+                img(src="images/home02-bg-services01.jpg", alt="demo")
               .content-block
                 span.icon-block.icon.ion-cash
                 h4.title Financial Projections
@@ -303,7 +314,9 @@ append content
                 p.desc
                   | Varius scelerisque tristique condimentum habitant dui euismod auctor lacinia maecenas cubilia eleifend erat, purus malesuada.
                 a.links-read-more(href='#') Read more
-            .sevives-item.col-md-4.col-sm-6
+            .sevives-item
+              .overlay
+                img(src="images/home02-bg-services01.jpg", alt="demo")
               .content-block
                 span.icon-block.icon.ion-podium
                 h4.title Bonds & Commodities
@@ -342,33 +355,34 @@ append content
   //- who we are
   .home02-wwa.ssp
     .container
-      .home02-wwa__inner
-        .home02-wwa__cover(style="background-image: url('images/home02-wwa01.jpg')")
-          .home02-wwa__cover-inner
-            h3 How Can We Help ?
-            .home02-wwa__divider
-            p.home02-wwa__sm-title
-              i.fa.fa-life-ring
-              | Hotline 24/7
-            p.home02-wwa__text (+917) 814 - 3527   -   (+917) 814 - 3527
-            p.home02-wwa__sm-title
-              i.fa.fa-location-arrow
-              | Location
-            p.home02-wwa__text 307 Jesse Centers
-              br
-              | London City, England 12568 
-            a(href="#").btn-orange CONTACT FORM
-        .home02-wwa__content
-          .main-title
-            p WHO WE ARE
-            h3 Our Mission, 
-              br  
-              | Values and Motto
-            span A putrid, nicotine-shaded mist loomed over Beijing on Thursday after a massive sandstorm slammed into the Chinese capital bringing the latest airpocalypse to this smog-choked city.
-          .home02-wwa__signature
-            p.text-signature Patterson 
-            p.name.text-orange James Patterson
-            p.job-title Founder & CEO
+      .row
+        .home02-wwa__inner
+          .home02-wwa__cover(style="background-image: url('images/home02-wwa01.jpg')")
+            .home02-wwa__cover-inner
+              h3 How Can We Help ?
+              .home02-wwa__divider
+              p.home02-wwa__sm-title
+                i.fa.fa-life-ring
+                | Hotline 24/7
+              p.home02-wwa__text (+917) 814 - 3527   -   (+917) 814 - 3527
+              p.home02-wwa__sm-title
+                i.fa.fa-location-arrow
+                | Location
+              p.home02-wwa__text 307 Jesse Centers
+                br
+                | London City, England 12568 
+              a(href="#").btn-orange CONTACT FORM
+          .home02-wwa__content
+            .main-title
+              p WHO WE ARE
+              h3 Our Mission, 
+                br  
+                | Values and Motto
+              span A putrid, nicotine-shaded mist loomed over Beijing on Thursday after a massive sandstorm slammed into the Chinese capital bringing the latest airpocalypse to this smog-choked city.
+            .home02-wwa__signature
+              p.text-signature Patterson 
+              p.name.text-orange James Patterson
+              p.job-title Founder & CEO
   //-testimonial
   .home02-testimonial.ssp.bg-blue-light.ssb60
     .container
@@ -426,10 +440,11 @@ append content
     .container
       .row
         .col-md-8
-          .main-title
-            p OUR BLOG
-            h3 Our latest news
-            a(href="#") View all post
+          .row
+            .main-title
+              p OUR BLOG
+              h3 Our latest news
+              a(href="#") View all post
       .row
         .home02-blog__inner
           .col-md-4
@@ -518,125 +533,126 @@ append content
   //- team
   .home02-team.ssp
     .container
-      .main-title
-        p OUR TEAM
-        h3 Meet our team
-        .group-control.group-slider-control01
-          .control.js-btn-prev__team
-            i.fa.fa-angle-left
-          .control.js-btn-next__team
-            i.fa.fa-angle-right
       .row
+        .main-title
+          p OUR TEAM
+          h3 Meet our team
+          .group-control.group-slider-control01
+            .control.js-btn-prev__team
+              i.fa.fa-angle-left
+            .control.js-btn-next__team
+              i.fa.fa-angle-right
         .home02-team__inner
-          .js-slick-team-home02.slick-team-home02
-            .team02__item-carousel
-              .team02__item
-                .overlay02
-                  p.team02__name James Patterson
-                  p.team02__job Founder & CEO
-                  .team02__divider
-                  p.team02__desc Enim nisi dui potenti tempor lacinia elementum massa nascetur, curabitur augue netus imperdiet nam.
-                  ul.list-social01
-                    li
-                      a(href="#").facebook
-                        i.fa.fa-facebook
-                    li
-                      a(href="#").twitter
-                        i.fa.fa-twitter
-                    li
-                      a(href="#").pinterest
-                        i.fa.fa-pinterest
-                img(src="images/team01.png" alt="demo")
-            .team02__item-carousel
-              .team02__item
-                .overlay02
-                  p.team02__name James Patterson
-                  p.team02__job Founder & CEO
-                  .team02__divider
-                  p.team02__desc Enim nisi dui potenti tempor lacinia elementum massa nascetur, curabitur augue netus imperdiet nam.
-                  ul.list-social01
-                    li
-                      a(href="#").facebook
-                        i.fa.fa-facebook
-                    li
-                      a(href="#").twitter
-                        i.fa.fa-twitter
-                    li
-                      a(href="#").pinterest
-                        i.fa.fa-pinterest
-                img(src="images/team02.png" alt="demo")
-            .team02__item-carousel
-              .team02__item
-                .overlay02
-                  p.team02__name James Patterson
-                  p.team02__job Founder & CEO
-                  .team02__divider
-                  p.team02__desc Enim nisi dui potenti tempor lacinia elementum massa nascetur, curabitur augue netus imperdiet nam.
-                  ul.list-social01
-                    li
-                      a(href="#").facebook
-                        i.fa.fa-facebook
-                    li
-                      a(href="#").twitter
-                        i.fa.fa-twitter
-                    li
-                      a(href="#").pinterest
-                        i.fa.fa-pinterest
-                img(src="images/team03.png" alt="demo")
-            .team02__item-carousel
-              .team02__item
-                .overlay02
-                  p.team02__name James Patterson
-                  p.team02__job Founder & CEO
-                  .team02__divider
-                  p.team02__desc Enim nisi dui potenti tempor lacinia elementum massa nascetur, curabitur augue netus imperdiet nam.
-                  ul.list-social01
-                    li
-                      a(href="#").facebook
-                        i.fa.fa-facebook
-                    li
-                      a(href="#").twitter
-                        i.fa.fa-twitter
-                    li
-                      a(href="#").pinterest
-                        i.fa.fa-pinterest
-                img(src="images/team01.png" alt="demo")
-            .team02__item-carousel
-              .team02__item
-                .overlay02
-                  p.team02__name James Patterson
-                  p.team02__job Founder & CEO
-                  .team02__divider
-                  p.team02__desc Enim nisi dui potenti tempor lacinia elementum massa nascetur, curabitur augue netus imperdiet nam.
-                  ul.list-social01
-                    li
-                      a(href="#").facebook
-                        i.fa.fa-facebook
-                    li
-                      a(href="#").twitter
-                        i.fa.fa-twitter
-                    li
-                      a(href="#").pinterest
-                        i.fa.fa-pinterest
-                img(src="images/team02.png" alt="demo")
-            .team02__item-carousel
-              .team02__item
-                .overlay02
-                  p.team02__name James Patterson
-                  p.team02__job Founder & CEO
-                  .team02__divider
-                  p.team02__desc Enim nisi dui potenti tempor lacinia elementum massa nascetur, curabitur augue netus imperdiet nam.
-                  ul.list-social01
-                    li
-                      a(href="#").facebook
-                        i.fa.fa-facebook
-                    li
-                      a(href="#").twitter
-                        i.fa.fa-twitter
-                    li
-                      a(href="#").pinterest
-                        i.fa.fa-pinterest
-                img(src="images/team03.png" alt="demo")
+          .row
+            .js-slick-team-home02.slick-team-home02
+              .team02__item-carousel
+                .team02__item
+                  .overlay02
+                    p.team02__name James Patterson
+                    p.team02__job Founder & CEO
+                    .team02__divider
+                    p.team02__desc Enim nisi dui potenti tempor lacinia elementum massa nascetur, curabitur augue netus imperdiet nam.
+                    ul.list-social01
+                      li
+                        a(href="#").facebook
+                          i.fa.fa-facebook
+                      li
+                        a(href="#").twitter
+                          i.fa.fa-twitter
+                      li
+                        a(href="#").pinterest
+                          i.fa.fa-pinterest
+                  img(src="images/team01.png" alt="demo")
+              .team02__item-carousel
+                .team02__item
+                  .overlay02
+                    p.team02__name James Patterson
+                    p.team02__job Founder & CEO
+                    .team02__divider
+                    p.team02__desc Enim nisi dui potenti tempor lacinia elementum massa nascetur, curabitur augue netus imperdiet nam.
+                    ul.list-social01
+                      li
+                        a(href="#").facebook
+                          i.fa.fa-facebook
+                      li
+                        a(href="#").twitter
+                          i.fa.fa-twitter
+                      li
+                        a(href="#").pinterest
+                          i.fa.fa-pinterest
+                  img(src="images/team02.png" alt="demo")
+              .team02__item-carousel
+                .team02__item
+                  .overlay02
+                    p.team02__name James Patterson
+                    p.team02__job Founder & CEO
+                    .team02__divider
+                    p.team02__desc Enim nisi dui potenti tempor lacinia elementum massa nascetur, curabitur augue netus imperdiet nam.
+                    ul.list-social01
+                      li
+                        a(href="#").facebook
+                          i.fa.fa-facebook
+                      li
+                        a(href="#").twitter
+                          i.fa.fa-twitter
+                      li
+                        a(href="#").pinterest
+                          i.fa.fa-pinterest
+                  img(src="images/team03.png" alt="demo")
+              .team02__item-carousel
+                .team02__item
+                  .overlay02
+                    p.team02__name James Patterson
+                    p.team02__job Founder & CEO
+                    .team02__divider
+                    p.team02__desc Enim nisi dui potenti tempor lacinia elementum massa nascetur, curabitur augue netus imperdiet nam.
+                    ul.list-social01
+                      li
+                        a(href="#").facebook
+                          i.fa.fa-facebook
+                      li
+                        a(href="#").twitter
+                          i.fa.fa-twitter
+                      li
+                        a(href="#").pinterest
+                          i.fa.fa-pinterest
+                  img(src="images/team01.png" alt="demo")
+              .team02__item-carousel
+                .team02__item
+                  .overlay02
+                    p.team02__name James Patterson
+                    p.team02__job Founder & CEO
+                    .team02__divider
+                    p.team02__desc Enim nisi dui potenti tempor lacinia elementum massa nascetur, curabitur augue netus imperdiet nam.
+                    ul.list-social01
+                      li
+                        a(href="#").facebook
+                          i.fa.fa-facebook
+                      li
+                        a(href="#").twitter
+                          i.fa.fa-twitter
+                      li
+                        a(href="#").pinterest
+                          i.fa.fa-pinterest
+                  img(src="images/team02.png" alt="demo")
+              .team02__item-carousel
+                .team02__item
+                  .overlay02
+                    p.team02__name James Patterson
+                    p.team02__job Founder & CEO
+                    .team02__divider
+                    p.team02__desc Enim nisi dui potenti tempor lacinia elementum massa nascetur, curabitur augue netus imperdiet nam.
+                    ul.list-social01
+                      li
+                        a(href="#").facebook
+                          i.fa.fa-facebook
+                      li
+                        a(href="#").twitter
+                          i.fa.fa-twitter
+                      li
+                        a(href="#").pinterest
+                          i.fa.fa-pinterest
+                  img(src="images/team03.png" alt="demo")
   //- brand
   .brand.bg-blue-light
     .container
@@ -659,7 +675,7 @@ append content
   //- footer
   include modules/footer/footer02.pug
   +lib
-  script(defer src="js/main-slider-home01.min.js")
+  script(defer src="js/main-slider-home02.min.js")
   script(defer src="js/slick-team-home02.min.js")
   script(defer src="js/brand-carousel.min.js")
   script(defer src="js/main-menu-desktop.min.js")
