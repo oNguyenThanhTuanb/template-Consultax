@@ -49,23 +49,30 @@
   color: $dmcolor;
 }
 
-.slider-home-03 {
-  .btn-play-video {
-    border: 2px solid $white;
-    background-color: $scolor;
-    color: $white;
-    width: 50px;
-    height: 50px;
-    text-align: center;
-    font-size: 30px;
-    display: block;
-    border-radius: 50%;
-    cursor: pointer;
+.btn-play-video {
+  border: 2px solid $white;
+  background-color: $scolor;
+  color: $white;
+  width: 50px;
+  height: 50px;
+  text-align: center;
+  font-size: 30px;
+  display: block;
+  border-radius: 50%;
+  cursor: pointer;
+  text-align: center!important;
 
-    i {
-      line-height: 46px;
-    }
+  i {
+    line-height: 46px;
   }
+}
+
+.btn-close-video {
+  font-size: 30px;
+  color: $black;
+}
+
+.slider-home-03 {
 
   .video-desc {
     color: $white;
@@ -112,3 +119,4 @@
     }
   }
 }
+

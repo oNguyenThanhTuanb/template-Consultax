@@ -14,10 +14,7 @@ $(document).ready(function() {
           jsFileLocation: "revolution/js/",
           sliderLayout: "fullscreen",
           autoHeight: "off",
-          // fullScreenAutoWidth: "off",
-          // fullScreenAlignForce: "off",
           fullScreenOffsetContainer: ".home05-cta-main",
-          // fullScreenOffset: "",
           delay: 9000,
           spinner:"off",
           navigation: {

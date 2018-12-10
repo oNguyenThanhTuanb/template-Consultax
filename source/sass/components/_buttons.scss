@@ -91,6 +91,11 @@
     outline: 0;
     box-shadow: none;
   }
+
+  @include sm {
+    top: 80vh;
+    left: -25px;
+  }
 }
 
 
@@ -99,6 +104,7 @@
   color: $scolor;
   top: auto;
   bottom: 148px;
+  display: none;
 
   .icon {
     padding-right: 0;

@@ -102,6 +102,9 @@
     }
     @include md { 
       padding: 40px 15px;
+      .footer02__slider-address01 {
+        margin-top: 30px;
+      }
     }
   }
 
@@ -240,7 +243,7 @@
     padding-bottom: 0;
 
     &__block01,
-    &__block02 {
+    .footer08__block02 {
       text-align: center;
       margin-bottom: 30px;
     }

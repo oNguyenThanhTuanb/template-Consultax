@@ -5,3 +5,18 @@
     width: 100%;
   }
 }
+
+.home07-project__thumb {
+  margin-top: 30px;
+
+  .item {
+    padding: 0 15px;
+  }
+
+  .slick-slide.slick-current.slick-active {
+    .item .home07-project__thumb-item {
+      opacity: 1;
+      background-color: rgba(255,255,255,0.1);
+    }
+  }
+}

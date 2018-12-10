@@ -188,6 +188,11 @@
 
 .home04-wwa__inner {
 
+  @include md {
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+
 }
 
 .home04-wwa__description {
@@ -317,19 +322,4 @@
   }
 }
 
-.home08-wwa__inner {
-  display: flex;
 
-  .home02-wwa__content {
-    flex: 0 0 40%;
-    padding-left: 0;
-  }
-
-  .home08-wwa__cover {
-    flex: 0 0 60%;
-
-    img {
-      transform: translateY(-90px);
-    }
-  }
-}
