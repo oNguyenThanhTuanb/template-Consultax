@@ -90,7 +90,19 @@ var options = {
       baseDirs.source + 'images/*.*'
     ],
     out: baseDirs.dest + 'images/'
-  }
+  },
+  scssunmin: {
+    outputStyle: 'nested', //nested
+    precison: 3,
+    errLogToConsole: true,
+    includePaths: [
+      './node_modules'
+    ],
+    in: [
+      baseDirs.sourceSCSS + '*.scss'
+    ],
+    out: baseDirs.dest + 'cssunmin/'
+  },
 };
 
 
@@ -254,6 +266,24 @@ gulp.task('compile-css', ['copy-fonts'], function(cb) {
       suffix: '.min'
     }))
     .pipe(gulp.dest(options.scss.out))
+    .pipe(browserSync.stream());
+});
+
+gulp.task('build-css', function(cb) {
+  return gulp
+    .src(options.scssunmin.in)
+    .pipe($.sourcemaps.init())
+    .pipe($.sass(options.scssunmin)
+      .on('error', $.sass.logError))
+    .pipe($.autoprefixer())
+    .pipe($.sourcemaps.write('./', {
+      includeContent: false,
+      sourceRoot: baseDirs.sourceSCSS
+    }))
+    // .pipe(rename({
+    //   suffix: '.min'
+    // }))
+    .pipe(gulp.dest(options.scssunmin.out))
     .pipe(browserSync.stream());
 });
 

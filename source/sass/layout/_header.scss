@@ -746,3 +746,62 @@
       display: block;
     }
   }
+
+  .header-container {
+    transition: all .3s;
+
+    &.clone {
+      position: fixed;
+      z-index: 999;
+      width: 100%;
+      left: 0;
+      top: 0;
+      transform: translateY(-100%);
+      opacity: 0;
+
+      &.fixed {
+        opacity: 1;
+        transform: none;
+        box-shadow: 0px 0px 3px #ccc;
+      }
+    }
+
+    // home 01
+    &.clone.stick-header-nav {
+      .home01__topbar,
+      .header01__info,
+      .header01__control {
+        display: none;
+      }
+
+      .header01 {
+        display: flex;
+        padding: 15px;
+        justify-content: space-between;
+        width: 100%;
+        background-color: #00387a;
+
+        &__top {
+          .container {
+            width: auto;
+          }
+        }
+
+        &__bottom {
+          flex-grow: 1;
+
+          .container {
+            width: auto;
+          }
+
+          &-inner {
+            justify-content: flex-end;
+
+            .navi-level-1 {
+              flex-grow: 0;
+            }
+          }
+        }
+      }
+    }
+  }
