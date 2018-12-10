@@ -183,49 +183,19 @@ li {
       padding-right: 30px;
     }
   }
-  @include min-lg {
-    .main-title {
-      width: calc(58.33333333% - 115px);
-      position: absolute;
-      right: 0;
-      top: 80px;
-    }
-  }
-	@include md-lg {
-		.main-title {
-			width: calc(58.33333333% - 115px);
-			position: absolute;
-			left: 45%;
-			top: 0;
-		}
-	}
 
-	.thumb-img {
-		margin-bottom: 30px;
-		float: right;
+	.thumb-img_testimonial-03 {
 		position: relative;
-		width: 100%;
-    @include min-md {
-      margin-bottom: 70px;
-      width: 92%;
-    }
-		img {
-			box-shadow: 1px 12px 22px 17px  rgba(#fafafa, .6);
-			float: right;
+		padding-left: 35px;
+		padding-bottom: 76px;
+
+		.inner {
+			box-shadow: -1px 12px 25px 0px rgba(0,0,0,0.3);
 			position: relative;
-			z-index: 10;
+			z-index: 2;
+
+			img {width: 100%;}
 		}
-    @include min-md {
-      &:before{
-        content: "";
-        width: 100%;
-        height: 100%;
-        background-color: $blue-base;
-        bottom: -70px;
-        right: 35px;
-        position: absolute;
-      }
-    }
 	}
 
 	&__desc {
@@ -233,15 +203,6 @@ li {
 		background-image: url('../images/h3_testimonial_bg.png');
 		background-repeat: no-repeat;
     padding-top: 20px;
-    @include min-lg {
-      padding-left: 30px;
-      margin-top: 200px;
-      margin-left: 80px;
-    }
-		@include md-lg {
-			padding-left: 30px;
-      margin-top: 80px;
-		}
 	}
 
 	&__bottom {
@@ -445,6 +406,12 @@ li {
 		overflow: hidden;
 		border-radius: 50%;
 		margin-right: 20px;
+
+		img {
+			width: 100%;
+			height: 100%;
+			object-fit: cover;
+		}
 	}
 
 	&__star {
@@ -466,6 +433,13 @@ li {
     font-size: 12px;
     font-weight: 900;
     margin-bottom: 8px;
+	}
+
+	@include lg {
+		&__desc {
+			font-size: 18px;
+			line-height: 1.3;
+		}
 	}
 }
 

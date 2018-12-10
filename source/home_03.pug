@@ -120,7 +120,7 @@ append header
   nav#menu
     ul
       li
-        a(href='#') Company
+        a(href='#') HOME
         ul
           li
             a(href='index.html') Home Version  1
@@ -207,8 +207,8 @@ append content
           .tp-caption.tp-resizeme.sh1--white(
             data-x="['center']", 
             data-hoffset="['0']", 
-            data-y='top', 
-            data-voffset='250', 
+            data-y='center', 
+            data-voffset='-100', 
             data-width="auto", 
             data-transform_idle='o:1;', 
             data-transform_in='y:100px;opacity:0;s:800;e:Power3.easeOut;', 
@@ -221,10 +221,10 @@ append content
             data-x="['center']", 
             data-hoffset="['0']", 
             data-y='center', 
-            data-voffset="['0','-55','-55','-55']", 
+            data-voffset="['0','0','0','0']", 
             data-width="['670','580','480','320']", 
             data-transform_idle='o:1;', 
-            data-transform_in='y:100px;opacity:0;s:800;e:Power3.easeOut;', 
+            data-transform_in='y:100px;opacity:0;s:1000;e:Power3.easeOut;', 
             data-transform_out='s:1000;e:Power3.easeInOut;s:1000;e:Power3.easeInOut;', 
             data-start='1700', 
             data-whitespace="['normal']", 
@@ -236,26 +236,26 @@ append content
           .tp-caption(
             data-x="['center']", 
             data-hoffset="['0']", 
-            data-y='bottom', 
-            data-voffset="['200','175','175','175']", 
-            data-transform_idle='o:1;', 
-            data-transform_in='y:100px;opacity:0;s:800;e:Power3.easeOut;', 
-            data-transform_out='s:1000;e:Power3.easeInOut;s:1000;e:Power3.easeInOut;', 
-            data-start='1900'
-            data-actions='[{"event":"mouseenter","action":"startlayer","layer":"slide-2971-layer-18","delay":""},{"event":"mouseleave","action":"stoplayer","layer":"slide-2971-layer-18","delay":""},{"event":"click","action":"startlayer","layer":"slide-2971-layer-15","delay":""},{"event":"click","action":"startlayer","layer":"slide-2971-layer-19","delay":""},{"event":"click","action":"startlayer","layer":"slide-2971-layer-20","delay":"1000"},{"event":"click","action":"playvideo","layer":"slide-2971-layer-15","delay":"1000"}]')
-            .btn-play-video
-              i.icon.ion-ios-play
-          .tp-caption(
-            data-x="['center']", 
-            data-hoffset="['0']", 
-            data-y='bottom', 
-            data-voffset="['150','175','175','175']",
+            data-y='center', 
+            data-voffset="['120','120','120','120']",
             data-fontsize="['14','14','14','14']", 
             data-transform_idle='o:1;', 
             data-transform_in='y:100px;opacity:0;s:800;e:Power3.easeOut;', 
             data-transform_out='s:1000;e:Power3.easeInOut;s:1000;e:Power3.easeInOut;', 
             data-start='2000')
             span.video-desc Video Company
+          .tp-caption(
+            data-x="['center']", 
+            data-hoffset="['0']", 
+            data-y='center', 
+            data-voffset="['180','180','180','180']", 
+            data-transform_idle='o:1;', 
+            data-transform_in='y:100px;opacity:0;s:1200;e:Power3.easeOut;', 
+            data-transform_out='s:1000;e:Power3.easeInOut;s:1000;e:Power3.easeInOut;', 
+            data-start='1900'
+            data-actions='[{"event":"mouseenter","action":"startlayer","layer":"slide-2971-layer-18","delay":""},{"event":"mouseleave","action":"stoplayer","layer":"slide-2971-layer-18","delay":""},{"event":"click","action":"startlayer","layer":"slide-2971-layer-15","delay":""},{"event":"click","action":"startlayer","layer":"slide-2971-layer-19","delay":""},{"event":"click","action":"startlayer","layer":"slide-2971-layer-20","delay":"1000"},{"event":"click","action":"playvideo","layer":"slide-2971-layer-15","delay":"1000"}]')
+            .btn-play-video
+              i.icon.ion-ios-play
           .tp-caption.tp-resizeme.tp-videolayer(
             id="slide-2971-layer-15" 
             data-x="['center','center','center','center']" 
@@ -381,24 +381,31 @@ append content
       .row
         .testimonial.testimonial3
           .row
-            .testimonial4__content
-              .group-control.group-slider-control04
-                .control.js-btn-prev__testimonial
-                  i.fa.fa-angle-left
-                .control.js-btn-next__testimonial
-                  i.fa.fa-angle-right
-              .main-title
-                p TESTIMONIAL & PARTNER
-                h3 What our clients say    
-              .js-slick-testimonial-home03
-                .home03-testimonial-item.list-item
-                  .row
-                    .col-sm-5
-                      .thumb-img
-                        img(src="images/h3_avatar1.png" alt="")
-                    .col-sm-7
-                      .testimonial__desc.testimonial3__desc
-                        | “A wonderful serenity has taken possession of my entire soul, like these sweet mornings of spring which I enjoy with my whole heart.”
+            .testimonial-home03__inner
+              .testimonial-thumb-container
+                .group-control
+                  .control.js-btn-prev__testimonial
+                    i.fa.fa-angle-left
+                  .control.js-btn-next__testimonial
+                    i.fa.fa-angle-right
+                .js-slick-testimonial-thumb-home03.testimonial-thumb-home03
+                  .thumb-img_testimonial-03
+                    .inner
+                      img(src="images/h3_avatar1.png" alt="demo")
+                  .thumb-img_testimonial-03
+                    .inner
+                      img(src="images/h3_avatar2.png" alt="demo")
+                  .thumb-img_testimonial-03
+                    .inner
+                      img(src="images/h3_avatar1.png" alt="demo")
+              .testimonial-content-container
+                .main-title
+                  p TESTIMONIAL & PARTNER
+                  h3 What our clients say
+                .js-slick-testimonial-content-home03   
+                  .content-item
+                    .testimonial__desc.testimonial3__desc
+                      | “A wonderful serenity has taken possession of my entire soul, like these sweet mornings of spring which I enjoy with my whole heart.”
                       .testimonial3__bottom
                         .testimonial3__info
                           h3.testimonial-title.pull-left Caroline Cummings
@@ -409,35 +416,12 @@ append content
                           i.icon.ion-ios-star
                           i.icon.ion-ios-star
                           i.icon.ion-ios-star-half
-                .home03-testimonial-item.list-item
-                  .row
-                    .col-sm-5
-                      .thumb-img
-                        img(src="images/h3_avatar1.png" alt="")
-                    .col-sm-7
-                      .testimonial__desc.testimonial3__desc
-                        | “A wonderful serenity has taken possession of my entire soul, like these sweet mornings of spring which I enjoy with my whole heart.”
+                  .content-item
+                    .testimonial__desc.testimonial3__desc
+                      | “If a country is to be corruption free and become a nation of beautiful minds, I strongly feel there are three key societal members who can make a difference. They are the father, the mother and the teacher.”
                       .testimonial3__bottom
                         .testimonial3__info
-                          h3.testimonial-title.pull-left Caroline Cummings
-                          p.testimonial-from.pull-left - from Berlin
-                        span.testimonial1__star.testimonial__star
-                          i.icon.ion-ios-star
-                          i.icon.ion-ios-star
-                          i.icon.ion-ios-star
-                          i.icon.ion-ios-star
-                          i.icon.ion-ios-star-half  
-                .home03-testimonial-item.list-item
-                  .row
-                    .col-sm-5
-                      .thumb-img
-                        img(src="images/h3_avatar1.png" alt="")
-                    .col-sm-7
-                      .testimonial__desc.testimonial3__desc
-                        | “A wonderful serenity has taken possession of my entire soul, like these sweet mornings of spring which I enjoy with my whole heart.”
-                      .testimonial3__bottom
-                        .testimonial3__info
-                          h3.testimonial-title.pull-left Caroline Cummings
+                          h3.testimonial-title.pull-left Jules Renard
                           p.testimonial-from.pull-left - from Berlin
                         span.testimonial1__star.testimonial__star
                           i.icon.ion-ios-star
@@ -445,24 +429,19 @@ append content
                           i.icon.ion-ios-star
                           i.icon.ion-ios-star
                           i.icon.ion-ios-star-half
-                .home03-testimonial-item.list-item
-                  .row
-                    .col-sm-5
-                      .thumb-img
-                        img(src="images/h3_avatar1.png" alt="")
-                    .col-sm-7
-                      .testimonial__desc.testimonial3__desc
-                        | “A wonderful serenity has taken possession of my entire soul, like these sweet mornings of spring which I enjoy with my whole heart.”
+                  .content-item
+                    .testimonial__desc.testimonial3__desc
+                      | “Our task must be to free ourselves... by widening our circle of compassion to embrace all living creatures and the whole of nature and it's beauty”
                       .testimonial3__bottom
                         .testimonial3__info
-                          h3.testimonial-title.pull-left Caroline Cummings
+                          h3.testimonial-title.pull-left Albert Einstein
                           p.testimonial-from.pull-left - from Berlin
                         span.testimonial1__star.testimonial__star
                           i.icon.ion-ios-star
                           i.icon.ion-ios-star
                           i.icon.ion-ios-star
                           i.icon.ion-ios-star
-                          i.icon.ion-ios-star-half                                
+                          i.icon.ion-ios-star-half
   //- brand
   .brand.brand-slider-home03
     .container
@@ -550,7 +529,7 @@ append content
   .home03-wcu.ssp
     .container
       .row
-        .home03-wcu__inner
+        .home03-wcu-inner
           .row
             .col-md-6
               .home03-feature-img

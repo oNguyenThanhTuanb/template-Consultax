@@ -4,10 +4,10 @@ $(document).ready(function() {
 
   var revapi8;
   tpj(document).ready(function() {
-    if (tpj("#js-slider-home08").revolution == undefined) {
-      revslider_showDoubleJqueryError("#js-slider-home08");
+    if (tpj("#js-slider-home06").revolution == undefined) {
+      revslider_showDoubleJqueryError("#js-slider-home06");
     } else {
-      revapi8 = tpj("#js-slider-home08")
+      revapi8 = tpj("#js-slider-home06")
         .show()
         .revolution({
           sliderType: "standard",
@@ -15,12 +15,7 @@ $(document).ready(function() {
           sliderLayout: "fullscreen",
           autoHeight: "off",
           delay: 9000,
-          spinner: "off",
-          autoHeight: "off",
-          fullScreenAutoWidth: "off",
-          fullScreenAlignForce: "off",
-          fullScreenOffsetContainer: "",
-          fullScreenOffset: "",
+          spinner:"off",
           navigation: {
             arrows: {
               enable: true,
