@@ -3,36 +3,37 @@ include modules/script/lib
 append head
   title="Index - HomePage 05"
 append header
-  .header02
-    .home02__topbar
-      .container
-        .home02__topbar-inner
-          .left
-            span
-              i.fa.fa-envelope
-              | info.consutax@gmail.com 
-            a(href="tel:+911  125 814 - 3527") 
-              i.fa.fa-phone
-              | +911  125 814 - 3527
-          .right
-            ul.list-social02
-              li
-                a(href="#").facebook
-                  i.fa.fa-facebook
-              li
-                a(href="#").twitter
-                  i.fa.fa-twitter
-              li
-                a(href="#").pinterest
-                  i.fa.fa-pinterest
-              li
-                a(href="#").linkedin
-                  i.fa.fa-linkedin
-            select.language-select
-              option ENG
-              option FRA
-              option VNI
-    .home02__header
+  .header-container.js-sticky-header.stick-header-nav
+    .header02
+      .home02__topbar
+        .container
+          .home02__topbar-inner
+            .left
+              span
+                i.fa.fa-envelope
+                | info.consutax@gmail.com 
+              a(href="tel:+911  125 814 - 3527") 
+                i.fa.fa-phone
+                | +911  125 814 - 3527
+            .right
+              ul.list-social02
+                li
+                  a(href="#").facebook
+                    i.fa.fa-facebook
+                li
+                  a(href="#").twitter
+                    i.fa.fa-twitter
+                li
+                  a(href="#").pinterest
+                    i.fa.fa-pinterest
+                li
+                  a(href="#").linkedin
+                    i.fa.fa-linkedin
+              select.language-select
+                option ENG
+                option FRA
+                option VNI
+      .home02__header
       .container
         .header02__inner
           .header01__logo
@@ -808,3 +809,4 @@ append content
   script(defer src="js/main-slider-home05.min.js")
   script(defer src="js/main-menu-desktop.min.js")
   script(defer src="js/mobilemenu.min.js")
+  script(defer src="js/sticky-header.min.js")

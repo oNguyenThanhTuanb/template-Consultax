@@ -178,7 +178,7 @@
     background-color: $dcolor;
     color: $white;
     font-size: 12px;
-    @include lg { 
+    @include lg {
       display: none;
     }
     &-inner {
@@ -209,7 +209,7 @@
     }
   }
 }
-@include lg { 
+@include lg {
   .header01__logo,
   .header04__logo,
   .header06__logo  {
@@ -227,13 +227,13 @@
       align-items: center;
     }
   }
-  
+
   &__info {
     display: flex;
     color: $white;
     font-size: 14px;
     line-height: 22px;
-    @include lg { 
+    @include lg {
       display: none;
     }
 
@@ -274,7 +274,7 @@
 
   &__bottom {
     background-color: $mcolor;
-    @include lg { 
+    @include lg {
       display: none;
     }
     &-inner {
@@ -391,7 +391,7 @@
 .home02__topbar {
   color: $white;
   border-bottom: 1px solid rgba($color: $white, $alpha: .2);
-  @include lg { 
+  @include lg {
     display: none;
   }
   a {
@@ -439,7 +439,7 @@
 
 .home02 {
   &__header {
-  
+
   }
 }
 
@@ -455,7 +455,7 @@
     display: flex;
     flex-grow: 1;
     justify-content: flex-end;
-    @include lg { 
+    @include lg {
       display: none;
     }
     .navi-level-1 {
@@ -556,7 +556,7 @@
 .home04__topbar {
   background-color: $dmcolor;
   color: $white;
-  @include lg { 
+  @include lg {
     display: none;
   }
 
@@ -598,7 +598,7 @@
     flex-grow: 1;
     justify-content: flex-end;
     padding: 25px 0;
-    @include lg { 
+    @include lg {
       display: none;
     }
     .navi-level-1 {
@@ -638,7 +638,7 @@
 
 .home07__topbar {
   @extend .home04__topbar;
-  
+
   background-color: $mcolor;
 }
 
@@ -661,7 +661,7 @@
       display: flex;
       flex-grow: 1;
       justify-content: flex-end;
-      @include lg { 
+      @include lg {
         display: none;
       }
       .navi-level-1 {
@@ -674,22 +674,22 @@
       display: flex;
       align-items: center;
       flex-wrap: nowrap;
-  
+
       a {
         color: $white;
         transition: $transition-base;
-  
+
         &:hover,
         &:focus {
           color: $scolor;
         }
       }
-  
+
       .header01-btn-cart {
         padding-left: 25px;
         padding-right: 50px;
       }
-  
+
       .header01-search {
         padding-left: 54px;
         padding-right: 20px;
@@ -703,7 +703,7 @@
       justify-content: center;
       align-items: center;
       padding: 20px 30px;
-      
+
       .icon {
         font-size: 36px;
         padding-right: 15px;
@@ -802,6 +802,84 @@
             }
           }
         }
+      }
+      // home 2
+      .home02__topbar,
+      .header02__control-inner {
+        display: none;
+      }
+      .header02 {
+        display: flex;
+        padding: 15px;
+        justify-content: space-between;
+        width: 100%;
+        background-color: #00387a;
+        .container {
+          width: 100%;
+        }
+        &__inner {
+          justify-content: flex-end;
+          padding: 0;
+        }
+      }
+
+      // Home 3
+      .header03__content-top {
+        display: none;
+      }
+      .header03 {
+        display: flex;
+        padding: 15px;
+        justify-content: space-between;
+        width: 100%;
+        background-color: #00387a;
+        box-shadow: 0 1px 6px #929191;
+        padding: 0;
+        &__content-bottom {
+          padding-top: 22px;
+        }
+        .container {
+          width: 100%;
+        }
+
+        &__inner {
+          justify-content: flex-end;
+          padding: 0;
+          justify-content: space-between;
+          width: 100%;
+        }
+      }
+      // home 4
+      .home04__topbar,
+      .header04__control {
+        display: none;
+      }
+
+      .header04 {
+        display: flex;
+        padding: 15px;
+        justify-content: space-between;
+        width: 100%;
+        background-color: #fff;
+        padding: 0;
+
+        .container {
+          width: 100%;
+        }
+
+        &__menu {
+          justify-content: flex-end;
+          padding: 10px;
+        }
+      }
+
+      // home 6
+      .header06 {
+        padding: 10px 30px;
+      }
+      .header06__control,
+      .header06__btn-call {
+        display: none;
       }
     }
   }

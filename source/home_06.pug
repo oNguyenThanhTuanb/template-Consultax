@@ -3,8 +3,9 @@ include modules/script/lib
 append head
   title="Index - HomePage 06"
 append header
-  .header06
-    .container.container-lg
+  .header-container.js-sticky-header.stick-header-nav
+    .header06
+      .container.container-lg
       .header06__inner
         .header06__logo
           img(src="images/logo-white.png", alt="demo")
@@ -687,3 +688,4 @@ append content
   script(defer src="js/slick-testimonial-home06.min.js")
   script(defer src="js/main-menu-desktop.min.js")
   script(defer src="js/mobilemenu.min.js")
+  script(defer src="js/sticky-header.min.js")
