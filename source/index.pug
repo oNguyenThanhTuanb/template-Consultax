@@ -3,140 +3,142 @@ include modules/script/lib
 append head
   title="Index - HomePage 01"
 append header
-  .home01__topbar
-    .container
-      .home01__topbar-inner
-        ul.list-social02
-          li
-            a(href="#").facebook
-              i.fa.fa-facebook
-          li
-            a(href="#").twitter
-              i.fa.fa-twitter
-          li
-            a(href="#").pinterest
-              i.fa.fa-pinterest
-          li
-            a(href="#").linkedin
-              i.fa.fa-linkedin
-        span  Opening Hours : Monday to Saturday - 8am to 9pm
-  .header01
-    .header01__top
+  //- stick-header-full
+  .header-container.js-sticky-header.stick-header-nav
+    .home01__topbar
       .container
-        .header01__top-inner
-          .header01__logo
-            img(src="images/logo-white.png", alt="demo")
-          a(href="#menu").btn-menu-mobile
-            i.fa.fa-bars
-          .header01__info
-            .col-1
-              p 
-                span Address: 
-                | 121 King Street
-              p Melbourne Victoria 3000 Australia
-            .col-2
-              p
-                span Free call: 
-                a(href="tel:(917)  814 - 3527") (917)  814 - 3527
-    .header01__bottom
-      .container
-        .header01__bottom-inner
-          ul.navi-level-1
+        .home01__topbar-inner
+          ul.list-social02
             li
-              a(href="#") HOME
-                i.fa.fa-caret-down
-              ul.navi-level-2
-                li
-                  a(href='index.html') Home Version  1
-                li
-                  a(href='home_02.html') Home Version  2
-                li
-                  a(href='home_03.html') Home Version  3
-                li
-                  a(href='home_04.html') Home Version  4
-                li
-                  a(href='home_05.html') Home Version  5
-                li
-                  a(href='home_06.html') Home Version  6
-                li
-                  a(href='home_07.html') Home Version  7
-                li
-                  a(href='home_08.html') Home Version  8
+              a(href="#").facebook
+                i.fa.fa-facebook
             li
-              a(href="#") ABOUT
-                i.fa.fa-caret-down               
+              a(href="#").twitter
+                i.fa.fa-twitter
             li
-              a(href="#") PAGES
-                i.fa.fa-caret-down 
-              ul.navi-level-2
-                li
-                  a(href='#') Shop
-                    i.fa.fa-caret-right
-                  ul.navi-level-3
-                    li
-                      a(href='#') Shop 2
-                    li
-                      a(href='#') Shop 3
-                li
-                  a(href='#') Event
-                    i.fa.fa-caret-right
-                  ul.navi-level-3
-                    li
-                      a(href='#') Event 2
-                    li
-                      a(href='#') Event 3
-                li
-                  a(href='#') Case Study
-                    i.fa.fa-caret-right
-                  ul.navi-level-3
-                    li
-                      a(href='#') Event 2
-                    li
-                      a(href='#') Event 3
-                li
-                  a(href='home_04.html') Coming Soon
-                li
-                  a(href='home_05.html') 404 Error              
+              a(href="#").pinterest
+                i.fa.fa-pinterest
             li
-              a(href="#") SERVICES 
-                i.fa.fa-caret-down                          
-            li
-              a(href="#") BLOG
-                i.fa.fa-caret-down
-              ul.navi-level-2
-                li
-                  a(href='#') Blog Default
-                li
-                  a(href='#') Blog Grid
-                    i.fa.fa-caret-right
-                  ul.navi-level-3
-                    li
-                      a(href='#') Blog Grid No SideBar
-                    li
-                      a(href="#") Blog Grid with Left Sidebar
-                    li
-                      a(href="#") Blog Grid with Right Sidebar
-                li
-                  a(href='#') Blog List
-                li
-                  a(href='#') Single Blog
-            li
-              a(href="#") CONTACTS
-          .header01__control
-            select.language-select
-              option ENG
-              option FRA
-              option VNI
-            .header01__control-inner
-              a(href='#').header01-btn-cart
-                i.fa.fa-shopping-cart(aria-hidden='true')
-              .header01-search
-                a.header01-btn-search.btn-search-navi(href='#/')
-                  i.fa.fa-search(aria-hidden='true')
-                .search-popup
-                  form.form-search-navi
-                    .input-group
-                      input.form-control(placeholder='Enter keyword...', type='text')
+              a(href="#").linkedin
+                i.fa.fa-linkedin
+          span  Opening Hours : Monday to Saturday - 8am to 9pm
+    .header01
+      .header01__top
+        .container
+          .header01__top-inner
+            .header01__logo
+              img(src="images/logo-white.png", alt="demo")
+            a(href="#menu").btn-menu-mobile
+              i.fa.fa-bars
+            .header01__info
+              .col-1
+                p 
+                  span Address: 
+                  | 121 King Street
+                p Melbourne Victoria 3000 Australia
+              .col-2
+                p
+                  span Free call: 
+                  a(href="tel:(917)  814 - 3527") (917)  814 - 3527
+      .header01__bottom
+        .container
+          .header01__bottom-inner
+            ul.navi-level-1
+              li
+                a(href="#") HOME
+                  i.fa.fa-caret-down
+                ul.navi-level-2
+                  li
+                    a(href='index.html') Home Version  1
+                  li
+                    a(href='home_02.html') Home Version  2
+                  li
+                    a(href='home_03.html') Home Version  3
+                  li
+                    a(href='home_04.html') Home Version  4
+                  li
+                    a(href='home_05.html') Home Version  5
+                  li
+                    a(href='home_06.html') Home Version  6
+                  li
+                    a(href='home_07.html') Home Version  7
+                  li
+                    a(href='home_08.html') Home Version  8
+              li
+                a(href="#") ABOUT
+                  i.fa.fa-caret-down               
+              li
+                a(href="#") PAGES
+                  i.fa.fa-caret-down 
+                ul.navi-level-2
+                  li
+                    a(href='#') Shop
+                      i.fa.fa-caret-right
+                    ul.navi-level-3
+                      li
+                        a(href='#') Shop 2
+                      li
+                        a(href='#') Shop 3
+                  li
+                    a(href='#') Event
+                      i.fa.fa-caret-right
+                    ul.navi-level-3
+                      li
+                        a(href='#') Event 2
+                      li
+                        a(href='#') Event 3
+                  li
+                    a(href='#') Case Study
+                      i.fa.fa-caret-right
+                    ul.navi-level-3
+                      li
+                        a(href='#') Event 2
+                      li
+                        a(href='#') Event 3
+                  li
+                    a(href='home_04.html') Coming Soon
+                  li
+                    a(href='home_05.html') 404 Error              
+              li
+                a(href="#") SERVICES 
+                  i.fa.fa-caret-down                          
+              li
+                a(href="#") BLOG
+                  i.fa.fa-caret-down
+                ul.navi-level-2
+                  li
+                    a(href='#') Blog Default
+                  li
+                    a(href='#') Blog Grid
+                      i.fa.fa-caret-right
+                    ul.navi-level-3
+                      li
+                        a(href='#') Blog Grid No SideBar
+                      li
+                        a(href="#") Blog Grid with Left Sidebar
+                      li
+                        a(href="#") Blog Grid with Right Sidebar
+                  li
+                    a(href='#') Blog List
+                  li
+                    a(href='#') Single Blog
+              li
+                a(href="#") CONTACTS
+            .header01__control
+              select.language-select
+                option ENG
+                option FRA
+                option VNI
+              .header01__control-inner
+                a(href='#').header01-btn-cart
+                  i.fa.fa-shopping-cart(aria-hidden='true')
+                .header01-search
+                  a.header01-btn-search.btn-search-navi(href='#/')
+                    i.fa.fa-search(aria-hidden='true')
+                  .search-popup
+                    form.form-search-navi
+                      .input-group
+                        input.form-control(placeholder='Enter keyword...', type='text')
   nav#menu
     ul
       li
@@ -725,4 +727,5 @@ append content
   script(defer src="js/brand-carousel.min.js")
   script(defer src="js/main-menu-desktop.min.js")
   script(defer src="js/mobilemenu.min.js")
+  script(defer src="js/sticky-header.min.js")
 
