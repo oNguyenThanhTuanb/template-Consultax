@@ -3,7 +3,7 @@
 // --------------------------------------------------
 .home03-about-us {
   width: 100%;
-  @include min-md { 
+  @include min-md {
     background: url('../images/home03-bg-about-us01.png');
     background-size: 508px 538px;
     background-position: 36% top;
@@ -16,17 +16,17 @@
   &__cover {
     position: relative;
     text-align: right;
-    @include min-md { 
+    @include min-md {
       flex: 0 0 50%;
     }
-    @include md { 
+    @include md {
       text-align: center;
       margin-bottom: 30px;
     }
     .cover {
       float: right;
       position: relative;
-      @include md { 
+      @include md {
         width: 100%;
       }
       img {
@@ -39,7 +39,7 @@
       }
 
       .home03-about-us__cover-content {
-        @include min-md { 
+        @include min-md {
           position: absolute;
           bottom: 15px;
           text-align: left;
@@ -50,7 +50,7 @@
 
     .cover02 {
       box-shadow: 0px 20px 20px 0px rgba(0, 0, 0, 0.3);
-      @include min-md { 
+      @include min-md {
         position: absolute;
         bottom: 144px;
         right: 144px;
@@ -88,7 +88,7 @@
   }
 
   &__content {
-    @include min-md {  
+    @include min-md {
       flex: 0 0 50%;
       padding-left: 100px;
     }
@@ -102,6 +102,9 @@
 }
 
 .home04-location {
+  @include md-lg {
+    margin-top: 40px;
+  }
   .main-title--vertical {
     margin-bottom: 35px;
   }
@@ -126,8 +129,7 @@
 
 .home06__about {
   padding: 90px 0;
-  @include md { 
+  @include md {
     padding: 40px 0;
   }
 }
-

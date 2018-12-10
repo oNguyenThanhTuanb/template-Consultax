@@ -12,6 +12,11 @@
 .home02-blog  {
   padding-top: 0;
 }
+.home05-blog {
+  @include lg {
+    padding: 40px 15px;
+  }
+}
 .post-type-01 {
   transition: $transition-base;
 
@@ -30,7 +35,9 @@
       font-family: $hfont;
       font-weight: bold;
       margin-bottom: 22px;
-
+      @include rwd(480) {
+        font-size: 16px;
+      }
       a {
         color: black;
         transition: $transition-base;
@@ -87,7 +94,7 @@
   }
 
   &:hover {
-    box-shadow: 0px 0px 40px 0px rgba(0, 0, 0, 0.1); 
+    box-shadow: 0px 0px 40px 0px rgba(0, 0, 0, 0.1);
   }
 }
 
@@ -124,7 +131,9 @@
     position: absolute;
     bottom: 0;
     width: 100%;
-
+    @include rwd(448) {
+      padding: 25px 20px;
+    }
     .post__title {
       font-size: 20px;
       font-family: $hfont;
@@ -134,7 +143,7 @@
       a {
         color: white;
         transition: $transition-base;
-        @include md { 
+        @include md {
           font-size: 16px;
         }
       }
@@ -192,6 +201,9 @@
 
 .post-type-03 {
   transition: $transition-base;
+  @include lg {
+    margin-bottom: 10px;
+  }
   @include min-md {
     display: flex;
   }
@@ -280,7 +292,7 @@
   }
 
   &:hover {
-    box-shadow: 0px 0px 40px 0px rgba(0, 0, 0, 0.1); 
+    box-shadow: 0px 0px 40px 0px rgba(0, 0, 0, 0.1);
   }
 }
 
@@ -382,6 +394,13 @@
 }
 
 .post-type-05 {
+  @include lg {
+    margin-bottom: 15px;
+  }
+  @include md {
+    margin-left: 15px;
+    margin-right: 15px;
+  }
   @extend .post-type-01;
   background-color: $white;
 
@@ -428,24 +447,32 @@
 
 .home03-blog__inner {
   margin-bottom: 58px;
-  @include min-md {
+  @include min-lg {
     display: flex;
     justify-content: space-between;
   }
   .home03-blog {
     &__left {
       width: 100%;
-      @include min-md {
+      @include min-lg {
         flex: 0 0 calc(50% - 15px);
+      }
+      @include lg {
+        margin-bottom: 10px;
       }
     }
 
     &__right {
-      @include min-md {
+      @include min-lg {
         flex: 0 0 calc(50% - 15px);
         display: flex;
         flex-direction: column;
         justify-content: space-between;
+      }
+      @include lg {
+        .post-type-01__content {
+          margin-bottom: 10px;
+        }
       }
     }
   }
