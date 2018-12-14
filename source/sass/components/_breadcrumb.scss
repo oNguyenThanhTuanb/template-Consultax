@@ -1,3 +1,33 @@
 //
 // Components :: Breadcrumb
 // --------------------------------------------------
+.breadcrumbs {
+  font-size: 12px;
+  margin-bottom: 30px;
+  ul {
+    margin-bottom: 0;
+    padding: 0;
+  }
+  li {
+    list-style: none;
+    color: $black;
+    display: inline-block;
+    padding: 15px 0;
+    text-transform: capitalize;
+    font-family: $hfont;
+    font-weight: bold;
+
+    &.active {
+      color: $oranger-2;
+    }
+  }
+  a {
+    color: $black;
+  }
+  a:hover {
+    color: $oranger-2;
+  }
+  span {
+    margin: 0 6px;
+  }
+}

@@ -1,0 +1,439 @@
+extends modules/layout/layout.pug
+include modules/script/lib
+append head
+  title="Index - Blog"
+append header
+  //- stick-header-full
+  .header-container.js-sticky-header.stick-header-nav
+    .home01__topbar
+      .container
+        .home01__topbar-inner
+          ul.list-social02
+            li
+              a(href="#").facebook
+                i.fa.fa-facebook
+            li
+              a(href="#").twitter
+                i.fa.fa-twitter
+            li
+              a(href="#").pinterest
+                i.fa.fa-pinterest
+            li
+              a(href="#").linkedin
+                i.fa.fa-linkedin
+          span  Opening Hours : Monday to Saturday - 8am to 9pm
+    .header01
+      .header01__top
+        .container
+          .header01__top-inner
+            .header01__logo
+              img(src="images/logo-white.png", alt="demo")
+            a(href="#menu").btn-menu-mobile
+              i.fa.fa-bars
+            .header01__info
+              .col-1
+                p 
+                  span Address: 
+                  | 121 King Street
+                p Melbourne Victoria 3000 Australia
+              .col-2
+                p
+                  span Free call: 
+                  a(href="tel:(917)  814 - 3527") (917)  814 - 3527
+      .header01__bottom
+        .container
+          .header01__bottom-inner
+            ul.navi-level-1
+              li
+                a(href="#") HOME
+                  i.fa.fa-caret-down
+                ul.navi-level-2
+                  li
+                    a(href='index.html') Home Version  1
+                  li
+                    a(href='home_02.html') Home Version  2
+                  li
+                    a(href='home_03.html') Home Version  3
+                  li
+                    a(href='home_04.html') Home Version  4
+                  li
+                    a(href='home_05.html') Home Version  5
+                  li
+                    a(href='home_06.html') Home Version  6
+                  li
+                    a(href='home_07.html') Home Version  7
+                  li
+                    a(href='home_08.html') Home Version  8
+              li
+                a(href="#") ABOUT
+                  i.fa.fa-caret-down               
+              li
+                a(href="#") PAGES
+                  i.fa.fa-caret-down 
+                ul.navi-level-2
+                  li
+                    a(href='#') Shop
+                      i.fa.fa-caret-right
+                    ul.navi-level-3
+                      li
+                        a(href='#') Shop 2
+                      li
+                        a(href='#') Shop 3
+                  li
+                    a(href='#') Event
+                      i.fa.fa-caret-right
+                    ul.navi-level-3
+                      li
+                        a(href='#') Event 2
+                      li
+                        a(href='#') Event 3
+                  li
+                    a(href='#') Case Study
+                      i.fa.fa-caret-right
+                    ul.navi-level-3
+                      li
+                        a(href='#') Event 2
+                      li
+                        a(href='#') Event 3
+                  li
+                    a(href='home_04.html') Coming Soon
+                  li
+                    a(href='home_05.html') 404 Error              
+              li
+                a(href="#") SERVICES 
+                  i.fa.fa-caret-down                          
+              li
+                a(href="#") BLOG
+                  i.fa.fa-caret-down
+                ul.navi-level-2
+                  li
+                    a(href='#') Blog Default
+                  li
+                    a(href='#') Blog Grid
+                      i.fa.fa-caret-right
+                    ul.navi-level-3
+                      li
+                        a(href='#') Blog Grid No SideBar
+                      li
+                        a(href="#") Blog Grid with Left Sidebar
+                      li
+                        a(href="#") Blog Grid with Right Sidebar
+                  li
+                    a(href='#') Blog List
+                  li
+                    a(href='#') Single Blog
+              li
+                a(href="#") CONTACTS
+            .header01__control
+              select.language-select
+                option ENG
+                option FRA
+                option VNI
+              .header01__control-inner
+                a(href='#').header01-btn-cart
+                  i.fa.fa-shopping-cart(aria-hidden='true')
+                .header01-search
+                  a.header01-btn-search.btn-search-navi(href='#/')
+                    i.fa.fa-search(aria-hidden='true')
+                  .search-popup
+                    form.form-search-navi
+                      .input-group
+                        input.form-control(placeholder='Enter keyword...', type='text')
+  nav#menu
+    ul
+      li
+        a(href='#') HOME
+        ul
+          li
+            a(href='index.html') Home Version  1
+          li
+            a(href='home_02.html') Home Version  2
+          li
+            a(href='home_03.html') Home Version  3
+          li
+            a(href='home_04.html') Home Version  4
+          li
+            a(href='home_05.html') Home Version  5
+          li
+            a(href='home_06.html') Home Version  6
+          li
+            a(href='home_07.html') Home Version  7
+          li
+            a(href='home_08.html') Home Version  8
+      li
+        a(href="#") ABOUT
+      li
+        a(href="#") PAGES
+        ul
+          li
+            a(href='#') Shop
+            ul
+              li
+                a(href='#') Shop 2
+              li
+                a(href='#') Shop 3
+          li
+            a(href='#') Event
+            ul.navi-level-3
+              li
+                a(href='#') Event 2
+              li
+                a(href='#') Event 3
+          li
+            a(href='#') Case Study
+            ul.navi-level-3
+              li
+                a(href='#') Event 2
+              li
+                a(href='#') Event 3
+          li
+            a(href='home_04.html') Coming Soon
+          li
+            a(href='home_05.html') 404 Error              
+      li
+        a(href="#") SERVICES 
+      li
+        a(href="#") BLOG
+        ul
+          li
+            a(href='#') Blog Default
+          li
+            a(href='#') Blog Grid
+            ul
+              li
+                a(href='#') Blog Grid No SideBar
+              li
+                a(href="#") Blog Grid with Left Sidebar
+              li
+                a(href="#") Blog Grid with Right Sidebar
+          li
+            a(href='#') Blog List
+          li
+            a(href='#') Single Blog
+      li
+        a(href="#") CONTACTS
+
+append content
+  .blog-container
+    .breadcrumbs
+      .container
+        ul.crumb
+          li
+            a(href='#')
+              i.fa.fa-home
+              |  home
+          span /
+          li.active  Single Post
+    .page-content.blog-page
+    .container
+      .row 
+        .col-md-4 
+          .sidebar
+            aside.widget.widget-search
+              .search-box
+                form(action="")
+                  input#s.search-field(type="text", placeholder="Search")
+                  button
+                    i.fa.fa-search
+            aside.widget.widget-category
+              h4
+                | Categories
+              ul
+                li
+                  a(href="#") Business
+                li
+                  a(href="#") Consulting 
+                li
+                  a(href="#") Franchising 
+                li
+                  a(href="#") Finacial
+                li
+                  a(href="#") Personal Injury
+                li
+                  a(href="#") Business Taxation			      
+            aside.widget.widget-feature
+              h4
+                | Featured post
+              ul
+                li 
+                  .post-blog-thumb 
+                    img(src="images/blog-thumb1.jpg")
+                  .post-blog-info
+                    h4.post-title
+                      a(href="#")
+                        | Quis sapien eget himenaeos fringilla
+                    span.date August 27, 2018	
+                li 
+                  .post-blog-thumb 
+                    img(src="images/blog-thumb2.jpg")
+                  .post-blog-info
+                    h4.post-title
+                      a(href="#")
+                        | Nostra id curae rhoncus lacinia
+                    span.date August 27, 2018	
+            aside.widget.widget-tag
+              h4
+                | Tags
+              .tag-block 
+                a(href="#") Finacial
+                a(href="#") Busines
+                a(href="#") Agency
+                a(href="#") Consuting
+                a(href="#") Advisor
+            aside.widget.widget-intagram
+              h4 
+                | Instagram
+              ul 
+                li 
+                  a(href="#")
+                    img(src="images/insta1.jpg", alt="")
+                li 
+                  a(href="#")
+                    img(src="images/insta2.jpg", alt="")
+                li 
+                  a(href="#")
+                    img(src="images/insta3.jpg", alt="")
+                li 
+                  a(href="#")
+                    img(src="images/insta4.jpg", alt="")
+                li 
+                  a(href="#")
+                    img(src="images/insta5.jpg", alt="")
+                li 
+                  a(href="#")
+                    img(src="images/insta6.jpg", alt="")                    
+            aside.widget.widget-tweet
+              h4 
+                | Recent Tweets
+              ul 
+                li
+                  .block-icon 
+                    i.fa.fa-twitter
+                  .block-info 
+                    span.tweet-sub 
+                      | Freelancers, grab some thanking your clients @mstavakoli.
+                    span.tweet-link
+                      a(href="#")
+                        | https://t.co/DOfxmjMNLz
+                li
+                  .block-icon 
+                    i.fa.fa-twitter
+                  .block-info 
+                    span.tweet-sub 
+                      | Freelancers, grab some thanking your clients @mstavakoli.
+                    span.tweet-link
+                      a(href="#")
+                        | https://t.co/DOfxmjMNLz        
+        .col-md-8
+          .blog-list.blog-single
+            article.post
+              .post-thumbail
+                img(src="images/blog-post1.jpg")
+              p.post-meta
+                span 
+                  | August 27, 2018
+                a(href="#")
+                  | Business
+              h1.post-title
+                | Cutting Your Restaurant's Operations Costs 
+              .post-content
+                p 
+                  | Lorem ipsum dolor sit amet consectetur adipiscing elit ad, tincidunt senectus felis platea natoque mattis. Dis lacinia pellentesque interdum tincidunt cubilia massa egestas primis ullamcorper velit ultrici molestie dui in feugiat lobortis erat vivamus hac condimentum est, libero nostra aliquet consequat fringilla cras lectus vitae ligula sapien. Aptent torquent magnis habitant turpis 
+                blockquote
+                  | Facilisis feugiat suspendisse elementum nisl eleifend risus id, scelerisque euismod himenaeos et hac aenean sodales nibh
+                p 
+                  | Lorem ipsum dolor sit amet consectetur adipiscing elit ad, tincidunt senectus felis platea natoque mattis. Dis lacinia pellentesque interdum tincidunt cubilia massa egestas primis ullamcorper velit ultrici molestie dui in feugiat lobortis erat vivamus hac condimentum est, libero nostra aliquet consequat fringilla cras lectus vitae ligula sapien. Aptent torquent magnis habitant turpis 
+                ul 
+                  li 
+                    i.fa.fa-check-circle
+                    |  Bibendum tempus arcu cursus orci, mus massa.  
+                  li 
+                    i.fa.fa-check-circle
+                    | Malesuada purus erat inceptos dapibus ut, placerat est in.
+                  li
+                    i.fa.fa-check-circle
+                    | Nam dictum pulvinar porttitor, metus non.
+                p 
+                  |  Lorem ipsum dolor sit amet consectetur adipiscing elit ad, tincidunt senectus felis platea natoque mattis. Dis lacinia pellentesque interdum tincidunt cubilia massa egestas primis ullamcorper velit ultrici molestie dui in feugiat lobortis erat vivamus hac condimentum est, libero nostra aliquet consequat fringilla cras lectus vitae ligula sapien. Aptent torquent magnis habitant turpis 
+              .post-footer
+                .tag-post
+                  span
+                    | Tags:
+                  a(href="#")
+                    | Finacial
+                  a(href="#")
+                    | Busines
+                .share-post
+                  span 
+                    | Share:
+                  a(href="#")
+                    i.fa.fa-facebook
+                  a(href="#")
+                    i.fa.fa-twitter  
+              .post-author
+                .author-avatar 
+                  img(src="images/blog-avatar.png", alt="")
+                .author-info
+                  .author-name 
+                    h3 
+                      | Louisa Medina
+                  .author-desc 
+                    p 
+                      | The European languages are members of the same family.
+                  .author-social 
+                    ul 
+                      li 
+                        a(href="#") 
+                          i.fa.fa-facebook         
+                      li 
+                        a(href="#") 
+                          i.fa.fa-twitter
+                      li 
+                        a(href="#") 
+                          i.fa.fa-pinterest-p
+            .list-comments
+              h4 3 comments
+              ul.commentlist
+                li
+                  .user-image
+                    img(src='images/blog-avatar.png', alt='')
+                  .comment-right
+                    p
+                      | Nunc risus ex, tempus quis purus ac, tempor consequat ex. Vivamus sem magna, maximus at est id, maximus aliquet nunc. Suspendisse lacinia velit a eros porttitor, in interdum ante faucibus.
+                    .comment-info
+                      a.c-reply(href='#')
+                        |  reply
+                li
+                  .user-image
+                    img(src='images/blog-avatar.png', alt='')
+                  .comment-right
+                    p
+                      | Donec sollicitudin nisi sed eros elementum, non vestibulum quam convallis. Curabitur bibendum magna at nisl hendrerit, et tempus metus facilisis. Praesent augue tellus, euismod id posuere eget, gravida id dolor.
+                    .comment-info
+                      a.c-reply(href='#')
+                        |  reply
+            .comments-area
+              .comment-respond
+                h4.comment-reply-title Add Comments:
+                form#commentform.comment-form(action='', method='post', novalidate='')
+                  .row.row-comment
+                    p.col-md-6.comment-form-author
+                      input#author(name='author', type='text', value='', placeholder='Your Name')
+                    p.col-md-6.comment-form-email
+                      input#email(name='email', type='email', value='', placeholder='Your Email')
+                    p.col-md-12.comment-form-comment
+                      textarea#comment(name='comment', placeholder='Your Comment')
+                    .col-md-12  
+                      p.form-submit
+                        input#submit.submit.ot-btn.btn-color(name='submit', type='submit', value='Send')
+
+  //- footer
+  include modules/footer/footer01.pug 
+  //- back to top
+  a#to-the-top.fixbtt
+    i.fa.fa-chevron-up
+  +lib
+  script(defer src="js/main-slider-home01.min.js")
+  script(defer src="js/main-menu-desktop.min.js")
+  script(defer src="js/mobilemenu.min.js")
+  script(defer src="js/sticky-header.min.js")

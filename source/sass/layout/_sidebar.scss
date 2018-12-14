@@ -1,3 +1,172 @@
 //
 // Layout :: SideBar
 // --------------------------------------------------
+.sidebar {
+  .widget {
+    background-color: $white;
+    margin-bottom: 10px;
+    > h4 {
+      padding: 30px 30px 20px; 
+      color: $black;
+      font-size: 20px;
+      font-family: $hfont;
+      font-weight: bold;    
+    }
+  }
+  .widget-search {
+    padding: 30px;
+    .search-box {
+      position: relative;
+    }
+    input {
+      border: 1px solid $grey-lighten-10;
+      border-radius: 4px;
+      color: #000;
+      width: 100%;
+      padding: 10px 20px;
+      height: 45px;
+    }
+    button {
+      background: transparent;
+      border: 0;
+      outline: none;
+      position: absolute;
+      top: 0;
+      right: 10px;
+      bottom: 0;
+      i {
+        font-size: 14px;
+        color: $grey-lighten-11;
+      }
+    }
+  }
+  .widget-category {
+    li {
+      border-top: 1px solid rgba($grey-lighten-10, .5);
+    }
+    a {
+      padding: 10px 30px;
+      color: $black;
+      display: block;
+      transition: $transition-base;
+      &:hover {
+        background: $oranger-2;
+        color: $white;
+        text-decoration: none;
+      }
+    }
+  }
+  .widget-feature {
+    ul {
+      padding: 0 30px 30px;
+    }
+    li {
+      display: flex;
+      justify-content: space-between;
+      margin-bottom: 10px;
+      transition: $transition-base;
+      &:hover {
+        text-decoration: none;
+      }
+    }
+    .post-blog-thumb {
+      width: 65px;
+    }
+    .post-blog-info {
+      width: calc(100% - 75px);
+      .post-title {
+        margin-top: 0;
+      }
+      .post-title a {
+        color: $black;
+        font-size: 16px;
+        font-family: $hfont;
+        font-weight: bold;
+        transition: $transition-base;
+        &:hover {
+          color: $oranger-2;
+          text-decoration: none;
+        }
+      }
+      .date {
+        color: 12px;
+        color: $grey-lighten-12;
+      }
+    }
+  }
+
+  .widget-tag {
+    .tag-block {
+      padding: 10px 30px 30px;
+      a {
+        display: inline-block;
+        border: 1px solid rgba($grey-lighten-10, .5);
+        padding: 10px;
+        margin-right: 10px;
+        border-radius: 4px;
+        margin-bottom: 10px;
+        transition: $transition-base;
+        &:hover {
+          background-color: $oranger-2;
+          color: $white;
+          text-decoration: none;
+        }
+      }
+    }
+  }
+
+  .widget-intagram {
+    ul {
+      padding: 0 30px 20px;
+      display: flex;
+      flex-wrap: wrap;
+      margin-left: -5px;
+      margin-right: -5px; 
+    }
+
+    li {
+      width: 33.33%;
+      padding: 0 5px;
+      margin-bottom: 10px;
+      border-radius: 4px;
+    }
+    
+    a {
+      display: block;
+    }
+  }
+
+  .widget-tweet {
+    ul {
+      padding: 0 30px 20px;
+    }
+    li {
+      display: flex;
+      justify-content: space-between;
+      margin-bottom: 10px;
+    }
+    .block-icon {
+      width: 35px;
+      i {
+        color: $black;
+        font-size: 18px;
+      }
+    }
+    .block-info {
+      width: calc(100% - 45px);
+    }
+    .tweet-sub {
+      color:$black;
+      font-size: 14px;
+      clear: both;
+      float: left;
+    }
+    .tweet-link {
+      clear: both;
+      float: left;
+      a {
+        color: $oranger-2;
+      }
+    }
+  }
+}
