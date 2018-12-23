@@ -27,7 +27,7 @@ li {
 
 	&__desc {
 		font-family: $hfont;
-		line-height: 24px;
+		line-height: 22px;
 		font-size: 16px;
 	}
 	&__star {
@@ -77,7 +77,7 @@ li {
 	}
 
 	&__star {
-		margin-bottom: 40px;
+		margin-bottom: 30px;
 		float: left;
     	width: 100%;
 	}
@@ -309,6 +309,7 @@ li {
 		background-repeat: no-repeat;
 		font-style: italic;
     margin-bottom: 20px;
+		font-size: 20px;
     @include min-md {
       margin-left: 20px;
     }
@@ -445,10 +446,16 @@ li {
 
 .home06-testimonials {
 	margin: 0 auto;
-	background-color: $white;
-	margin-top: -100px;
 	position: relative;
-	padding-top: 50px;
+	.container-lg {
+		margin-top: -100px;
+		background-color: $white;
+		padding-top: 100px;
+	}
+}
+
+.home07-testimonial {
+	padding-bottom: 0;
 }
 
 .home08-testimonial {

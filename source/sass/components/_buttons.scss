@@ -105,7 +105,9 @@
   top: auto;
   bottom: 148px;
   display: none;
-
+  span {
+    float: left;
+  }
   .icon {
     padding-right: 0;
     padding-left: 15px;

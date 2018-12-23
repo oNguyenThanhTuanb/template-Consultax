@@ -78,7 +78,7 @@
     color: $white;
     font-weight: 900;
   }
-  
+
   .btn-close-video {
     font-size: 30px;
     color: $white;
@@ -101,7 +101,8 @@
     font-size: 14px;
     font-weight: 900;
     font-family: $hfont;
-
+    background: transparent;
+    border: 0;
     i {
       color: $scolor;
       font-size: 30px;
@@ -113,10 +114,10 @@
     display: flex;
     flex-direction: column;
     width: 30px;
-
+    position: relative;
+    bottom: 80px;
     li {
       margin: 0;
     }
   }
 }
-

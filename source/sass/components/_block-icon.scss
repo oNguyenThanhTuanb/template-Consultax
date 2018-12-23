@@ -298,8 +298,6 @@
 		}
 	}
   .home5-feature {
-		padding-left: 15px;
-		padding-right: 15px;
 		@include md {
       .row > div {
         margin-bottom: 20px;
@@ -334,6 +332,7 @@
 			background-color: rgba($white, .1);
 			border-right: 1px solid $blue-lighter-1;
 			border-bottom: 1px solid $blue-lighter-1;
+      cursor: pointer;
 			@include min-md {
 				width: 33.33%;
 				.list-items .item:nth-child(4),
@@ -431,6 +430,10 @@
     .feature-right {
         width: calc(100% - 50px);
     }
+    .desc {
+      min-height: 60px;
+      margin-bottom: 0;
+    }
   }
 
   /*home7 feature*/
@@ -445,8 +448,8 @@
     }
 
     .desc {
-        min-height: 60px;
-      margin-bottom: 0
+      min-height: 50px;
+      margin-bottom: 0;
     }
 
     .content-block:hover {
